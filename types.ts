@@ -1,0 +1,29 @@
+export interface Beer {
+  id: string;
+  name: string;
+  brewery: string;
+  type: string; // e.g., IPA, Stout, Lager
+  abv: string;
+  emoji?: string; // A fun emoji assigned to the beer
+  description?: string; // Short fun fact
+}
+
+export interface LogEntry {
+  id: string;
+  beerId: string;
+  timestamp: number;
+  note?: string;
+}
+
+export enum ViewState {
+  DASHBOARD = 'DASHBOARD',
+  SEARCH = 'SEARCH',
+  DETAIL = 'DETAIL',
+  PROFILE = 'PROFILE'
+}
+
+export interface UserStats {
+  totalBeers: number;
+  uniqueBeers: number;
+  favoriteType: string;
+}
