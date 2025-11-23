@@ -128,12 +128,27 @@ export const completeMagicLinkSignIn = async (emailOverride?: string) => {
 export const signInWithEmail = async (email: string, pass: string) => {
     if (!auth) throw new Error("Firebase not initialized");
     const result = await signInWithEmailAndPassword(auth, email, pass);
+
+    // Check if email is verified
+    if (!result.user.emailVerified) {
+        // Sign out the user
+        await auth.signOut();
+        throw new Error("auth/email-not-verified");
+    }
+
     return result.user;
 };
 
 export const signUpWithEmail = async (email: string, pass: string) => {
     if (!auth) throw new Error("Firebase not initialized");
     const result = await createUserWithEmailAndPassword(auth, email, pass);
+
+    // Send verification email
+    if (result.user) {
+        const { sendEmailVerification } = await import('firebase/auth');
+        await sendEmailVerification(result.user);
+    }
+
     return result.user;
 };
 

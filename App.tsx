@@ -66,8 +66,8 @@ const LoginScreen = ({
 }: {
   onLogin: () => void,
   onGuest: () => void,
-  authMode: 'default' | 'email' | 'magic' | 'magic-success' | 'magic-confirm',
-  setAuthMode: (mode: 'default' | 'email' | 'magic' | 'magic-success' | 'magic-confirm') => void,
+  authMode: 'default' | 'email' | 'magic' | 'magic-success' | 'magic-confirm' | 'email-verify',
+  setAuthMode: (mode: 'default' | 'email' | 'magic' | 'magic-success' | 'magic-confirm' | 'email-verify') => void,
   email: string,
   setEmail: (email: string) => void,
   password: string,
@@ -75,6 +75,27 @@ const LoginScreen = ({
 }) => {
   const [loadingState, setLoadingState] = useState<string | null>(null);
   const [error, setError] = useState('');
+
+  // Map Firebase error codes to user-friendly messages
+  const getErrorMessage = (error: any): string => {
+    const errorCode = error?.code || error?.message || '';
+    const errorMap: Record<string, string> = {
+      'auth/invalid-credential': 'Invalid email or password. Please try again.',
+      'auth/user-not-found': 'No account found with this email.',
+      'auth/wrong-password': 'Incorrect password. Please try again.',
+      'auth/email-already-in-use': 'This email is already registered. Try signing in instead.',
+      'auth/weak-password': 'Password is too weak. Please use at least 6 characters.',
+      'auth/invalid-email': 'Please enter a valid email address.',
+      'auth/user-disabled': 'This account has been disabled.',
+      'auth/too-many-requests': 'Too many failed attempts. Please try again later.',
+      'auth/popup-blocked': 'Pop-up was blocked. Please allow pop-ups and try again.',
+      'auth/popup-closed-by-user': 'Sign-in was cancelled.',
+      'auth/network-request-failed': 'Network error. Please check your connection.',
+      'auth/email-not-verified': 'Please verify your email before signing in. Check your inbox for the verification link.',
+    };
+
+    return errorMap[errorCode] || 'Something went wrong. Please try again.';
+  };
 
   const handleGoogle = async () => {
     setLoadingState('google');
@@ -84,7 +105,7 @@ const LoginScreen = ({
       onLogin();
     } catch (e: any) {
       console.error(e);
-      setError(e.message || "Login failed");
+      setError(getErrorMessage(e));
       setLoadingState(null);
     }
   };
@@ -131,18 +152,6 @@ const LoginScreen = ({
                   Sign in with Google
                 </FunkyButton>
 
-                {/* Facebook */}
-                <FunkyButton onClick={async () => {
-                  setLoadingState('facebook'); setError('');
-                  try { await signInWithFacebook(); onLogin(); }
-                  catch (e: any) { setError(e.message); setLoadingState(null); }
-                }} isLoading={loadingState === 'facebook'} className="bg-[#1877F2] text-white hover:bg-[#166fe5] shadow-xl shadow-[#1877F2]/20">
-                  <span className="w-5 h-5 bg-white rounded-full mr-2 inline-flex items-center justify-center">
-                    <span className="text-[#1877F2] font-bold text-xs">f</span>
-                  </span>
-                  Sign in with Facebook
-                </FunkyButton>
-
                 {/* Email Options */}
                 <div className="grid grid-cols-2 gap-3">
                   <FunkyButton variant="secondary" onClick={() => setAuthMode('magic')}>
@@ -183,7 +192,7 @@ const LoginScreen = ({
                   try {
                     await sendMagicLink(email);
                     setAuthMode('magic-success');
-                  } catch (e: any) { setError(e.message); }
+                  } catch (e: any) { setError(getErrorMessage(e)); }
                   finally { setLoadingState(null); }
                 }} isLoading={loadingState === 'magic'}>
                   Send Magic Link 🪄
@@ -232,19 +241,60 @@ const LoginScreen = ({
                     if (!email || !password) return setError("Email and password required");
                     setLoadingState('email-signin'); setError('');
                     try { await signInWithEmail(email, password); onLogin(); }
-                    catch (e: any) { setError(e.message); setLoadingState(null); }
+                    catch (e: any) { setError(getErrorMessage(e)); setLoadingState(null); }
                   }} isLoading={loadingState === 'email-signin'}>
                     Sign In
                   </FunkyButton>
                   <FunkyButton variant="secondary" onClick={async () => {
                     if (!email || !password) return setError("Email and password required");
                     setLoadingState('email-signup'); setError('');
-                    try { await signUpWithEmail(email, password); onLogin(); }
-                    catch (e: any) { setError(e.message); setLoadingState(null); }
+                    try {
+                      await signUpWithEmail(email, password);
+                      setAuthMode('email-verify');
+                    }
+                    catch (e: any) { setError(getErrorMessage(e)); setLoadingState(null); }
                   }} isLoading={loadingState === 'email-signup'}>
                     Sign Up
                   </FunkyButton>
                 </div>
+
+                <div className="relative py-2">
+                  <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-slate-200"></div></div>
+                  <div className="relative flex justify-center text-xs uppercase"><span className="bg-slate-50 px-2 text-slate-400 font-bold">Or</span></div>
+                </div>
+
+                <FunkyButton onClick={handleGoogle} isLoading={loadingState === 'google'} className="bg-slate-900 text-white hover:bg-slate-800 shadow-xl shadow-slate-900/20">
+                  <span className="w-5 h-5 bg-white rounded-full mr-2 inline-flex items-center justify-center">
+                    <span className="text-slate-900 font-bold text-xs">G</span>
+                  </span>
+                  Sign in with Google
+                </FunkyButton>
+              </div>
+            )}
+
+            {authMode === 'email-verify' && (
+              <div className="space-y-6 animate-fade-in text-center py-4">
+                <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto text-3xl">
+                  📧
+                </div>
+                <div className="space-y-2">
+                  <h3 className="font-bold text-xl text-slate-800">Verify your email</h3>
+                  <p className="text-slate-600 text-sm">
+                    We sent a verification link to <span className="font-bold text-slate-800">{email}</span>.
+                    <br />Click the link in your email to activate your account.
+                  </p>
+                </div>
+                <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 text-left text-sm text-slate-600">
+                  <p className="font-bold text-blue-700 mb-2">📌 Next steps:</p>
+                  <ol className="list-decimal list-inside space-y-1">
+                    <li>Check your inbox (and spam folder)</li>
+                    <li>Click the verification link</li>
+                    <li>Return here and sign in</li>
+                  </ol>
+                </div>
+                <FunkyButton variant="secondary" onClick={() => setAuthMode('default')}>
+                  Back to Login
+                </FunkyButton>
               </div>
             )}
           </div>
@@ -262,8 +312,9 @@ const LoginScreen = ({
           </div>
 
           {error && (
-            <div className="p-4 bg-red-50 text-red-600 text-sm rounded-xl border border-red-100 font-bold flex items-center gap-2">
-              ⚠️ {error}
+            <div className="p-4 bg-red-50 text-red-700 text-sm rounded-xl border border-red-100 flex items-start gap-3 animate-fade-in">
+              <span className="text-lg">⚠️</span>
+              <span className="flex-1">{error}</span>
             </div>
           )}
         </div>
@@ -333,7 +384,7 @@ export default function App() {
   const [user, setUser] = useState<FirebaseUser | null>(null);
   const [authChecked, setAuthChecked] = useState(false);
   const [isGuest, setIsGuest] = useState(false);
-  const [authMode, setAuthMode] = useState<'default' | 'email' | 'magic' | 'magic-success' | 'magic-confirm'>('default');
+  const [authMode, setAuthMode] = useState<'default' | 'email' | 'magic' | 'magic-success' | 'magic-confirm' | 'email-verify'>('default');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
