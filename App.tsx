@@ -218,6 +218,39 @@ const LoginScreen = ({
               </div>
             )}
 
+            {authMode === 'magic-confirm' && (
+              <div className="space-y-4 animate-fade-in">
+                <div className="flex items-center justify-between">
+                  <h3 className="font-bold text-slate-800">Complete Sign In</h3>
+                  <button onClick={() => setAuthMode('default')} className="text-xs text-slate-500 hover:text-slate-800 font-bold">Cancel</button>
+                </div>
+                <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 text-left text-sm text-slate-600">
+                  <p className="font-bold text-blue-700 mb-1">📧 Email Required</p>
+                  <p>Please enter the email address you used to request the magic link.</p>
+                </div>
+                <FunkyInput
+                  placeholder="Email Address"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <FunkyButton onClick={async () => {
+                  if (!email) return setError("Email is required");
+                  setLoadingState('magic-confirm'); setError('');
+                  try {
+                    await completeMagicLinkSignIn(email);
+                    onLogin();
+                  } catch (e: any) {
+                    setError(getErrorMessage(e));
+                  } finally {
+                    setLoadingState(null);
+                  }
+                }} isLoading={loadingState === 'magic-confirm'}>
+                  Complete Sign In
+                </FunkyButton>
+              </div>
+            )}
+
             {authMode === 'email' && (
               <div className="space-y-4 animate-fade-in">
                 <div className="flex items-center justify-between">
