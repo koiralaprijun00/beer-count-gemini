@@ -139,10 +139,8 @@ export default function App() {
   useEffect(() => {
       // Give Firebase a moment to initialize or fail
       const timer = setTimeout(() => {
-         if (!isFirebaseReady) {
-            // If still not ready after timeout, just show the login screen (it will display specific error on click)
-            setAuthChecked(true);
-         }
+         // If still not ready after timeout, just show the login screen (it will display specific error on click)
+         setAuthChecked(true);
       }, 1000);
 
       if (auth) {

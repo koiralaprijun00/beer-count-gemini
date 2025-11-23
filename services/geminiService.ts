@@ -2,7 +2,26 @@ import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { Beer } from '../types';
 import { STATIC_BEERS } from './staticBeerData';
 
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+// Lazy initialization of AI client to handle missing API keys gracefully
+let ai: GoogleGenAI | null = null;
+
+const getAI = (): GoogleGenAI | null => {
+  if (ai) return ai;
+  
+  const apiKey = process.env.API_KEY || process.env.GEMINI_API_KEY;
+  if (!apiKey) {
+    console.warn("Gemini API key not found. AI features will be disabled. Using static data only.");
+    return null;
+  }
+  
+  try {
+    ai = new GoogleGenAI({ apiKey });
+    return ai;
+  } catch (error) {
+    console.error("Failed to initialize GoogleGenAI:", error);
+    return null;
+  }
+};
 
 const beerSchema: Schema = {
   type: Type.ARRAY,
@@ -37,8 +56,13 @@ export const searchBeersWithGemini = async (query: string): Promise<Beer[]> => {
   }
 
   // 2. IF NOT ENOUGH LOCAL MATCHES, ASK GEMINI
+  const aiClient = getAI();
+  if (!aiClient) {
+    return localMatches; // Return local matches if AI is not available
+  }
+  
   try {
-    const response = await ai.models.generateContent({
+    const response = await aiClient.models.generateContent({
       model,
       contents: `The user is searching for beers with the query: "${query}". 
       Return a list of 6 distinct, real-world beers that match this search.
@@ -86,9 +110,14 @@ export const getTrendingBeers = async (): Promise<Beer[]> => {
     .map(b => ({ ...b, id: crypto.randomUUID() }));
 
   const model = 'gemini-2.5-flash';
+  const aiClient = getAI();
+  
+  if (!aiClient) {
+    return shuffledStatic; // Return static beers if AI is not available
+  }
   
   try {
-    const response = await ai.models.generateContent({
+    const response = await aiClient.models.generateContent({
       model,
       contents: `Generate a list of 5 diverse, popular, and highly-rated craft beers from around the world for a "Discover" section. 
       Do NOT include: ${shuffledStatic.map(b => b.name).join(', ')}.
@@ -122,8 +151,13 @@ export const getTrendingBeers = async (): Promise<Beer[]> => {
 };
 
 export const generateFunFact = async (beerName: string): Promise<string> => {
+    const aiClient = getAI();
+    if (!aiClient) {
+        return "A mysterious brew with no known history!";
+    }
+    
     try {
-        const response = await ai.models.generateContent({
+        const response = await aiClient.models.generateContent({
             model: 'gemini-2.5-flash',
             contents: `Tell me a very short, hilarious, or interesting fact about ${beerName} in one sentence. Keep it under 20 words.`,
         });
