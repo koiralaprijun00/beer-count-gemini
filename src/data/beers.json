@@ -118,5 +118,6465 @@
         "description": "A well-rounded, highly drinkable IPA. A bit of Caramel Malt barley provides the richness that mellows out the twang of the hops.",
         "emoji": "🐶",
         "country": "USA"
+    },
+    {
+        "id": "local-13",
+        "name": "Stella Artois",
+        "brewery": "Anheuser-Busch InBev",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Premium European lager with a smooth, crisp finish.",
+        "emoji": "⭐",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-14",
+        "name": "Hoegaarden",
+        "brewery": "Hoegaarden Brewery",
+        "type": "Wheat",
+        "abv": "4.9%",
+        "description": "Belgian wheat beer with coriander and orange peel. Cloudy and refreshing.",
+        "emoji": "🍊",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-15",
+        "name": "Blue Moon",
+        "brewery": "Blue Moon Brewing Company",
+        "type": "Wheat",
+        "abv": "5.4%",
+        "description": "Belgian-style wheat ale with orange peel and a hint of coriander.",
+        "emoji": "🌙",
+        "country": "USA"
+    },
+    {
+        "id": "local-16",
+        "name": "Samuel Adams Boston Lager",
+        "brewery": "Boston Beer Company",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Full-flavored, smooth lager with a complex, balanced taste.",
+        "emoji": "🦅",
+        "country": "USA"
+    },
+    {
+        "id": "local-17",
+        "name": "Carlsberg",
+        "brewery": "Carlsberg Group",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Probably the best beer in the world. Smooth and refreshing.",
+        "emoji": "🇩🇰",
+        "country": "Denmark"
+    },
+    {
+        "id": "local-18",
+        "name": "Budweiser",
+        "brewery": "Anheuser-Busch",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "The King of Beers. Crisp American-style lager.",
+        "emoji": "👑",
+        "country": "USA"
+    },
+    {
+        "id": "local-19",
+        "name": "Peroni Nastro Azzurro",
+        "brewery": "Birra Peroni",
+        "type": "Lager",
+        "abv": "5.1%",
+        "description": "Premium Italian lager with a delicate balance of bitterness and citrus.",
+        "emoji": "🇮🇹",
+        "country": "Italy"
+    },
+    {
+        "id": "local-20",
+        "name": "Leffe Blonde",
+        "brewery": "Abbaye de Leffe",
+        "type": "Belgian Ale",
+        "abv": "6.6%",
+        "description": "Smooth abbey beer with vanilla and clove notes.",
+        "emoji": "⛪",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-21",
+        "name": "Sapporo Premium",
+        "brewery": "Sapporo Breweries",
+        "type": "Lager",
+        "abv": "4.9%",
+        "description": "Japan's oldest beer brand. Clean, crisp, and refreshing.",
+        "emoji": "🏔️",
+        "country": "Japan"
+    },
+    {
+        "id": "local-22",
+        "name": "Paulaner Hefe-Weizen",
+        "brewery": "Paulaner Brewery",
+        "type": "Wheat",
+        "abv": "5.5%",
+        "description": "Munich's finest wheat beer with fruity banana notes.",
+        "emoji": "🥨",
+        "country": "Germany"
+    },
+    {
+        "id": "local-23",
+        "name": "Modelo Especial",
+        "brewery": "Grupo Modelo",
+        "type": "Lager",
+        "abv": "4.4%",
+        "description": "Full-flavored pilsner-style lager with a crisp, clean finish.",
+        "emoji": "🌮",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-24",
+        "name": "Newcastle Brown Ale",
+        "brewery": "Newcastle Breweries",
+        "type": "Brown Ale",
+        "abv": "4.7%",
+        "description": "Smooth, easy-drinking brown ale with caramel notes.",
+        "emoji": "🏰",
+        "country": "UK"
+    },
+    {
+        "id": "local-25",
+        "name": "Kronenbourg 1664",
+        "brewery": "Brasseries Kronenbourg",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Premium French lager with a hint of bitterness and citrus.",
+        "emoji": "🇫🇷",
+        "country": "France"
+    },
+    {
+        "id": "local-26",
+        "name": "Erdinger Weissbier",
+        "brewery": "Erdinger Weißbräu",
+        "type": "Wheat",
+        "abv": "5.3%",
+        "description": "Germany's most popular wheat beer. Naturally cloudy with fruity notes.",
+        "emoji": "🍌",
+        "country": "Germany"
+    },
+    {
+        "id": "local-27",
+        "name": "Kirin Ichiban",
+        "brewery": "Kirin Brewery Company",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Pure malt lager with a smooth, rich flavor.",
+        "emoji": "🦒",
+        "country": "Japan"
+    },
+    {
+        "id": "local-28",
+        "name": "Amstel",
+        "brewery": "Heineken",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Dutch lager with a mild, slightly sweet taste.",
+        "emoji": "🌷",
+        "country": "Netherlands"
+    },
+    {
+        "id": "local-29",
+        "name": "Desperados",
+        "brewery": "Brasserie Fischer",
+        "type": "Lager",
+        "abv": "5.9%",
+        "description": "Tequila-flavored beer with a hint of lime and cactus.",
+        "emoji": "🌵",
+        "country": "France"
+    },
+    {
+        "id": "local-30",
+        "name": "Anchor Steam Beer",
+        "brewery": "Anchor Brewing Company",
+        "type": "Steam Beer",
+        "abv": "4.9%",
+        "description": "San Francisco's original craft beer. Unique steam beer style.",
+        "emoji": "⚓",
+        "country": "USA"
+    },
+    {
+        "id": "local-31",
+        "name": "Franziskaner Weissbier",
+        "brewery": "Spaten-Franziskaner-Bräu",
+        "type": "Wheat",
+        "abv": "5.0%",
+        "description": "Traditional Bavarian wheat beer with banana and clove aromas.",
+        "emoji": "🍞",
+        "country": "Germany"
+    },
+    {
+        "id": "local-32",
+        "name": "Birra Moretti",
+        "brewery": "Birra Moretti",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Italian lager with a clean, crisp taste.",
+        "emoji": "🍝",
+        "country": "Italy"
+    },
+    {
+        "id": "local-33",
+        "name": "Goose Island IPA",
+        "brewery": "Goose Island Beer Company",
+        "type": "IPA",
+        "abv": "5.9%",
+        "description": "Fruity aroma, a crisp taste, and a dry finish.",
+        "emoji": "🪿",
+        "country": "USA"
+    },
+    {
+        "id": "local-34",
+        "name": "Estrella Damm",
+        "brewery": "S.A. Damm",
+        "type": "Lager",
+        "abv": "5.4%",
+        "description": "Mediterranean lager from Barcelona. Crisp and refreshing.",
+        "emoji": "⭐",
+        "country": "Spain"
+    },
+    {
+        "id": "local-35",
+        "name": "Tiger Beer",
+        "brewery": "Asia Pacific Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Singapore's iconic beer. Smooth and easy-drinking.",
+        "emoji": "🐯",
+        "country": "Singapore"
+    },
+    {
+        "id": "local-36",
+        "name": "Coopers Pale Ale",
+        "brewery": "Coopers Brewery",
+        "type": "Pale Ale",
+        "abv": "4.5%",
+        "description": "Australia's most iconic craft beer. Fruity and balanced.",
+        "emoji": "🦘",
+        "country": "Australia"
+    },
+    {
+        "id": "local-37",
+        "name": "Tsingtao",
+        "brewery": "Tsingtao Brewery",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "China's most famous beer. Light and crisp.",
+        "emoji": "🇨🇳",
+        "country": "China"
+    },
+    {
+        "id": "local-38",
+        "name": "Kingfisher",
+        "brewery": "United Breweries",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "India's best-selling beer. Smooth and refreshing.",
+        "emoji": "🦅",
+        "country": "India"
+    },
+    {
+        "id": "local-39",
+        "name": "Brahma",
+        "brewery": "Ambev",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Brazil's popular lager. Light and easy-drinking.",
+        "emoji": "🇧🇷",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-40",
+        "name": "Quilmes",
+        "brewery": "Cervecería y Maltería Quilmes",
+        "type": "Lager",
+        "abv": "4.9%",
+        "description": "Argentina's national beer. Crisp and refreshing.",
+        "emoji": "🇦🇷",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-41",
+        "name": "Harp Lager",
+        "brewery": "Guinness",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Irish lager with a crisp, clean taste.",
+        "emoji": "🎻",
+        "country": "Ireland"
+    },
+    {
+        "id": "local-42",
+        "name": "Singha",
+        "brewery": "Boon Rawd Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Thailand's original beer. Full-bodied with a hoppy flavor.",
+        "emoji": "🦁",
+        "country": "Thailand"
+    },
+    {
+        "id": "local-43",
+        "name": "Efes Pilsen",
+        "brewery": "Anadolu Efes",
+        "type": "Pilsner",
+        "abv": "5.0%",
+        "description": "Turkey's most popular beer. Light and refreshing.",
+        "emoji": "🇹🇷",
+        "country": "Turkey"
+    },
+    {
+        "id": "local-44",
+        "name": "Baltika",
+        "brewery": "Baltika Breweries",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Russia's leading beer brand. Crisp and clean.",
+        "emoji": "🇷🇺",
+        "country": "Russia"
+    },
+    {
+        "id": "local-45",
+        "name": "Grolsch Premium Lager",
+        "brewery": "Grolsch Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Dutch lager with a distinctive swing-top bottle.",
+        "emoji": "🔒",
+        "country": "Netherlands"
+    },
+    {
+        "id": "local-46",
+        "name": "Warsteiner Premium Verum",
+        "brewery": "Warsteiner Brewery",
+        "type": "Pilsner",
+        "abv": "4.8%",
+        "description": "German pilsner with a balanced, refreshing taste.",
+        "emoji": "🏔️",
+        "country": "Germany"
+    },
+    {
+        "id": "local-47",
+        "name": "Dos Equis",
+        "brewery": "Cuauhtémoc Moctezuma Brewery",
+        "type": "Lager",
+        "abv": "4.2%",
+        "description": "The most interesting beer in the world. Smooth and crisp.",
+        "emoji": "❌❌",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-48",
+        "name": "Tecate",
+        "brewery": "Cuauhtémoc Moctezuma Brewery",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Mexican lager best served with lime and salt.",
+        "emoji": "🧂",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-49",
+        "name": "Pacifico Clara",
+        "brewery": "Grupo Modelo",
+        "type": "Pilsner",
+        "abv": "4.5%",
+        "description": "Mexican pilsner with a crisp, refreshing taste.",
+        "emoji": "🌊",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-50",
+        "name": "Negra Modelo",
+        "brewery": "Grupo Modelo",
+        "type": "Vienna Lager",
+        "abv": "5.4%",
+        "description": "Rich, full-flavored dark lager with caramel notes.",
+        "emoji": "🌑",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-51",
+        "name": "Augustiner Helles",
+        "brewery": "Augustiner-Bräu München",
+        "type": "Helles",
+        "abv": "5.2%",
+        "description": "Munich's finest Helles. Smooth, malty, and perfectly balanced.",
+        "emoji": "🍺",
+        "country": "Germany"
+    },
+    {
+        "id": "local-52",
+        "name": "Hofbräu Original",
+        "brewery": "Hofbräuhaus",
+        "type": "Helles",
+        "abv": "5.1%",
+        "description": "Classic Munich beer from the world-famous Hofbräuhaus.",
+        "emoji": "🏛️",
+        "country": "Germany"
+    },
+    {
+        "id": "local-53",
+        "name": "Spaten Oktoberfest",
+        "brewery": "Spaten-Franziskaner-Bräu",
+        "type": "Märzen",
+        "abv": "5.9%",
+        "description": "The original Oktoberfest beer. Rich, malty, and amber-colored.",
+        "emoji": "🎪",
+        "country": "Germany"
+    },
+    {
+        "id": "local-54",
+        "name": "Bitburger Premium Pils",
+        "brewery": "Bitburger Brauerei",
+        "type": "Pilsner",
+        "abv": "4.8%",
+        "description": "Germany's best-selling draft beer. Crisp and hoppy.",
+        "emoji": "🍺",
+        "country": "Germany"
+    },
+    {
+        "id": "local-55",
+        "name": "Schneider Weisse",
+        "brewery": "Schneider Weisse",
+        "type": "Wheat",
+        "abv": "5.4%",
+        "description": "Original Bavarian wheat beer with banana and clove notes.",
+        "emoji": "🌾",
+        "country": "Germany"
+    },
+    {
+        "id": "local-56",
+        "name": "Ayinger Celebrator",
+        "brewery": "Brauerei Aying",
+        "type": "Doppelbock",
+        "abv": "6.7%",
+        "description": "Rich, dark doppelbock with chocolate and caramel flavors.",
+        "emoji": "🍫",
+        "country": "Germany"
+    },
+    {
+        "id": "local-57",
+        "name": "Köstritzer Schwarzbier",
+        "brewery": "Köstritzer Schwarzbierbrauerei",
+        "type": "Schwarzbier",
+        "abv": "4.8%",
+        "description": "Classic German black lager. Smooth with coffee notes.",
+        "emoji": "⚫",
+        "country": "Germany"
+    },
+    {
+        "id": "local-58",
+        "name": "Rothaus Tannenzäpfle",
+        "brewery": "Badische Staatsbrauerei Rothaus",
+        "type": "Pilsner",
+        "abv": "5.1%",
+        "description": "Black Forest pilsner with a cult following. Crisp and hoppy.",
+        "emoji": "🌲",
+        "country": "Germany"
+    },
+    {
+        "id": "local-59",
+        "name": "Lapin Kulta",
+        "brewery": "Hartwall",
+        "type": "Lager",
+        "abv": "5.2%",
+        "description": "Finland's premium lager from Lapland. Pure and crisp.",
+        "emoji": "🦌",
+        "country": "Finland"
+    },
+    {
+        "id": "local-60",
+        "name": "Karhu",
+        "brewery": "Hartwall",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "The Bear beer. Finland's most popular lager.",
+        "emoji": "🐻",
+        "country": "Finland"
+    },
+    {
+        "id": "local-61",
+        "name": "Koff",
+        "brewery": "Sinebrychoff",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Helsinki's original beer since 1819. Smooth and balanced.",
+        "emoji": "🇫🇮",
+        "country": "Finland"
+    },
+    {
+        "id": "local-62",
+        "name": "Sandels",
+        "brewery": "Olvi",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Finnish lager with a crisp, refreshing taste.",
+        "emoji": "🏖️",
+        "country": "Finland"
+    },
+    {
+        "id": "local-63",
+        "name": "Pripps Blå",
+        "brewery": "Carlsberg Sverige",
+        "type": "Lager",
+        "abv": "5.3%",
+        "description": "Sweden's most popular beer. Light and refreshing.",
+        "emoji": "🔵",
+        "country": "Sweden"
+    },
+    {
+        "id": "local-64",
+        "name": "Norrlands Guld",
+        "brewery": "Spendrups",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Northern Sweden's gold. Crisp and clean.",
+        "emoji": "🥇",
+        "country": "Sweden"
+    },
+    {
+        "id": "local-65",
+        "name": "Falcon Export",
+        "brewery": "Carlsberg Sverige",
+        "type": "Lager",
+        "abv": "5.2%",
+        "description": "Swedish premium lager with a balanced taste.",
+        "emoji": "🦅",
+        "country": "Sweden"
+    },
+    {
+        "id": "local-66",
+        "name": "Mariestads",
+        "brewery": "Spendrups",
+        "type": "Lager",
+        "abv": "5.3%",
+        "description": "Swedish craft lager with a hoppy character.",
+        "emoji": "⚓",
+        "country": "Sweden"
+    },
+    {
+        "id": "local-67",
+        "name": "Tuborg Green",
+        "brewery": "Tuborg Brewery",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Danish lager with a fresh, crisp taste.",
+        "emoji": "💚",
+        "country": "Denmark"
+    },
+    {
+        "id": "local-68",
+        "name": "Royal Unibrew",
+        "brewery": "Royal Unibrew",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Danish lager with a smooth, balanced flavor.",
+        "emoji": "👑",
+        "country": "Denmark"
+    },
+    {
+        "id": "local-69",
+        "name": "Faxe Kondi",
+        "brewery": "Royal Unibrew",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Strong Danish lager. Bold and full-bodied.",
+        "emoji": "💪",
+        "country": "Denmark"
+    },
+    {
+        "id": "local-70",
+        "name": "Mikkeller Beer Geek Breakfast",
+        "brewery": "Mikkeller",
+        "type": "Stout",
+        "abv": "7.5%",
+        "description": "Coffee oatmeal stout. Rich and complex.",
+        "emoji": "☕",
+        "country": "Denmark"
+    },
+    {
+        "id": "local-71",
+        "name": "Brand",
+        "brewery": "Heineken",
+        "type": "Pilsner",
+        "abv": "5.0%",
+        "description": "Dutch pilsner with a distinctive bitter taste.",
+        "emoji": "🔥",
+        "country": "Netherlands"
+    },
+    {
+        "id": "local-72",
+        "name": "Bavaria Premium",
+        "brewery": "Bavaria Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Dutch lager with a smooth, mild taste.",
+        "emoji": "🇳🇱",
+        "country": "Netherlands"
+    },
+    {
+        "id": "local-73",
+        "name": "La Trappe Quadrupel",
+        "brewery": "De Koningshoeven Brewery",
+        "type": "Quadrupel",
+        "abv": "10.0%",
+        "description": "Trappist ale with rich, complex flavors of dark fruit and caramel.",
+        "emoji": "🍇",
+        "country": "Netherlands"
+    },
+    {
+        "id": "local-74",
+        "name": "Jopen Koyt",
+        "brewery": "Jopen",
+        "type": "Gruit",
+        "abv": "8.5%",
+        "description": "Historic Dutch beer brewed with herbs instead of hops.",
+        "emoji": "🌿",
+        "country": "Netherlands"
+    },
+    {
+        "id": "local-75",
+        "name": "Brouwerij 't IJ IPA",
+        "brewery": "Brouwerij 't IJ",
+        "type": "IPA",
+        "abv": "7.0%",
+        "description": "Amsterdam craft IPA brewed near a windmill. Hoppy and citrusy.",
+        "emoji": "🌬️",
+        "country": "Netherlands"
+    },
+    {
+        "id": "local-76",
+        "name": "A. Le Coq Porter",
+        "brewery": "A. Le Coq",
+        "type": "Porter",
+        "abv": "6.5%",
+        "description": "Award-winning Baltic porter. Rich, dark, and full-bodied.",
+        "emoji": "🏆",
+        "country": "Finland"
+    },
+    {
+        "id": "local-77",
+        "name": "Stallhagen IPA",
+        "brewery": "Stallhagen",
+        "type": "IPA",
+        "abv": "5.5%",
+        "description": "Åland Islands craft IPA. Hoppy with citrus notes.",
+        "emoji": "🏝️",
+        "country": "Finland"
+    },
+    {
+        "id": "local-78",
+        "name": "Nokian Panimo Keisari",
+        "brewery": "Nokian Panimo",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Imperial lager from Nokia. Smooth and balanced.",
+        "emoji": "👑",
+        "country": "Finland"
+    },
+    {
+        "id": "local-79",
+        "name": "Pyynikin Brewing Company Moss",
+        "brewery": "Pyynikin Brewing Company",
+        "type": "IPA",
+        "abv": "5.5%",
+        "description": "Tampere craft IPA. Fresh and hoppy.",
+        "emoji": "🌲",
+        "country": "Finland"
+    },
+    {
+        "id": "local-80",
+        "name": "Laitilan Kukko Pils",
+        "brewery": "Laitilan Wirvoitusjuomatehdas",
+        "type": "Pilsner",
+        "abv": "4.5%",
+        "description": "Finnish pilsner with a crisp, clean taste.",
+        "emoji": "🐓",
+        "country": "Finland"
+    },
+    {
+        "id": "local-81",
+        "name": "Olvi III",
+        "brewery": "Olvi",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Classic Finnish lager. Light and refreshing.",
+        "emoji": "3️⃣",
+        "country": "Finland"
+    },
+    {
+        "id": "local-82",
+        "name": "Sinebrychoff Koff Porter",
+        "brewery": "Sinebrychoff",
+        "type": "Porter",
+        "abv": "7.2%",
+        "description": "Finnish Baltic porter. Dark, rich, and complex.",
+        "emoji": "⚫",
+        "country": "Finland"
+    },
+    {
+        "id": "local-83",
+        "name": "Malmgård Pale Ale",
+        "brewery": "Malmgård",
+        "type": "Pale Ale",
+        "abv": "4.7%",
+        "description": "Organic Finnish pale ale. Balanced and flavorful.",
+        "emoji": "🌾",
+        "country": "Finland"
+    },
+    {
+        "id": "local-84",
+        "name": "Hiisi Brewing Sauna Session",
+        "brewery": "Hiisi Brewing",
+        "type": "Pale Ale",
+        "abv": "4.5%",
+        "description": "Session ale perfect after sauna. Light and refreshing.",
+        "emoji": "🧖",
+        "country": "Finland"
+    },
+    {
+        "id": "local-85",
+        "name": "Tornion Panimo Lapin Kulta IPA",
+        "brewery": "Tornion Panimo",
+        "type": "IPA",
+        "abv": "5.2%",
+        "description": "Northern Finland IPA. Hoppy with Arctic purity.",
+        "emoji": "❄️",
+        "country": "Finland"
+    },
+    {
+        "id": "local-86",
+        "name": "Carling",
+        "brewery": "Molson Coors",
+        "type": "Lager",
+        "abv": "4.0%",
+        "description": "UK's best-selling lager. Crisp and refreshing.",
+        "emoji": "🇬🇧",
+        "country": "UK"
+    },
+    {
+        "id": "local-87",
+        "name": "Desperado",
+        "brewery": "Brasserie Fischer",
+        "type": "Lager",
+        "abv": "5.9%",
+        "description": "Tequila-flavored beer with a hint of lime. Popular across Europe.",
+        "emoji": "🌵",
+        "country": "France"
+    },
+    {
+        "id": "local-88",
+        "name": "Heineken 0.0",
+        "brewery": "Heineken",
+        "type": "Non-Alcoholic",
+        "abv": "0.0%",
+        "description": "Europe's leading non-alcoholic beer. All the taste, zero alcohol.",
+        "emoji": "🚫🍺",
+        "country": "Netherlands"
+    },
+    {
+        "id": "local-89",
+        "name": "Peroni 0.0",
+        "brewery": "Birra Peroni",
+        "type": "Non-Alcoholic",
+        "abv": "0.0%",
+        "description": "Italian non-alcoholic lager. Crisp and refreshing.",
+        "emoji": "🇮🇹",
+        "country": "Italy"
+    },
+    {
+        "id": "local-90",
+        "name": "Carlsberg Pilsner",
+        "brewery": "Carlsberg",
+        "type": "Pilsner",
+        "abv": "5.0%",
+        "description": "Brewed according to German Reinheitsgebot. Pure and crisp.",
+        "emoji": "🍺",
+        "country": "Denmark"
+    },
+    {
+        "id": "local-91",
+        "name": "Leffe Brune",
+        "brewery": "Abbaye de Leffe",
+        "type": "Belgian Ale",
+        "abv": "6.5%",
+        "description": "Dark abbey beer with caramel and chocolate notes.",
+        "emoji": "🍫",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-92",
+        "name": "Grimbergen Blonde",
+        "brewery": "Grimbergen Abbey",
+        "type": "Belgian Ale",
+        "abv": "6.7%",
+        "description": "Abbey beer with fruity and spicy notes.",
+        "emoji": "⛪",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-93",
+        "name": "Affligem Blonde",
+        "brewery": "Affligem Abbey",
+        "type": "Belgian Ale",
+        "abv": "6.8%",
+        "description": "Trappist-style blonde ale. Smooth and balanced.",
+        "emoji": "🍯",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-94",
+        "name": "Jupiler",
+        "brewery": "Anheuser-Busch InBev",
+        "type": "Pilsner",
+        "abv": "5.2%",
+        "description": "Belgium's best-selling beer. Crisp and refreshing.",
+        "emoji": "🇧🇪",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-95",
+        "name": "Maes Pils",
+        "brewery": "Alken-Maes",
+        "type": "Pilsner",
+        "abv": "5.2%",
+        "description": "Belgian pilsner with a clean, crisp taste.",
+        "emoji": "🍺",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-96",
+        "name": "Krombacher Pils",
+        "brewery": "Krombacher Brauerei",
+        "type": "Pilsner",
+        "abv": "4.8%",
+        "description": "Germany's best-selling pilsner. Fresh and hoppy.",
+        "emoji": "🌲",
+        "country": "Germany"
+    },
+    {
+        "id": "local-97",
+        "name": "Veltins Pilsener",
+        "brewery": "Brauerei C. & A. Veltins",
+        "type": "Pilsner",
+        "abv": "4.8%",
+        "description": "Premium German pilsner. Crisp and well-balanced.",
+        "emoji": "⭐",
+        "country": "Germany"
+    },
+    {
+        "id": "local-98",
+        "name": "Becks",
+        "brewery": "Brauerei Beck & Co",
+        "type": "Pilsner",
+        "abv": "5.0%",
+        "description": "Bremen pilsner exported worldwide. Clean and crisp.",
+        "emoji": "🚢",
+        "country": "Germany"
+    },
+    {
+        "id": "local-99",
+        "name": "Jever Pilsener",
+        "brewery": "Friesisches Brauhaus zu Jever",
+        "type": "Pilsner",
+        "abv": "4.9%",
+        "description": "Extra hoppy North German pilsner. Distinctively bitter.",
+        "emoji": "🌊",
+        "country": "Germany"
+    },
+    {
+        "id": "local-100",
+        "name": "Orval",
+        "brewery": "Brasserie d'Orval",
+        "type": "Trappist Ale",
+        "abv": "6.2%",
+        "description": "Authentic Trappist beer. Dry-hopped with unique character.",
+        "emoji": "🏰",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-101",
+        "name": "Erdinger Alkoholfrei",
+        "brewery": "Erdinger Weißbräu",
+        "type": "Non-Alcoholic",
+        "abv": "0.5%",
+        "description": "Isotonic wheat beer. Perfect for athletes and active lifestyles.",
+        "emoji": "🏃",
+        "country": "Germany"
+    },
+    {
+        "id": "local-102",
+        "name": "Clausthaler Original",
+        "brewery": "Radeberger Gruppe",
+        "type": "Non-Alcoholic",
+        "abv": "0.5%",
+        "description": "Pioneer of non-alcoholic beer. Crisp and refreshing.",
+        "emoji": "🥇",
+        "country": "Germany"
+    },
+    {
+        "id": "local-103",
+        "name": "Brooklyn Special Effects",
+        "brewery": "Brooklyn Brewery",
+        "type": "Non-Alcoholic",
+        "abv": "0.4%",
+        "description": "Hoppy non-alcoholic IPA. Full flavor, zero alcohol.",
+        "emoji": "🌉",
+        "country": "USA"
+    },
+    {
+        "id": "local-104",
+        "name": "Athletic Brewing Run Wild IPA",
+        "brewery": "Athletic Brewing Company",
+        "type": "Non-Alcoholic",
+        "abv": "0.5%",
+        "description": "Award-winning NA IPA. Citrusy and hoppy.",
+        "emoji": "🏃‍♂️",
+        "country": "USA"
+    },
+    {
+        "id": "local-105",
+        "name": "Bitburger Drive",
+        "brewery": "Bitburger Brauerei",
+        "type": "Non-Alcoholic",
+        "abv": "0.0%",
+        "description": "German pilsner taste without alcohol. Crisp and clean.",
+        "emoji": "🚗",
+        "country": "Germany"
+    },
+    {
+        "id": "local-106",
+        "name": "Guinness 0.0",
+        "brewery": "Guinness",
+        "type": "Non-Alcoholic",
+        "abv": "0.0%",
+        "description": "The iconic stout, now alcohol-free. Rich and creamy.",
+        "emoji": "🖤",
+        "country": "Ireland"
+    },
+    {
+        "id": "local-107",
+        "name": "Brewdog Nanny State",
+        "brewery": "BrewDog",
+        "type": "Non-Alcoholic",
+        "abv": "0.5%",
+        "description": "Hoppy ale with tropical fruit notes. Full-flavored NA beer.",
+        "emoji": "👶",
+        "country": "UK"
+    },
+    {
+        "id": "local-108",
+        "name": "Paulaner Weizen 0.0",
+        "brewery": "Paulaner Brewery",
+        "type": "Non-Alcoholic",
+        "abv": "0.0%",
+        "description": "Bavarian wheat beer without alcohol. Fruity and refreshing.",
+        "emoji": "🌾",
+        "country": "Germany"
+    },
+    {
+        "id": "local-109",
+        "name": "Lagunitas IPNA",
+        "brewery": "Lagunitas Brewing Company",
+        "type": "Non-Alcoholic",
+        "abv": "0.5%",
+        "description": "Hoppy IPA character without the alcohol. Citrusy and bold.",
+        "emoji": "🐕",
+        "country": "USA"
+    },
+    {
+        "id": "local-110",
+        "name": "Mikkeller Drink'in The Sun",
+        "brewery": "Mikkeller",
+        "type": "Non-Alcoholic",
+        "abv": "0.3%",
+        "description": "Tropical wheat beer. Light and refreshing.",
+        "emoji": "☀️",
+        "country": "Denmark"
+    },
+    {
+        "id": "local-111",
+        "name": "Krombacher Alkoholfrei",
+        "brewery": "Krombacher Brauerei",
+        "type": "Non-Alcoholic",
+        "abv": "0.0%",
+        "description": "Germany's favorite pilsner in non-alcoholic form.",
+        "emoji": "🌲",
+        "country": "Germany"
+    },
+    {
+        "id": "local-112",
+        "name": "Stella Artois Liberté",
+        "brewery": "Anheuser-Busch InBev",
+        "type": "Non-Alcoholic",
+        "abv": "0.0%",
+        "description": "Premium Belgian lager without alcohol. Crisp and balanced.",
+        "emoji": "🗽",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-113",
+        "name": "Corona Cero",
+        "brewery": "Grupo Modelo",
+        "type": "Non-Alcoholic",
+        "abv": "0.0%",
+        "description": "The beach beer, now alcohol-free. Light and refreshing.",
+        "emoji": "🏖️",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-114",
+        "name": "Budweiser Zero",
+        "brewery": "Anheuser-Busch",
+        "type": "Non-Alcoholic",
+        "abv": "0.0%",
+        "description": "The King of Beers in zero-alcohol form. Crisp and clean.",
+        "emoji": "👑",
+        "country": "USA"
+    },
+    {
+        "id": "local-115",
+        "name": "Warsteiner Fresh 0.0",
+        "brewery": "Warsteiner Brewery",
+        "type": "Non-Alcoholic",
+        "abv": "0.0%",
+        "description": "German pilsner without alcohol. Fresh and crisp.",
+        "emoji": "💚",
+        "country": "Germany"
+    },
+    {
+        "id": "local-116",
+        "name": "Żywiec",
+        "brewery": "Grupa Żywiec",
+        "type": "Lager",
+        "abv": "5.6%",
+        "description": "Poland's most popular beer. Full-bodied and refreshing.",
+        "emoji": "🇵🇱",
+        "country": "Poland"
+    },
+    {
+        "id": "local-117",
+        "name": "Tyskie Gronie",
+        "brewery": "Kompania Piwowarska",
+        "type": "Lager",
+        "abv": "5.2%",
+        "description": "Classic Polish lager. Smooth and balanced.",
+        "emoji": "🌾",
+        "country": "Poland"
+    },
+    {
+        "id": "local-118",
+        "name": "Okocim",
+        "brewery": "Carlsberg Polska",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Traditional Polish beer since 1845. Crisp and clean.",
+        "emoji": "🏰",
+        "country": "Poland"
+    },
+    {
+        "id": "local-119",
+        "name": "Lech Premium",
+        "brewery": "Kompania Piwowarska",
+        "abv": "5.2%",
+        "type": "Lager",
+        "description": "Premium Polish lager. Smooth with a hint of sweetness.",
+        "emoji": "⚔️",
+        "country": "Poland"
+    },
+    {
+        "id": "local-120",
+        "name": "Warka Strong",
+        "brewery": "Grupa Żywiec",
+        "type": "Strong Lager",
+        "abv": "7.0%",
+        "description": "Strong Polish lager. Bold and full-flavored.",
+        "emoji": "💪",
+        "country": "Poland"
+    },
+    {
+        "id": "local-121",
+        "name": "Kozel Premium",
+        "brewery": "Plzeňský Prazdroj",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Czech lager with the goat logo. Smooth and malty.",
+        "emoji": "🐐",
+        "country": "Czechia"
+    },
+    {
+        "id": "local-122",
+        "name": "Budweiser Budvar",
+        "brewery": "Budějovický Budvar",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "The original Budweiser from České Budějovice. Rich and hoppy.",
+        "emoji": "🍺",
+        "country": "Czechia"
+    },
+    {
+        "id": "local-123",
+        "name": "Staropramen",
+        "brewery": "Pivovary Staropramen",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Prague's famous beer. Crisp and refreshing.",
+        "emoji": "🏛️",
+        "country": "Czechia"
+    },
+    {
+        "id": "local-124",
+        "name": "Gambrinus",
+        "brewery": "Plzeňský Prazdroj",
+        "type": "Pilsner",
+        "abv": "4.3%",
+        "description": "Czech pilsner named after the beer king. Light and hoppy.",
+        "emoji": "👑",
+        "country": "Czechia"
+    },
+    {
+        "id": "local-125",
+        "name": "Krušovice",
+        "brewery": "Heineken Česká republika",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Royal Czech beer since 1581. Smooth and balanced.",
+        "emoji": "🏰",
+        "country": "Czechia"
+    },
+    {
+        "id": "local-126",
+        "name": "Bernard",
+        "brewery": "Rodinný pivovar Bernard",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Unpasteurized Czech lager. Fresh and natural.",
+        "emoji": "🌿",
+        "country": "Czechia"
+    },
+    {
+        "id": "local-127",
+        "name": "Stiegl Goldbrau",
+        "brewery": "Stieglbrauerei zu Salzburg",
+        "type": "Lager",
+        "abv": "4.9%",
+        "description": "Austria's most popular beer. Golden and refreshing.",
+        "emoji": "🦌",
+        "country": "Austria"
+    },
+    {
+        "id": "local-128",
+        "name": "Gösser",
+        "brewery": "Brauerei Göss",
+        "type": "Lager",
+        "abv": "5.2%",
+        "description": "Austrian lager with a smooth, malty taste.",
+        "emoji": "🇦🇹",
+        "country": "Austria"
+    },
+    {
+        "id": "local-129",
+        "name": "Ottakringer Helles",
+        "brewery": "Ottakringer Brauerei",
+        "type": "Helles",
+        "abv": "5.2%",
+        "description": "Vienna's local beer. Smooth and balanced.",
+        "emoji": "🎡",
+        "country": "Austria"
+    },
+    {
+        "id": "local-130",
+        "name": "Zipfer Urtyp",
+        "brewery": "Brauerei Zipf",
+        "type": "Lager",
+        "abv": "5.4%",
+        "description": "Upper Austrian lager. Crisp and full-bodied.",
+        "emoji": "⛰️",
+        "country": "Austria"
+    },
+    {
+        "id": "local-131",
+        "name": "Puntigamer",
+        "brewery": "Brau Union Österreich",
+        "type": "Lager",
+        "abv": "5.1%",
+        "description": "Styrian beer from Graz. Smooth and refreshing.",
+        "emoji": "🍺",
+        "country": "Austria"
+    },
+    {
+        "id": "local-132",
+        "name": "Schwechater",
+        "brewery": "Brau Union Österreich",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Historic Viennese lager. Balanced and malty.",
+        "emoji": "🏛️",
+        "country": "Austria"
+    },
+    {
+        "id": "local-133",
+        "name": "Švyturys",
+        "brewery": "Švyturys-Utenos Alus",
+        "type": "Lager",
+        "abv": "5.2%",
+        "description": "Lithuania's lighthouse beer. Crisp and refreshing.",
+        "emoji": "🗼",
+        "country": "Lithuania"
+    },
+    {
+        "id": "local-134",
+        "name": "Kalnapilis",
+        "brewery": "Carlsberg Baltic",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Lithuanian lager since 1902. Smooth and balanced.",
+        "emoji": "🇱🇹",
+        "country": "Lithuania"
+    },
+    {
+        "id": "local-135",
+        "name": "Volfas Engelman",
+        "brewery": "Volfas Engelman",
+        "type": "Lager",
+        "abv": "5.2%",
+        "description": "Premium Lithuanian beer. Full-bodied and flavorful.",
+        "emoji": "🐺",
+        "country": "Lithuania"
+    },
+    {
+        "id": "local-136",
+        "name": "Aldaris",
+        "brewery": "Aldaris",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Latvia's oldest brewery. Crisp and clean.",
+        "emoji": "🇱🇻",
+        "country": "Latvia"
+    },
+    {
+        "id": "local-137",
+        "name": "Užavas",
+        "brewery": "Užavas alus darītava",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Latvian craft beer. Natural and unfiltered.",
+        "emoji": "🌾",
+        "country": "Latvia"
+    },
+    {
+        "id": "local-138",
+        "name": "Obolon Premium",
+        "brewery": "Obolon",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Ukraine's leading beer. Crisp and refreshing.",
+        "emoji": "🇺🇦",
+        "country": "Ukraine"
+    },
+    {
+        "id": "local-139",
+        "name": "Lvivske",
+        "brewery": "Carlsberg Ukraine",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Beer from Lviv. Smooth and balanced.",
+        "emoji": "🦁",
+        "country": "Ukraine"
+    },
+    {
+        "id": "local-140",
+        "name": "Chernigivske",
+        "brewery": "Carlsberg Ukraine",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Ukrainian lager with a rich history.",
+        "emoji": "🏰",
+        "country": "Ukraine"
+    },
+    {
+        "id": "local-141",
+        "name": "Dreher",
+        "brewery": "Dreher Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Hungary's most popular beer. Crisp and refreshing.",
+        "emoji": "🇭🇺",
+        "country": "Hungary"
+    },
+    {
+        "id": "local-142",
+        "name": "Soproni",
+        "brewery": "Soproni Brewery",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Hungarian lager from Sopron. Light and crisp.",
+        "emoji": "🍺",
+        "country": "Hungary"
+    },
+    {
+        "id": "local-143",
+        "name": "Borsodi",
+        "brewery": "Borsodi Brewery",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Hungarian lager. Smooth and easy-drinking.",
+        "emoji": "⭐",
+        "country": "Hungary"
+    },
+    {
+        "id": "local-144",
+        "name": "Ožujsko",
+        "brewery": "Zagrebačka pivovara",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Croatia's most popular beer. Crisp and refreshing.",
+        "emoji": "🇭🇷",
+        "country": "Croatia"
+    },
+    {
+        "id": "local-145",
+        "name": "Karlovačko",
+        "brewery": "Karlovačka pivovara",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Croatian lager from Karlovac. Smooth and balanced.",
+        "emoji": "🏰",
+        "country": "Croatia"
+    },
+    {
+        "id": "local-146",
+        "name": "Tomislav",
+        "brewery": "Zagrebačka pivovara",
+        "type": "Dark Lager",
+        "abv": "7.3%",
+        "description": "Premium Croatian dark lager. Rich and full-bodied.",
+        "emoji": "👑",
+        "country": "Croatia"
+    },
+    {
+        "id": "local-147",
+        "name": "Menabrea",
+        "brewery": "Birra Menabrea",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Italy's oldest brewery since 1846. Crisp and elegant.",
+        "emoji": "⛰️",
+        "country": "Italy"
+    },
+    {
+        "id": "local-148",
+        "name": "Ichnusa",
+        "brewery": "Birra Ichnusa",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Sardinian beer. Light and refreshing.",
+        "emoji": "🏝️",
+        "country": "Italy"
+    },
+    {
+        "id": "local-149",
+        "name": "Messina Cristalli di Sale",
+        "brewery": "Birra Messina",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Sicilian beer with sea salt. Unique and refreshing.",
+        "emoji": "🌊",
+        "country": "Italy"
+    },
+    {
+        "id": "local-150",
+        "name": "1664 Blanc",
+        "brewery": "Brasseries Kronenbourg",
+        "type": "Wheat",
+        "abv": "5.0%",
+        "description": "French wheat beer with citrus notes. Smooth and fruity.",
+        "emoji": "🍊",
+        "country": "France"
+    },
+    {
+        "id": "local-151",
+        "name": "Meteor",
+        "brewery": "Brasserie Meteor",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Alsatian beer. Crisp and traditional.",
+        "emoji": "☄️",
+        "country": "France"
+    },
+    {
+        "id": "local-152",
+        "name": "Pietra",
+        "brewery": "Brasserie Pietra",
+        "type": "Amber Ale",
+        "abv": "6.0%",
+        "description": "Corsican beer brewed with chestnuts. Unique and nutty.",
+        "emoji": "🌰",
+        "country": "France"
+    },
+    {
+        "id": "local-153",
+        "name": "Smithwick's",
+        "brewery": "Diageo",
+        "type": "Red Ale",
+        "abv": "4.5%",
+        "description": "Irish red ale. Smooth with caramel notes.",
+        "emoji": "🍀",
+        "country": "Ireland"
+    },
+    {
+        "id": "local-154",
+        "name": "Murphy's Irish Stout",
+        "brewery": "Heineken",
+        "type": "Stout",
+        "abv": "4.0%",
+        "description": "Cork's famous stout. Smooth and creamy.",
+        "emoji": "⚫",
+        "country": "Ireland"
+    },
+    {
+        "id": "local-155",
+        "name": "Galway Hooker",
+        "brewery": "Galway Hooker Brewery",
+        "type": "Pale Ale",
+        "abv": "4.3%",
+        "description": "Irish craft pale ale. Hoppy and refreshing.",
+        "emoji": "⛵",
+        "country": "Ireland"
+    },
+    {
+        "id": "local-156",
+        "name": "Tennent's Lager",
+        "brewery": "Tennent Caledonian",
+        "type": "Lager",
+        "abv": "4.0%",
+        "description": "Scotland's favorite lager. Crisp and refreshing.",
+        "emoji": "🏴󠁧󠁢󠁳󠁣󠁴󠁿",
+        "country": "Scotland"
+    },
+    {
+        "id": "local-157",
+        "name": "Belhaven Best",
+        "brewery": "Belhaven Brewery",
+        "type": "Scottish Ale",
+        "abv": "3.5%",
+        "description": "Classic Scottish ale. Malty and smooth.",
+        "emoji": "🦁",
+        "country": "Scotland"
+    },
+    {
+        "id": "local-158",
+        "name": "BrewDog Punk IPA",
+        "brewery": "BrewDog",
+        "type": "IPA",
+        "abv": "5.6%",
+        "description": "Scottish craft IPA. Hoppy and rebellious.",
+        "emoji": "🎸",
+        "country": "Scotland"
+    },
+    {
+        "id": "local-159",
+        "name": "Sapporo Yebisu",
+        "brewery": "Sapporo Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Premium Japanese lager. Rich and full-bodied.",
+        "emoji": "🎌",
+        "country": "Japan"
+    },
+    {
+        "id": "local-160",
+        "name": "Orion Draft",
+        "brewery": "Orion Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Okinawan beer. Light and tropical.",
+        "emoji": "🌺",
+        "country": "Japan"
+    },
+    {
+        "id": "local-161",
+        "name": "Yona Yona Ale",
+        "brewery": "Yo-Ho Brewing Company",
+        "type": "Pale Ale",
+        "abv": "5.5%",
+        "description": "Japanese craft pale ale. Hoppy and citrusy.",
+        "emoji": "🌙",
+        "country": "Japan"
+    },
+    {
+        "id": "local-162",
+        "name": "Hitachino Nest White Ale",
+        "brewery": "Kiuchi Brewery",
+        "type": "Wheat",
+        "abv": "5.5%",
+        "description": "Japanese wheat beer with coriander and orange peel.",
+        "emoji": "🦉",
+        "country": "Japan"
+    },
+    {
+        "id": "local-163",
+        "name": "Coedo Beniaka",
+        "brewery": "Coedo Brewery",
+        "type": "Sweet Potato Ale",
+        "abv": "7.0%",
+        "description": "Unique beer brewed with sweet potatoes. Smooth and sweet.",
+        "emoji": "🍠",
+        "country": "Japan"
+    },
+    {
+        "id": "local-164",
+        "name": "Snow Beer",
+        "brewery": "CR Snow",
+        "type": "Lager",
+        "abv": "3.0%",
+        "description": "World's best-selling beer. Light and refreshing.",
+        "emoji": "❄️",
+        "country": "China"
+    },
+    {
+        "id": "local-165",
+        "name": "Harbin Ice",
+        "brewery": "Harbin Brewery",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Northern Chinese lager. Crisp and clean.",
+        "emoji": "🧊",
+        "country": "China"
+    },
+    {
+        "id": "local-166",
+        "name": "Yanjing Beer",
+        "brewery": "Beijing Yanjing Brewery",
+        "type": "Lager",
+        "abv": "4.0%",
+        "description": "Beijing's local beer. Light and easy-drinking.",
+        "emoji": "🏯",
+        "country": "China"
+    },
+    {
+        "id": "local-167",
+        "name": "Zhujiang Beer",
+        "brewery": "Guangzhou Zhujiang Brewery",
+        "type": "Lager",
+        "abv": "4.3%",
+        "description": "Pearl River beer from Guangzhou. Refreshing.",
+        "emoji": "🐉",
+        "country": "China"
+    },
+    {
+        "id": "local-168",
+        "name": "Pabst Blue Ribbon China",
+        "brewery": "Pabst Brewing Company",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "American classic, popular in China. Smooth and balanced.",
+        "emoji": "🎀",
+        "country": "China"
+    },
+    {
+        "id": "local-169",
+        "name": "Cass",
+        "brewery": "Oriental Brewery",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "South Korea's most popular beer. Light and crisp.",
+        "emoji": "🇰🇷",
+        "country": "South Korea"
+    },
+    {
+        "id": "local-170",
+        "name": "Hite",
+        "brewery": "Hite Jinro",
+        "type": "Lager",
+        "abv": "4.3%",
+        "description": "Korean lager. Clean and refreshing.",
+        "emoji": "💎",
+        "country": "South Korea"
+    },
+    {
+        "id": "local-171",
+        "name": "OB Golden Lager",
+        "brewery": "Oriental Brewery",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Premium Korean lager. Smooth and balanced.",
+        "emoji": "🥇",
+        "country": "South Korea"
+    },
+    {
+        "id": "local-172",
+        "name": "Kloud",
+        "brewery": "Lotte Chilsung",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Gravity-brewed Korean beer. Rich and full-bodied.",
+        "emoji": "☁️",
+        "country": "South Korea"
+    },
+    {
+        "id": "local-173",
+        "name": "Terra",
+        "brewery": "Hite Jinro",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Korean craft-style lager. Clean and crisp.",
+        "emoji": "🌍",
+        "country": "South Korea"
+    },
+    {
+        "id": "local-174",
+        "name": "Saigon Beer",
+        "brewery": "Sabeco",
+        "type": "Lager",
+        "abv": "4.9%",
+        "description": "Vietnam's iconic beer. Light and refreshing.",
+        "emoji": "🇻🇳",
+        "country": "Vietnam"
+    },
+    {
+        "id": "local-175",
+        "name": "333 Premium",
+        "brewery": "Sabeco",
+        "type": "Lager",
+        "abv": "5.3%",
+        "description": "Ba Ba Ba - Vietnamese favorite. Crisp and clean.",
+        "emoji": "3️⃣",
+        "country": "Vietnam"
+    },
+    {
+        "id": "local-176",
+        "name": "Hanoi Beer",
+        "brewery": "Habeco",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Northern Vietnam's beer. Light and easy-drinking.",
+        "emoji": "🏙️",
+        "country": "Vietnam"
+    },
+    {
+        "id": "local-177",
+        "name": "Bia Hoi",
+        "brewery": "Various",
+        "type": "Fresh Beer",
+        "abv": "3.0%",
+        "description": "Vietnamese draft beer. Ultra-fresh and light.",
+        "emoji": "🍺",
+        "country": "Vietnam"
+    },
+    {
+        "id": "local-178",
+        "name": "Tiger Crystal",
+        "brewery": "Heineken Asia Pacific",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Premium Asian lager. Smooth and refreshing.",
+        "emoji": "💎",
+        "country": "Vietnam"
+    },
+    {
+        "id": "local-179",
+        "name": "San Miguel Pale Pilsen",
+        "brewery": "San Miguel Brewery",
+        "type": "Pilsner",
+        "abv": "5.0%",
+        "description": "Philippines' iconic beer. Crisp and hoppy.",
+        "emoji": "🇵🇭",
+        "country": "Philippines"
+    },
+    {
+        "id": "local-180",
+        "name": "Red Horse Beer",
+        "brewery": "San Miguel Brewery",
+        "type": "Strong Lager",
+        "abv": "6.9%",
+        "description": "Extra strong Filipino beer. Bold and powerful.",
+        "emoji": "🐴",
+        "country": "Philippines"
+    },
+    {
+        "id": "local-181",
+        "name": "San Mig Light",
+        "brewery": "San Miguel Brewery",
+        "type": "Light Lager",
+        "abv": "3.5%",
+        "description": "Low-calorie Filipino lager. Light and refreshing.",
+        "emoji": "💡",
+        "country": "Philippines"
+    },
+    {
+        "id": "local-182",
+        "name": "Cerveza Negra",
+        "brewery": "San Miguel Brewery",
+        "type": "Dark Lager",
+        "abv": "5.4%",
+        "description": "Filipino dark lager. Rich and malty.",
+        "emoji": "⚫",
+        "country": "Philippines"
+    },
+    {
+        "id": "local-183",
+        "name": "Colt 45",
+        "brewery": "Asia Brewery",
+        "type": "Strong Lager",
+        "abv": "7.2%",
+        "description": "Strong Filipino beer. Bold and full-flavored.",
+        "emoji": "🔫",
+        "country": "Philippines"
+    },
+    {
+        "id": "local-184",
+        "name": "Bintang",
+        "brewery": "Multi Bintang Indonesia",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Indonesia's star beer. Crisp and refreshing.",
+        "emoji": "⭐",
+        "country": "Indonesia"
+    },
+    {
+        "id": "local-185",
+        "name": "Anker Beer",
+        "brewery": "Delta Djakarta",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Indonesian lager. Smooth and balanced.",
+        "emoji": "⚓",
+        "country": "Indonesia"
+    },
+    {
+        "id": "local-186",
+        "name": "Bali Hai",
+        "brewery": "Multi Bintang Indonesia",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Tropical Indonesian beer. Light and easy-drinking.",
+        "emoji": "🏝️",
+        "country": "Indonesia"
+    },
+    {
+        "id": "local-187",
+        "name": "Prost",
+        "brewery": "Multi Bintang Indonesia",
+        "type": "Pilsner",
+        "abv": "4.7%",
+        "description": "Indonesian pilsner. Crisp and clean.",
+        "emoji": "🍻",
+        "country": "Indonesia"
+    },
+    {
+        "id": "local-188",
+        "name": "Stark",
+        "brewery": "Multi Bintang Indonesia",
+        "type": "Strong Lager",
+        "abv": "6.5%",
+        "description": "Strong Indonesian lager. Bold and powerful.",
+        "emoji": "💪",
+        "country": "Indonesia"
+    },
+    {
+        "id": "local-189",
+        "name": "Chang Beer",
+        "brewery": "Thai Beverage",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Thailand's elephant beer. Full-bodied and refreshing.",
+        "emoji": "🐘",
+        "country": "Thailand"
+    },
+    {
+        "id": "local-190",
+        "name": "Leo Beer",
+        "brewery": "Boon Rawd Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Thai lager with a leopard logo. Smooth and crisp.",
+        "emoji": "🐆",
+        "country": "Thailand"
+    },
+    {
+        "id": "local-191",
+        "name": "Archa Beer",
+        "brewery": "Thai Beverage",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Thai budget beer. Light and easy-drinking.",
+        "emoji": "🍺",
+        "country": "Thailand"
+    },
+    {
+        "id": "local-192",
+        "name": "Beerlao",
+        "brewery": "Lao Brewery Company",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Laos' national beer. Crisp and refreshing.",
+        "emoji": "🇱🇦",
+        "country": "Laos"
+    },
+    {
+        "id": "local-193",
+        "name": "Angkor Beer",
+        "brewery": "Cambrew",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Cambodia's premium beer. Smooth and balanced.",
+        "emoji": "🏛️",
+        "country": "Cambodia"
+    },
+    {
+        "id": "local-194",
+        "name": "Anchor Smooth",
+        "brewery": "Guinness Anchor Berhad",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Malaysia's smooth lager. Easy-drinking and refreshing.",
+        "emoji": "⚓",
+        "country": "Malaysia"
+    },
+    {
+        "id": "local-195",
+        "name": "Carlsberg Smooth Draught",
+        "brewery": "Carlsberg Malaysia",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Malaysian favorite. Smooth and crisp.",
+        "emoji": "🇲🇾",
+        "country": "Malaysia"
+    },
+    {
+        "id": "local-196",
+        "name": "Tiger Radler",
+        "brewery": "Heineken Malaysia",
+        "type": "Radler",
+        "abv": "2.0%",
+        "description": "Lemon-flavored beer. Light and refreshing.",
+        "emoji": "🍋",
+        "country": "Malaysia"
+    },
+    {
+        "id": "local-197",
+        "name": "Skol Super",
+        "brewery": "Carlsberg Malaysia",
+        "type": "Strong Lager",
+        "abv": "6.5%",
+        "description": "Strong Malaysian lager. Bold and powerful.",
+        "emoji": "💪",
+        "country": "Malaysia"
+    },
+    {
+        "id": "local-198",
+        "name": "Royal Stout",
+        "brewery": "Guinness Anchor Berhad",
+        "type": "Stout",
+        "abv": "8.0%",
+        "description": "Malaysian stout. Rich and full-bodied.",
+        "emoji": "👑",
+        "country": "Malaysia"
+    },
+    {
+        "id": "local-199",
+        "name": "Myanmar Beer",
+        "brewery": "Myanmar Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Myanmar's national beer. Crisp and refreshing.",
+        "emoji": "🇲🇲",
+        "country": "Myanmar"
+    },
+    {
+        "id": "local-200",
+        "name": "Dagon Beer",
+        "brewery": "Myanmar Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Named after ancient capital. Smooth and balanced.",
+        "emoji": "🏛️",
+        "country": "Myanmar"
+    },
+    {
+        "id": "local-201",
+        "name": "Mandalay Beer",
+        "brewery": "Myanmar Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Premium Myanmar lager. Clean and crisp.",
+        "emoji": "🏰",
+        "country": "Myanmar"
+    },
+    {
+        "id": "local-202",
+        "name": "Yoma Beer",
+        "brewery": "Yoma Brewery",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Craft Myanmar beer. Fresh and hoppy.",
+        "emoji": "⛰️",
+        "country": "Myanmar"
+    },
+    {
+        "id": "local-203",
+        "name": "ABC Extra Stout",
+        "brewery": "Asia Pacific Breweries",
+        "type": "Stout",
+        "abv": "8.0%",
+        "description": "Strong Southeast Asian stout. Rich and bold.",
+        "emoji": "⚫",
+        "country": "Singapore"
+    },
+    {
+        "id": "local-204",
+        "name": "Archipelago Brewery IPA",
+        "brewery": "Archipelago Brewery",
+        "type": "IPA",
+        "abv": "5.5%",
+        "description": "Singapore craft IPA. Tropical and hoppy.",
+        "emoji": "🏝️",
+        "country": "Singapore"
+    },
+    {
+        "id": "local-205",
+        "name": "Brewlander Yippie IPA",
+        "brewery": "Brewlander",
+        "type": "IPA",
+        "abv": "6.0%",
+        "description": "Singapore craft IPA. Citrusy and bold.",
+        "emoji": "🦁",
+        "country": "Singapore"
+    },
+    {
+        "id": "local-206",
+        "name": "Beerlao Dark",
+        "brewery": "Lao Brewery Company",
+        "type": "Dark Lager",
+        "abv": "6.5%",
+        "description": "Lao dark lager. Rich and malty.",
+        "emoji": "⚫",
+        "country": "Laos"
+    },
+    {
+        "id": "local-207",
+        "name": "Beerlao Gold",
+        "brewery": "Lao Brewery Company",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Premium Lao lager. Smooth and balanced.",
+        "emoji": "🥇",
+        "country": "Laos"
+    },
+    {
+        "id": "local-208",
+        "name": "Cambodia Beer",
+        "brewery": "Cambrew",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Cambodian lager. Light and refreshing.",
+        "emoji": "🇰🇭",
+        "country": "Cambodia"
+    },
+    {
+        "id": "local-209",
+        "name": "Kingdom Brewhouse Pale Ale",
+        "brewery": "Kingdom Brewhouse",
+        "type": "Pale Ale",
+        "abv": "5.2%",
+        "description": "Cambodian craft pale ale. Hoppy and fresh.",
+        "emoji": "🏛️",
+        "country": "Cambodia"
+    },
+    {
+        "id": "local-210",
+        "name": "Himawari Weizen",
+        "brewery": "Himawari Hotel",
+        "type": "Wheat",
+        "abv": "5.0%",
+        "description": "Cambodian wheat beer. Fruity and refreshing.",
+        "emoji": "🌻",
+        "country": "Cambodia"
+    },
+    {
+        "id": "local-211",
+        "name": "Gorkha Beer",
+        "brewery": "Gorkha Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Nepal's premium beer. Crisp and refreshing.",
+        "emoji": "🏔️",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-212",
+        "name": "Everest Beer",
+        "brewery": "Gorkha Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Named after the world's highest peak. Light and clean.",
+        "emoji": "⛰️",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-213",
+        "name": "Tuborg Strong",
+        "brewery": "Gorkha Brewery",
+        "type": "Strong Lager",
+        "abv": "8.0%",
+        "description": "Strong Nepali lager. Bold and powerful.",
+        "emoji": "💪",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-214",
+        "name": "Sherpa Beer",
+        "brewery": "Sherpa Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Craft Nepali beer. Fresh and hoppy.",
+        "emoji": "🥾",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-215",
+        "name": "Nepal Ice",
+        "brewery": "Gorkha Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Himalayan lager. Crisp and refreshing.",
+        "emoji": "🧊",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-216",
+        "name": "Taj Mahal",
+        "brewery": "United Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Premium Indian lager. Smooth and balanced.",
+        "emoji": "🕌",
+        "country": "India"
+    },
+    {
+        "id": "local-217",
+        "name": "Royal Challenge",
+        "brewery": "United Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "India's premium beer. Crisp and refreshing.",
+        "emoji": "👑",
+        "country": "India"
+    },
+    {
+        "id": "local-218",
+        "name": "Haywards 5000",
+        "brewery": "United Breweries",
+        "type": "Strong Lager",
+        "abv": "7.0%",
+        "description": "Strong Indian lager. Bold and full-flavored.",
+        "emoji": "5️⃣",
+        "country": "India"
+    },
+    {
+        "id": "local-219",
+        "name": "Bira 91 White",
+        "brewery": "B9 Beverages",
+        "type": "Wheat",
+        "abv": "4.9%",
+        "description": "Indian craft wheat beer. Light and citrusy.",
+        "emoji": "🦁",
+        "country": "India"
+    },
+    {
+        "id": "local-220",
+        "name": "Bira 91 Blonde",
+        "brewery": "B9 Beverages",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Indian craft lager. Smooth and easy-drinking.",
+        "emoji": "🌟",
+        "country": "India"
+    },
+    {
+        "id": "local-221",
+        "name": "White Rhino",
+        "brewery": "White Rhino Brewing",
+        "type": "Wheat",
+        "abv": "5.0%",
+        "description": "Indian craft wheat beer. Fruity and refreshing.",
+        "emoji": "🦏",
+        "country": "India"
+    },
+    {
+        "id": "local-222",
+        "name": "Hunter Beer",
+        "brewery": "Hunter Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Bangladesh's popular beer. Crisp and clean.",
+        "emoji": "🇧🇩",
+        "country": "Bangladesh"
+    },
+    {
+        "id": "local-223",
+        "name": "Djinn Premium",
+        "brewery": "Dhaka Beverages",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Bangladeshi premium lager. Smooth and balanced.",
+        "emoji": "🧞",
+        "country": "Bangladesh"
+    },
+    {
+        "id": "local-224",
+        "name": "Pabst Blue Ribbon Bangladesh",
+        "brewery": "Pabst Brewing",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "American classic brewed in Bangladesh.",
+        "emoji": "🎀",
+        "country": "Bangladesh"
+    },
+    {
+        "id": "local-225",
+        "name": "Lion Lager",
+        "brewery": "Lion Brewery",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Sri Lanka's iconic beer. Crisp and refreshing.",
+        "emoji": "🦁",
+        "country": "Sri Lanka"
+    },
+    {
+        "id": "local-226",
+        "name": "Lion Stout",
+        "brewery": "Lion Brewery",
+        "type": "Stout",
+        "abv": "8.8%",
+        "description": "Award-winning Sri Lankan stout. Rich and complex.",
+        "emoji": "⚫",
+        "country": "Sri Lanka"
+    },
+    {
+        "id": "local-227",
+        "name": "Lion Strong",
+        "brewery": "Lion Brewery",
+        "type": "Strong Lager",
+        "abv": "8.0%",
+        "description": "Strong Sri Lankan lager. Bold and powerful.",
+        "emoji": "💪",
+        "country": "Sri Lanka"
+    },
+    {
+        "id": "local-228",
+        "name": "Carlsberg Smooth",
+        "brewery": "Lion Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Sri Lankan Carlsberg. Smooth and easy-drinking.",
+        "emoji": "🌴",
+        "country": "Sri Lanka"
+    },
+    {
+        "id": "local-229",
+        "name": "Sando Stout",
+        "brewery": "Lion Brewery",
+        "type": "Stout",
+        "abv": "6.0%",
+        "description": "Sri Lankan stout. Dark and malty.",
+        "emoji": "🍫",
+        "country": "Sri Lanka"
+    },
+    {
+        "id": "local-230",
+        "name": "Chamisul Fresh Soju",
+        "brewery": "HiteJinro",
+        "type": "Soju",
+        "abv": "17.8%",
+        "description": "Korea's #1 soju. Smooth and clean distilled spirit.",
+        "emoji": "🍶",
+        "country": "South Korea"
+    },
+    {
+        "id": "local-231",
+        "name": "Jinro Soju",
+        "brewery": "HiteJinro",
+        "type": "Soju",
+        "abv": "20.1%",
+        "description": "Original Korean soju. Strong and traditional.",
+        "emoji": "🥃",
+        "country": "South Korea"
+    },
+    {
+        "id": "local-232",
+        "name": "Good Day Soju",
+        "brewery": "Muhak",
+        "type": "Soju",
+        "abv": "16.9%",
+        "description": "Smooth Korean soju. Light and easy-drinking.",
+        "emoji": "☀️",
+        "country": "South Korea"
+    },
+    {
+        "id": "local-233",
+        "name": "Chum Churum Soju",
+        "brewery": "Lotte Liquor",
+        "type": "Soju",
+        "abv": "17.0%",
+        "description": "Alkaline water soju. Smooth and refined.",
+        "emoji": "💧",
+        "country": "South Korea"
+    },
+    {
+        "id": "local-234",
+        "name": "Makgeolli Jangsu",
+        "brewery": "Kooksoondang",
+        "type": "Makgeolli",
+        "abv": "6.0%",
+        "description": "Traditional Korean rice wine. Milky, sweet, and slightly fizzy.",
+        "emoji": "🍚",
+        "country": "South Korea"
+    },
+    {
+        "id": "local-235",
+        "name": "Seoul Makgeolli",
+        "brewery": "Seoul Takju",
+        "type": "Makgeolli",
+        "abv": "6.0%",
+        "description": "Seoul's traditional rice wine. Creamy and refreshing.",
+        "emoji": "🏙️",
+        "country": "South Korea"
+    },
+    {
+        "id": "local-236",
+        "name": "Kooksoondang Makgeolli",
+        "brewery": "Kooksoondang",
+        "type": "Makgeolli",
+        "abv": "5.0%",
+        "description": "Premium Korean rice wine. Smooth and naturally sweet.",
+        "emoji": "🌾",
+        "country": "South Korea"
+    },
+    {
+        "id": "local-237",
+        "name": "Kathmandu Premium Lager",
+        "brewery": "Kathmandu Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Mellow with Saaz hops and Godavari spring water. First Nepali beer exported to UK.",
+        "emoji": "🏛️",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-238",
+        "name": "Sherpa Khumbu Kolsch",
+        "brewery": "Sherpa Brewery",
+        "type": "Kolsch",
+        "abv": "5.0%",
+        "description": "Light fruity ale with Himalayan water. Craft standout.",
+        "emoji": "🏔️",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-239",
+        "name": "Gorkha Strong",
+        "brewery": "Gorkha Brewery",
+        "type": "Strong Lager",
+        "abv": "6.0%",
+        "description": "Bolder version of Gorkha Premium. Malty and robust.",
+        "emoji": "💪",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-240",
+        "name": "Nepal Ice Strong",
+        "brewery": "Sun Gold Brewery",
+        "type": "Strong Lager",
+        "abv": "7.0%",
+        "description": "Darker, malt-heavy ale. Strong flavor for evenings.",
+        "emoji": "🌙",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-241",
+        "name": "Barahsinghe Craft",
+        "brewery": "Barahsinghe Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Floral, balanced craft lager. Refreshing aroma.",
+        "emoji": "🦌",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-242",
+        "name": "Namaste Premium",
+        "brewery": "Gorkha Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Malty with fruity esters. Named after Nepal's greeting.",
+        "emoji": "🙏",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-243",
+        "name": "Iceberg Extra Strong",
+        "brewery": "Iceberg Brewery",
+        "type": "Strong Lager",
+        "abv": "7.0%",
+        "description": "Full-bodied strong lager since 1982. Rich malt and heritage.",
+        "emoji": "🧊",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-244",
+        "name": "Sherpa Himalayan Red",
+        "brewery": "Sherpa Brewery",
+        "type": "ESB",
+        "abv": "5.0%",
+        "description": "Extra Special Bitter with pronounced malt and hop bitterness.",
+        "emoji": "🔴",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-245",
+        "name": "Yeti Lager",
+        "brewery": "Yeti Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Golden lager with grainy aroma. Microbrew quality.",
+        "emoji": "❄️",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-246",
+        "name": "Khumbu Pilsner",
+        "brewery": "Sherpa Brewery",
+        "type": "Pilsner",
+        "abv": "5.0%",
+        "description": "Hop-forward pilsner. Great with spicy Nepali dishes.",
+        "emoji": "🌾",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-247",
+        "name": "Nepal Ice Natura",
+        "brewery": "Sun Gold Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Lighter variant with natural ingredients. Milder herbal twist.",
+        "emoji": "🌿",
+        "country": "Nepal"
+    },
+    {
+        "id": "local-248",
+        "name": "Derbes",
+        "brewery": "Derbes Brewery",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Kazakhstan's popular lager. Crisp and refreshing.",
+        "emoji": "🇰🇿",
+        "country": "Kazakhstan"
+    },
+    {
+        "id": "local-249",
+        "name": "Tian Shan",
+        "brewery": "Tian Shan Brewery",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Named after the mountain range. Light and clean.",
+        "emoji": "⛰️",
+        "country": "Kazakhstan"
+    },
+    {
+        "id": "local-250",
+        "name": "Karaganda",
+        "brewery": "Karaganda Brewery",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Classic Kazakh lager. Smooth and balanced.",
+        "emoji": "🍺",
+        "country": "Kazakhstan"
+    },
+    {
+        "id": "local-251",
+        "name": "Shymkent",
+        "brewery": "Shymkent Brewery",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Southern Kazakhstan's favorite. Crisp and easy-drinking.",
+        "emoji": "🌾",
+        "country": "Kazakhstan"
+    },
+    {
+        "id": "local-252",
+        "name": "Sarbast",
+        "brewery": "Sarbast Brewery",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Uzbekistan's premium lager. Clean and refreshing.",
+        "emoji": "🇺🇿",
+        "country": "Uzbekistan"
+    },
+    {
+        "id": "local-253",
+        "name": "Khorezm",
+        "brewery": "Khorezm Brewery",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Historic Uzbek beer. Smooth and balanced.",
+        "emoji": "🏛️",
+        "country": "Uzbekistan"
+    },
+    {
+        "id": "local-254",
+        "name": "Pulsar",
+        "brewery": "Toshkent Brewery",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Tashkent's popular beer. Crisp and clean.",
+        "emoji": "⭐",
+        "country": "Uzbekistan"
+    },
+    {
+        "id": "local-255",
+        "name": "Arpa",
+        "brewery": "Arpa Brewery",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Kyrgyzstan's national beer. Light and refreshing.",
+        "emoji": "🇰🇬",
+        "country": "Kyrgyzstan"
+    },
+    {
+        "id": "local-256",
+        "name": "Karabalta",
+        "brewery": "Karabalta Brewery",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Kyrgyz lager. Smooth and easy-drinking.",
+        "emoji": "🏔️",
+        "country": "Kyrgyzstan"
+    },
+    {
+        "id": "local-257",
+        "name": "Nashe Pivo",
+        "brewery": "Bishkek Brewery",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Our Beer in Russian. Popular Kyrgyz lager.",
+        "emoji": "🍺",
+        "country": "Kyrgyzstan"
+    },
+    {
+        "id": "local-258",
+        "name": "Bomonti",
+        "brewery": "Bomonti Brewery",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Historic Turkish beer since 1890. Premium and smooth.",
+        "emoji": "🏛️",
+        "country": "Turkey"
+    },
+    {
+        "id": "local-259",
+        "name": "Marmara",
+        "brewery": "Anadolu Efes",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Turkish lager. Crisp and refreshing.",
+        "emoji": "🌊",
+        "country": "Turkey"
+    },
+    {
+        "id": "local-260",
+        "name": "Tuborg Gold",
+        "brewery": "Anadolu Efes",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Turkish Tuborg variant. Smooth and balanced.",
+        "emoji": "🥇",
+        "country": "Turkey"
+    },
+    {
+        "id": "local-261",
+        "name": "Goldstar",
+        "brewery": "Tempo Beer Industries",
+        "type": "Lager",
+        "abv": "4.9%",
+        "description": "Israel's most popular beer. Full-bodied lager.",
+        "emoji": "⭐",
+        "country": "Israel"
+    },
+    {
+        "id": "local-262",
+        "name": "Maccabee",
+        "brewery": "Tempo Beer Industries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Israeli lager. Light and refreshing.",
+        "emoji": "🇮🇱",
+        "country": "Israel"
+    },
+    {
+        "id": "local-263",
+        "name": "Taybeh",
+        "brewery": "Taybeh Brewing Company",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Palestinian craft beer. First microbrewery in Middle East.",
+        "emoji": "🍺",
+        "country": "Israel"
+    },
+    {
+        "id": "local-264",
+        "name": "Negev",
+        "brewery": "Negev Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Desert beer from southern Israel. Crisp and clean.",
+        "emoji": "🏜️",
+        "country": "Israel"
+    },
+    {
+        "id": "local-265",
+        "name": "Alexander",
+        "brewery": "Alexander Brewery",
+        "type": "Wheat",
+        "abv": "5.2%",
+        "description": "Israeli craft wheat beer. Fruity and refreshing.",
+        "emoji": "🌾",
+        "country": "Israel"
+    },
+    {
+        "id": "local-266",
+        "name": "Almaza",
+        "brewery": "Almaza Brewery",
+        "type": "Pilsner",
+        "abv": "4.2%",
+        "description": "Lebanon's iconic beer since 1933. Crisp pilsner.",
+        "emoji": "🇱🇧",
+        "country": "Lebanon"
+    },
+    {
+        "id": "local-267",
+        "name": "961 Beer",
+        "brewery": "961 Beer",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Lebanese craft beer. Named after country code.",
+        "emoji": "🍺",
+        "country": "Lebanon"
+    },
+    {
+        "id": "local-268",
+        "name": "961 Pale Ale",
+        "brewery": "961 Beer",
+        "type": "Pale Ale",
+        "abv": "5.0%",
+        "description": "Lebanese craft pale ale. Hoppy and aromatic.",
+        "emoji": "🌿",
+        "country": "Lebanon"
+    },
+    {
+        "id": "local-269",
+        "name": "Colonel Beer",
+        "brewery": "Colonel Beer",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Lebanese craft lager. Smooth and balanced.",
+        "emoji": "🎖️",
+        "country": "Lebanon"
+    },
+    {
+        "id": "local-270",
+        "name": "Petra Beer",
+        "brewery": "Jordan River Foundation",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Jordanian beer named after ancient city. Crisp and clean.",
+        "emoji": "🏛️",
+        "country": "Jordan"
+    },
+    {
+        "id": "local-271",
+        "name": "Carakale",
+        "brewery": "Carakale Brewing Company",
+        "type": "Pale Ale",
+        "abv": "5.0%",
+        "description": "Jordan's first microbrewery. Craft pale ale.",
+        "emoji": "🦅",
+        "country": "Jordan"
+    },
+    {
+        "id": "local-272",
+        "name": "Carakale Blonde",
+        "brewery": "Carakale Brewing Company",
+        "type": "Blonde Ale",
+        "abv": "4.8%",
+        "description": "Jordanian craft blonde ale. Light and hoppy.",
+        "emoji": "🍯",
+        "country": "Jordan"
+    },
+    {
+        "id": "local-273",
+        "name": "Victoria Bitter",
+        "brewery": "Carlton & United Breweries",
+        "type": "Lager",
+        "abv": "4.9%",
+        "description": "Australia's iconic VB. Full-flavored and refreshing.",
+        "emoji": "🇦🇺",
+        "country": "Australia"
+    },
+    {
+        "id": "local-274",
+        "name": "Carlton Draught",
+        "brewery": "Carlton & United Breweries",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Classic Australian lager. Smooth and easy-drinking.",
+        "emoji": "🍺",
+        "country": "Australia"
+    },
+    {
+        "id": "local-275",
+        "name": "XXXX Gold",
+        "brewery": "Castlemaine Perkins",
+        "type": "Lager",
+        "abv": "3.5%",
+        "description": "Queensland's favorite. Light and refreshing.",
+        "emoji": "🥇",
+        "country": "Australia"
+    },
+    {
+        "id": "local-276",
+        "name": "Tooheys New",
+        "brewery": "Lion Nathan",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "NSW favorite. Crisp and clean.",
+        "emoji": "🦁",
+        "country": "Australia"
+    },
+    {
+        "id": "local-277",
+        "name": "James Squire One Fifty Lashes",
+        "brewery": "Malt Shovel Brewery",
+        "type": "Pale Ale",
+        "abv": "4.2%",
+        "description": "Award-winning Australian pale ale. Hoppy and balanced.",
+        "emoji": "🍺",
+        "country": "Australia"
+    },
+    {
+        "id": "local-278",
+        "name": "Little Creatures Pale Ale",
+        "brewery": "Little Creatures Brewing",
+        "type": "Pale Ale",
+        "abv": "5.2%",
+        "description": "Fremantle craft icon. Fresh and hoppy.",
+        "emoji": "🐟",
+        "country": "Australia"
+    },
+    {
+        "id": "local-279",
+        "name": "Stone & Wood Pacific Ale",
+        "brewery": "Stone & Wood Brewing",
+        "type": "Pale Ale",
+        "abv": "4.4%",
+        "description": "Byron Bay favorite. Tropical and refreshing.",
+        "emoji": "🌴",
+        "country": "Australia"
+    },
+    {
+        "id": "local-280",
+        "name": "Furphy",
+        "brewery": "Lion Nathan",
+        "type": "Lager",
+        "abv": "4.4%",
+        "description": "Refreshing ale-style lager. Crisp and hoppy.",
+        "emoji": "🍃",
+        "country": "Australia"
+    },
+    {
+        "id": "local-281",
+        "name": "Hahn Super Dry",
+        "brewery": "Lion Nathan",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Ultra-crisp lager. Clean and dry finish.",
+        "emoji": "💎",
+        "country": "Australia"
+    },
+    {
+        "id": "local-282",
+        "name": "Balter XPA",
+        "brewery": "Balter Brewing",
+        "type": "XPA",
+        "abv": "5.0%",
+        "description": "Gold Coast craft XPA. Tropical and sessionable.",
+        "emoji": "🏄",
+        "country": "Australia"
+    },
+    {
+        "id": "local-283",
+        "name": "Pirate Life IPA",
+        "brewery": "Pirate Life Brewing",
+        "type": "IPA",
+        "abv": "6.8%",
+        "description": "Adelaide craft IPA. Bold and hoppy.",
+        "emoji": "🏴‍☠️",
+        "country": "Australia"
+    },
+    {
+        "id": "local-284",
+        "name": "Steinlager Pure",
+        "brewery": "Lion Nathan",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "New Zealand's premium lager. Crisp and clean.",
+        "emoji": "🇳🇿",
+        "country": "New Zealand"
+    },
+    {
+        "id": "local-285",
+        "name": "Speight's",
+        "brewery": "Lion Nathan",
+        "type": "Lager",
+        "abv": "4.0%",
+        "description": "Pride of the South. Traditional NZ lager.",
+        "emoji": "🦁",
+        "country": "New Zealand"
+    },
+    {
+        "id": "local-286",
+        "name": "Tui",
+        "brewery": "DB Breweries",
+        "type": "Lager",
+        "abv": "4.0%",
+        "description": "East Coast favorite. Smooth and easy-drinking.",
+        "emoji": "🐦",
+        "country": "New Zealand"
+    },
+    {
+        "id": "local-287",
+        "name": "DB Export Gold",
+        "brewery": "DB Breweries",
+        "type": "Lager",
+        "abv": "4.0%",
+        "description": "Classic Kiwi lager. Light and refreshing.",
+        "emoji": "🥇",
+        "country": "New Zealand"
+    },
+    {
+        "id": "local-288",
+        "name": "Monteith's Original Ale",
+        "brewery": "Monteith's Brewing",
+        "type": "Ale",
+        "abv": "4.0%",
+        "description": "West Coast craft ale. Malty and balanced.",
+        "emoji": "🏔️",
+        "country": "New Zealand"
+    },
+    {
+        "id": "local-289",
+        "name": "Emerson's Pilsner",
+        "brewery": "Emerson's Brewery",
+        "type": "Pilsner",
+        "abv": "4.9%",
+        "description": "Dunedin craft pilsner. Hoppy and aromatic.",
+        "emoji": "🍺",
+        "country": "New Zealand"
+    },
+    {
+        "id": "local-290",
+        "name": "Garage Project Beer",
+        "brewery": "Garage Project",
+        "type": "IPA",
+        "abv": "6.0%",
+        "description": "Wellington craft IPA. Innovative and bold.",
+        "emoji": "🚗",
+        "country": "New Zealand"
+    },
+    {
+        "id": "local-291",
+        "name": "Tuatara IPA",
+        "brewery": "Tuatara Brewing",
+        "type": "IPA",
+        "abv": "5.8%",
+        "description": "Kiwi craft IPA. Citrusy and hoppy.",
+        "emoji": "🦎",
+        "country": "New Zealand"
+    },
+    {
+        "id": "local-292",
+        "name": "Panhead Port Road Pilsner",
+        "brewery": "Panhead Custom Ales",
+        "type": "Pilsner",
+        "abv": "4.7%",
+        "description": "Upper Hutt pilsner. Crisp and clean.",
+        "emoji": "🛣️",
+        "country": "New Zealand"
+    },
+    {
+        "id": "local-293",
+        "name": "Epic Pale Ale",
+        "brewery": "Epic Brewing",
+        "type": "Pale Ale",
+        "abv": "5.4%",
+        "description": "Auckland craft pale ale. Hoppy and refreshing.",
+        "emoji": "🌊",
+        "country": "New Zealand"
+    },
+    {
+        "id": "local-294",
+        "name": "8 Wired Hopwired IPA",
+        "brewery": "8 Wired Brewing",
+        "type": "IPA",
+        "abv": "7.3%",
+        "description": "Canterbury craft IPA. Bold and complex.",
+        "emoji": "8️⃣",
+        "country": "New Zealand"
+    },
+    {
+        "id": "local-295",
+        "name": "Kilimanjaro Premium Lager",
+        "brewery": "Tanzania Breweries",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Tanzania's iconic beer. Named after Africa's highest peak.",
+        "emoji": "🏔️",
+        "country": "Tanzania"
+    },
+    {
+        "id": "local-296",
+        "name": "Safari Lager",
+        "brewery": "Tanzania Breweries",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Tanzanian lager. Crisp and refreshing.",
+        "emoji": "🦁",
+        "country": "Tanzania"
+    },
+    {
+        "id": "local-297",
+        "name": "Serengeti Premium Lager",
+        "brewery": "Tanzania Breweries",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Named after the famous plains. Smooth and balanced.",
+        "emoji": "🦓",
+        "country": "Tanzania"
+    },
+    {
+        "id": "local-298",
+        "name": "Ndovu Special Malt",
+        "brewery": "Tanzania Breweries",
+        "type": "Malt Liquor",
+        "abv": "5.5%",
+        "description": "Elephant beer. Rich and malty.",
+        "emoji": "🐘",
+        "country": "Tanzania"
+    },
+    {
+        "id": "local-299",
+        "name": "Three Horses Beer",
+        "brewery": "Star Breweries",
+        "type": "Pilsner",
+        "abv": "5.4%",
+        "description": "Madagascar's iconic THB. Crisp pilsner.",
+        "emoji": "🐴",
+        "country": "Madagascar"
+    },
+    {
+        "id": "local-300",
+        "name": "Queen Lager",
+        "brewery": "Star Breweries",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Malagasy lager. Light and refreshing.",
+        "emoji": "👑",
+        "country": "Madagascar"
+    },
+    {
+        "id": "local-301",
+        "name": "Gold Extra",
+        "brewery": "Star Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Premium Madagascar lager. Smooth and balanced.",
+        "emoji": "🥇",
+        "country": "Madagascar"
+    },
+    {
+        "id": "local-302",
+        "name": "Laurentina Preta",
+        "brewery": "Cervejas de Moçambique",
+        "type": "Dunkel",
+        "abv": "5.5%",
+        "description": "Mozambican dark lager. Rich and malty.",
+        "emoji": "⚫",
+        "country": "Mozambique"
+    },
+    {
+        "id": "local-303",
+        "name": "Laurentina Clara",
+        "brewery": "Cervejas de Moçambique",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Mozambique's popular lager. Crisp and clean.",
+        "emoji": "🇲🇿",
+        "country": "Mozambique"
+    },
+    {
+        "id": "local-304",
+        "name": "2M",
+        "brewery": "Cervejas de Moçambique",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Manica e Sofala beer. Refreshing Mozambican lager.",
+        "emoji": "2️⃣",
+        "country": "Mozambique"
+    },
+    {
+        "id": "local-305",
+        "name": "Castle Lager",
+        "brewery": "South African Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "South Africa's iconic beer. Crisp and refreshing.",
+        "emoji": "🏰",
+        "country": "South Africa"
+    },
+    {
+        "id": "local-306",
+        "name": "Castle Milk Stout",
+        "brewery": "South African Breweries",
+        "type": "Milk Stout",
+        "abv": "6.0%",
+        "description": "Sweet South African stout. Rich and creamy.",
+        "emoji": "🍫",
+        "country": "South Africa"
+    },
+    {
+        "id": "local-307",
+        "name": "Black Label",
+        "brewery": "South African Breweries",
+        "type": "Lager",
+        "abv": "5.5%",
+        "description": "South Africa's working man's beer. Full-bodied lager.",
+        "emoji": "⚫",
+        "country": "South Africa"
+    },
+    {
+        "id": "local-308",
+        "name": "Carling Black Label",
+        "brewery": "South African Breweries",
+        "type": "Lager",
+        "abv": "5.5%",
+        "description": "Champion beer. Bold and refreshing.",
+        "emoji": "🏆",
+        "country": "South Africa"
+    },
+    {
+        "id": "local-309",
+        "name": "Windhoek Lager",
+        "brewery": "Namibia Breweries",
+        "type": "Lager",
+        "abv": "4.0%",
+        "description": "Namibia's premium lager. Brewed according to Reinheitsgebot.",
+        "emoji": "🇳🇦",
+        "country": "Namibia"
+    },
+    {
+        "id": "local-310",
+        "name": "Hansa Pilsener",
+        "brewery": "Namibia Breweries",
+        "type": "Pilsner",
+        "abv": "4.5%",
+        "description": "Namibian pilsner. Crisp and hoppy.",
+        "emoji": "🍺",
+        "country": "Namibia"
+    },
+    {
+        "id": "local-311",
+        "name": "Tafel Lager",
+        "brewery": "Namibia Breweries",
+        "type": "Lager",
+        "abv": "4.0%",
+        "description": "Namibian table beer. Light and easy-drinking.",
+        "emoji": "🏜️",
+        "country": "Namibia"
+    },
+    {
+        "id": "local-312",
+        "name": "Mosi Lager",
+        "brewery": "Zambian Breweries",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Named after Victoria Falls (Mosi-oa-Tunya). Zambian favorite.",
+        "emoji": "💧",
+        "country": "Zambia"
+    },
+    {
+        "id": "local-313",
+        "name": "Rhino Lager",
+        "brewery": "Zambian Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Zambian premium lager. Smooth and balanced.",
+        "emoji": "🦏",
+        "country": "Zambia"
+    },
+    {
+        "id": "local-314",
+        "name": "Carlsberg Malawi",
+        "brewery": "Carlsberg Malawi",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Malawian Carlsberg. Crisp and clean.",
+        "emoji": "🇲🇼",
+        "country": "Malawi"
+    },
+    {
+        "id": "local-315",
+        "name": "Carlsberg Brown",
+        "brewery": "Carlsberg Malawi",
+        "type": "Dark Lager",
+        "abv": "5.5%",
+        "description": "Malawian dark lager. Rich and malty.",
+        "emoji": "🟤",
+        "country": "Malawi"
+    },
+    {
+        "id": "local-316",
+        "name": "Kuche Kuche",
+        "brewery": "Carlsberg Malawi",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Malawian budget lager. Light and refreshing.",
+        "emoji": "🍺",
+        "country": "Malawi"
+    },
+    {
+        "id": "local-317",
+        "name": "Tusker Lager",
+        "brewery": "East African Breweries",
+        "type": "Lager",
+        "abv": "4.2%",
+        "description": "Kenya's iconic beer. Crisp and refreshing.",
+        "emoji": "🐘",
+        "country": "Kenya"
+    },
+    {
+        "id": "local-318",
+        "name": "White Cap",
+        "brewery": "East African Breweries",
+        "type": "Lager",
+        "abv": "4.2%",
+        "description": "Kenyan lager. Light and easy-drinking.",
+        "emoji": "⚪",
+        "country": "Kenya"
+    },
+    {
+        "id": "local-319",
+        "name": "Pilsner Lager",
+        "brewery": "East African Breweries",
+        "type": "Pilsner",
+        "abv": "4.5%",
+        "description": "Kenyan pilsner. Crisp and hoppy.",
+        "emoji": "🍺",
+        "country": "Kenya"
+    },
+    {
+        "id": "local-320",
+        "name": "Nile Special",
+        "brewery": "Nile Breweries",
+        "type": "Lager",
+        "abv": "5.6%",
+        "description": "Uganda's premium lager. Full-bodied and smooth.",
+        "emoji": "🌊",
+        "country": "Uganda"
+    },
+    {
+        "id": "local-321",
+        "name": "Bell Lager",
+        "brewery": "Nile Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Uganda's favorite beer. Crisp and refreshing.",
+        "emoji": "🔔",
+        "country": "Uganda"
+    },
+    {
+        "id": "local-322",
+        "name": "Primus",
+        "brewery": "Bralirwa",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Rwanda's most popular beer. Crisp and clean.",
+        "emoji": "🇷🇼",
+        "country": "Rwanda"
+    },
+    {
+        "id": "local-323",
+        "name": "Mutzig",
+        "brewery": "Bralirwa",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Rwandan lager. Smooth and balanced.",
+        "emoji": "🍺",
+        "country": "Rwanda"
+    },
+    {
+        "id": "local-324",
+        "name": "Star Lager",
+        "brewery": "Nigerian Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Nigeria's iconic beer. Crisp and refreshing.",
+        "emoji": "⭐",
+        "country": "Nigeria"
+    },
+    {
+        "id": "local-325",
+        "name": "Gulder",
+        "brewery": "Nigerian Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Ultimate Nigerian beer. Full-flavored lager.",
+        "emoji": "🥇",
+        "country": "Nigeria"
+    },
+    {
+        "id": "local-326",
+        "name": "Legend Extra Stout",
+        "brewery": "Nigerian Breweries",
+        "type": "Stout",
+        "abv": "7.5%",
+        "description": "Nigerian stout. Rich and bold.",
+        "emoji": "⚫",
+        "country": "Nigeria"
+    },
+    {
+        "id": "local-327",
+        "name": "Flag Lager",
+        "brewery": "Accra Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Ghana's premium lager. Crisp and clean.",
+        "emoji": "🇬🇭",
+        "country": "Ghana"
+    },
+    {
+        "id": "local-328",
+        "name": "Club Beer",
+        "brewery": "Accra Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Ghanaian lager. Smooth and refreshing.",
+        "emoji": "🍺",
+        "country": "Ghana"
+    },
+    {
+        "id": "local-329",
+        "name": "Kotimaista IPA",
+        "brewery": "Olvi",
+        "type": "IPA",
+        "abv": "5.5%",
+        "description": "Finnish IPA. Hoppy and citrusy with domestic ingredients.",
+        "emoji": "🇫🇮",
+        "country": "Finland"
+    },
+    {
+        "id": "local-330",
+        "name": "Coors Light",
+        "brewery": "Molson Coors",
+        "type": "Light Lager",
+        "abv": "4.2%",
+        "description": "America's light beer. Crisp and refreshing.",
+        "emoji": "🏔️",
+        "country": "USA"
+    },
+    {
+        "id": "local-331",
+        "name": "Miller Lite",
+        "brewery": "Molson Coors",
+        "type": "Light Lager",
+        "abv": "4.2%",
+        "description": "Original light beer. Smooth and easy-drinking.",
+        "emoji": "💡",
+        "country": "USA"
+    },
+    {
+        "id": "local-332",
+        "name": "Bud Light",
+        "brewery": "Anheuser-Busch",
+        "type": "Light Lager",
+        "abv": "4.2%",
+        "description": "America's best-selling beer. Light and crisp.",
+        "emoji": "🔵",
+        "country": "USA"
+    },
+    {
+        "id": "local-333",
+        "name": "Michelob Ultra",
+        "brewery": "Anheuser-Busch",
+        "type": "Light Lager",
+        "abv": "4.2%",
+        "description": "Low-carb light beer. Crisp and refreshing.",
+        "emoji": "🏃",
+        "country": "USA"
+    },
+    {
+        "id": "local-334",
+        "name": "Pabst Blue Ribbon",
+        "brewery": "Pabst Brewing Company",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Classic American lager. Smooth and balanced.",
+        "emoji": "🎀",
+        "country": "USA"
+    },
+    {
+        "id": "local-335",
+        "name": "Yuengling Traditional Lager",
+        "brewery": "D.G. Yuengling & Son",
+        "type": "Amber Lager",
+        "abv": "4.5%",
+        "description": "America's oldest brewery. Rich amber lager.",
+        "emoji": "🦅",
+        "country": "USA"
+    },
+    {
+        "id": "local-336",
+        "name": "Shiner Bock",
+        "brewery": "Spoetzl Brewery",
+        "type": "Bock",
+        "abv": "4.4%",
+        "description": "Texas favorite. Smooth dark lager.",
+        "emoji": "🤠",
+        "country": "USA"
+    },
+    {
+        "id": "local-337",
+        "name": "Fat Tire Amber Ale",
+        "brewery": "New Belgium Brewing",
+        "type": "Amber Ale",
+        "abv": "5.2%",
+        "description": "Colorado craft classic. Malty and balanced.",
+        "emoji": "🚲",
+        "country": "USA"
+    },
+    {
+        "id": "local-338",
+        "name": "Dogfish Head 60 Minute IPA",
+        "brewery": "Dogfish Head Brewery",
+        "type": "IPA",
+        "abv": "6.0%",
+        "description": "Continuously hopped IPA. Citrusy and bold.",
+        "emoji": "🦈",
+        "country": "USA"
+    },
+    {
+        "id": "local-339",
+        "name": "Dogfish Head 90 Minute IPA",
+        "brewery": "Dogfish Head Brewery",
+        "type": "Imperial IPA",
+        "abv": "9.0%",
+        "description": "Imperial IPA. Rich and complex.",
+        "emoji": "🦈",
+        "country": "USA"
+    },
+    {
+        "id": "local-340",
+        "name": "Bell's Two Hearted Ale",
+        "brewery": "Bell's Brewery",
+        "type": "IPA",
+        "abv": "7.0%",
+        "description": "Michigan IPA. Hoppy and balanced.",
+        "emoji": "🔔",
+        "country": "USA"
+    },
+    {
+        "id": "local-341",
+        "name": "Founders All Day IPA",
+        "brewery": "Founders Brewing",
+        "type": "Session IPA",
+        "abv": "4.7%",
+        "description": "Session IPA. Hoppy but drinkable.",
+        "emoji": "☀️",
+        "country": "USA"
+    },
+    {
+        "id": "local-342",
+        "name": "Founders KBS",
+        "brewery": "Founders Brewing",
+        "type": "Imperial Stout",
+        "abv": "12.0%",
+        "description": "Kentucky Breakfast Stout. Bourbon barrel-aged.",
+        "emoji": "🥃",
+        "country": "USA"
+    },
+    {
+        "id": "local-343",
+        "name": "Goose Island IPA",
+        "brewery": "Goose Island Beer Company",
+        "type": "IPA",
+        "abv": "5.9%",
+        "description": "Chicago IPA. Fruity and crisp.",
+        "emoji": "🪿",
+        "country": "USA"
+    },
+    {
+        "id": "local-344",
+        "name": "Goose Island Bourbon County Stout",
+        "brewery": "Goose Island Beer Company",
+        "type": "Imperial Stout",
+        "abv": "14.0%",
+        "description": "Legendary barrel-aged stout. Rich and complex.",
+        "emoji": "🥃",
+        "country": "USA"
+    },
+    {
+        "id": "local-345",
+        "name": "Deschutes Fresh Squeezed IPA",
+        "brewery": "Deschutes Brewery",
+        "type": "IPA",
+        "abv": "6.4%",
+        "description": "Oregon IPA. Juicy and citrusy.",
+        "emoji": "🍊",
+        "country": "USA"
+    },
+    {
+        "id": "local-346",
+        "name": "Deschutes Black Butte Porter",
+        "brewery": "Deschutes Brewery",
+        "type": "Porter",
+        "abv": "5.2%",
+        "description": "Classic American porter. Smooth and chocolatey.",
+        "emoji": "⚫",
+        "country": "USA"
+    },
+    {
+        "id": "local-347",
+        "name": "Allagash White",
+        "brewery": "Allagash Brewing",
+        "type": "Witbier",
+        "abv": "5.0%",
+        "description": "Belgian-style wheat beer. Spicy and refreshing.",
+        "emoji": "⚪",
+        "country": "USA"
+    },
+    {
+        "id": "local-348",
+        "name": "Ballast Point Sculpin IPA",
+        "brewery": "Ballast Point Brewing",
+        "type": "IPA",
+        "abv": "7.0%",
+        "description": "San Diego IPA. Hoppy and tropical.",
+        "emoji": "🐟",
+        "country": "USA"
+    },
+    {
+        "id": "local-349",
+        "name": "Firestone Walker 805",
+        "brewery": "Firestone Walker Brewing",
+        "type": "Blonde Ale",
+        "abv": "4.7%",
+        "description": "California blonde ale. Easy-drinking.",
+        "emoji": "🌊",
+        "country": "USA"
+    },
+    {
+        "id": "local-350",
+        "name": "Firestone Walker Union Jack IPA",
+        "brewery": "Firestone Walker Brewing",
+        "type": "IPA",
+        "abv": "7.5%",
+        "description": "West Coast IPA. Piney and citrusy.",
+        "emoji": "🌲",
+        "country": "USA"
+    },
+    {
+        "id": "local-351",
+        "name": "Anchor Steam Beer",
+        "brewery": "Anchor Brewing Company",
+        "type": "Steam Beer",
+        "abv": "4.9%",
+        "description": "San Francisco original. Unique steam beer.",
+        "emoji": "⚓",
+        "country": "USA"
+    },
+    {
+        "id": "local-352",
+        "name": "Rogue Dead Guy Ale",
+        "brewery": "Rogue Ales",
+        "type": "Maibock",
+        "abv": "6.8%",
+        "description": "Oregon maibock. Malty and smooth.",
+        "emoji": "💀",
+        "country": "USA"
+    },
+    {
+        "id": "local-353",
+        "name": "Left Hand Milk Stout",
+        "brewery": "Left Hand Brewing",
+        "type": "Milk Stout",
+        "abv": "6.0%",
+        "description": "Nitro milk stout. Creamy and sweet.",
+        "emoji": "🥛",
+        "country": "USA"
+    },
+    {
+        "id": "local-354",
+        "name": "Oskar Blues Dale's Pale Ale",
+        "brewery": "Oskar Blues Brewery",
+        "type": "Pale Ale",
+        "abv": "6.5%",
+        "description": "Colorado pale ale. Hoppy and bold.",
+        "emoji": "🏔️",
+        "country": "USA"
+    },
+    {
+        "id": "local-355",
+        "name": "Victory Golden Monkey",
+        "brewery": "Victory Brewing",
+        "type": "Tripel",
+        "abv": "9.5%",
+        "description": "Belgian-style tripel. Fruity and strong.",
+        "emoji": "🐵",
+        "country": "USA"
+    },
+    {
+        "id": "local-356",
+        "name": "Sweetwater 420 Extra Pale Ale",
+        "brewery": "Sweetwater Brewing",
+        "type": "Pale Ale",
+        "abv": "5.7%",
+        "description": "Georgia pale ale. Hoppy and refreshing.",
+        "emoji": "🍃",
+        "country": "USA"
+    },
+    {
+        "id": "local-357",
+        "name": "Cigar City Jai Alai IPA",
+        "brewery": "Cigar City Brewing",
+        "type": "IPA",
+        "abv": "7.5%",
+        "description": "Florida IPA. Tropical and bold.",
+        "emoji": "🏖️",
+        "country": "USA"
+    },
+    {
+        "id": "local-358",
+        "name": "Surly Furious",
+        "brewery": "Surly Brewing",
+        "type": "IPA",
+        "abv": "6.7%",
+        "description": "Minnesota IPA. Aggressively hopped.",
+        "emoji": "😠",
+        "country": "USA"
+    },
+    {
+        "id": "local-359",
+        "name": "3 Floyds Zombie Dust",
+        "brewery": "3 Floyds Brewing",
+        "type": "Pale Ale",
+        "abv": "6.4%",
+        "description": "Indiana pale ale. Citra-hopped perfection.",
+        "emoji": "🧟",
+        "country": "USA"
+    },
+    {
+        "id": "local-360",
+        "name": "Russian River Pliny the Elder",
+        "brewery": "Russian River Brewing",
+        "type": "Double IPA",
+        "abv": "8.0%",
+        "description": "Legendary double IPA. Hoppy and balanced.",
+        "emoji": "👴",
+        "country": "USA"
+    },
+    {
+        "id": "local-361",
+        "name": "The Alchemist Heady Topper",
+        "brewery": "The Alchemist",
+        "type": "Double IPA",
+        "abv": "8.0%",
+        "description": "Vermont DIPA. Drink from the can!",
+        "emoji": "🧪",
+        "country": "USA"
+    },
+    {
+        "id": "local-362",
+        "name": "Hill Farmstead Edward",
+        "brewery": "Hill Farmstead Brewery",
+        "type": "Pale Ale",
+        "abv": "5.2%",
+        "description": "Vermont pale ale. Hoppy and refined.",
+        "emoji": "🏔️",
+        "country": "USA"
+    },
+    {
+        "id": "local-363",
+        "name": "Toppling Goliath King Sue",
+        "brewery": "Toppling Goliath Brewing",
+        "type": "Double IPA",
+        "abv": "7.8%",
+        "description": "Iowa DIPA. Tropical and juicy.",
+        "emoji": "👑",
+        "country": "USA"
+    },
+    {
+        "id": "local-364",
+        "name": "Tree House Julius",
+        "brewery": "Tree House Brewing",
+        "type": "IPA",
+        "abv": "6.8%",
+        "description": "Massachusetts hazy IPA. Juicy and smooth.",
+        "emoji": "🌳",
+        "country": "USA"
+    },
+    {
+        "id": "local-365",
+        "name": "Trillium Fort Point Pale Ale",
+        "brewery": "Trillium Brewing",
+        "type": "Pale Ale",
+        "abv": "6.6%",
+        "description": "Boston pale ale. Hoppy and aromatic.",
+        "emoji": "🌸",
+        "country": "USA"
+    },
+    {
+        "id": "local-366",
+        "name": "Other Half Green City",
+        "brewery": "Other Half Brewing",
+        "type": "IPA",
+        "abv": "6.8%",
+        "description": "Brooklyn IPA. Hazy and juicy.",
+        "emoji": "🗽",
+        "country": "USA"
+    },
+    {
+        "id": "local-367",
+        "name": "Tired Hands HopHands",
+        "brewery": "Tired Hands Brewing",
+        "type": "IPA",
+        "abv": "7.0%",
+        "description": "Pennsylvania IPA. Fresh and hoppy.",
+        "emoji": "🙌",
+        "country": "USA"
+    },
+    {
+        "id": "local-368",
+        "name": "Modern Times Blazing World",
+        "brewery": "Modern Times Beer",
+        "type": "Amber Ale",
+        "abv": "6.8%",
+        "description": "San Diego amber ale. Hoppy and malty.",
+        "emoji": "🔥",
+        "country": "USA"
+    },
+    {
+        "id": "local-369",
+        "name": "Odell IPA",
+        "brewery": "Odell Brewing",
+        "type": "IPA",
+        "abv": "7.0%",
+        "description": "Colorado IPA. Balanced and hoppy.",
+        "emoji": "🍺",
+        "country": "USA"
+    },
+    {
+        "id": "local-370",
+        "name": "Great Lakes Burning River",
+        "brewery": "Great Lakes Brewing",
+        "type": "Pale Ale",
+        "abv": "6.0%",
+        "description": "Ohio pale ale. Hoppy and crisp.",
+        "emoji": "🔥",
+        "country": "USA"
+    },
+    {
+        "id": "local-371",
+        "name": "Boulevard Tank 7",
+        "brewery": "Boulevard Brewing",
+        "type": "Saison",
+        "abv": "8.5%",
+        "description": "Kansas City saison. Fruity and spicy.",
+        "emoji": "7️⃣",
+        "country": "USA"
+    },
+    {
+        "id": "local-372",
+        "name": "Avery IPA",
+        "brewery": "Avery Brewing",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Colorado IPA. Hoppy and balanced.",
+        "emoji": "🍺",
+        "country": "USA"
+    },
+    {
+        "id": "local-373",
+        "name": "Elysian Space Dust IPA",
+        "brewery": "Elysian Brewing",
+        "type": "IPA",
+        "abv": "8.2%",
+        "description": "Seattle IPA. Hoppy and citrusy.",
+        "emoji": "🌌",
+        "country": "USA"
+    },
+    {
+        "id": "local-374",
+        "name": "Fremont Lush IPA",
+        "brewery": "Fremont Brewing",
+        "type": "IPA",
+        "abv": "7.0%",
+        "description": "Seattle IPA. Tropical and juicy.",
+        "emoji": "🌴",
+        "country": "USA"
+    },
+    {
+        "id": "local-375",
+        "name": "Ninkasi Total Domination IPA",
+        "brewery": "Ninkasi Brewing",
+        "type": "IPA",
+        "abv": "6.7%",
+        "description": "Oregon IPA. Bold and hoppy.",
+        "emoji": "👑",
+        "country": "USA"
+    },
+    {
+        "id": "local-376",
+        "name": "Widmer Hefeweizen",
+        "brewery": "Widmer Brothers Brewing",
+        "type": "Hefeweizen",
+        "abv": "4.9%",
+        "description": "Portland wheat beer. Citrusy and refreshing.",
+        "emoji": "🍋",
+        "country": "USA"
+    },
+    {
+        "id": "local-377",
+        "name": "Pyramid Hefeweizen",
+        "brewery": "Pyramid Breweries",
+        "type": "Hefeweizen",
+        "abv": "5.2%",
+        "description": "Seattle wheat beer. Smooth and fruity.",
+        "emoji": "🔺",
+        "country": "USA"
+    },
+    {
+        "id": "local-378",
+        "name": "Harpoon IPA",
+        "brewery": "Harpoon Brewery",
+        "type": "IPA",
+        "abv": "5.9%",
+        "description": "Boston IPA. Classic and balanced.",
+        "emoji": "🔱",
+        "country": "USA"
+    },
+    {
+        "id": "local-379",
+        "name": "Narragansett Lager",
+        "brewery": "Narragansett Brewing",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Rhode Island classic. Crisp and clean.",
+        "emoji": "🌊",
+        "country": "USA"
+    },
+    {
+        "id": "local-380",
+        "name": "Genesee Cream Ale",
+        "brewery": "Genesee Brewing",
+        "type": "Cream Ale",
+        "abv": "5.1%",
+        "description": "New York classic. Smooth and easy-drinking.",
+        "emoji": "🍺",
+        "country": "USA"
+    },
+    {
+        "id": "local-381",
+        "name": "Molson Canadian",
+        "brewery": "Molson Coors Canada",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Canada's beer. Crisp and refreshing.",
+        "emoji": "🇨🇦",
+        "country": "Canada"
+    },
+    {
+        "id": "local-382",
+        "name": "Labatt Blue",
+        "brewery": "Labatt Brewing",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Canadian classic. Smooth and balanced.",
+        "emoji": "🔵",
+        "country": "Canada"
+    },
+    {
+        "id": "local-383",
+        "name": "Moosehead Lager",
+        "brewery": "Moosehead Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Canada's oldest independent brewery. Crisp lager.",
+        "emoji": "🫎",
+        "country": "Canada"
+    },
+    {
+        "id": "local-384",
+        "name": "Alexander Keith's IPA",
+        "brewery": "Alexander Keith's Brewery",
+        "type": "IPA",
+        "abv": "5.0%",
+        "description": "Nova Scotia IPA. Smooth and hoppy.",
+        "emoji": "⚓",
+        "country": "Canada"
+    },
+    {
+        "id": "local-385",
+        "name": "Sleeman Original Draught",
+        "brewery": "Sleeman Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Ontario lager. Crisp and clean.",
+        "emoji": "🍺",
+        "country": "Canada"
+    },
+    {
+        "id": "local-386",
+        "name": "Kokanee",
+        "brewery": "Columbia Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "BC mountain lager. Crisp and refreshing.",
+        "emoji": "🏔️",
+        "country": "Canada"
+    },
+    {
+        "id": "local-387",
+        "name": "Granville Island Pale Ale",
+        "brewery": "Granville Island Brewing",
+        "type": "Pale Ale",
+        "abv": "5.0%",
+        "description": "Vancouver pale ale. Hoppy and balanced.",
+        "emoji": "🏝️",
+        "country": "Canada"
+    },
+    {
+        "id": "local-388",
+        "name": "Steam Whistle Pilsner",
+        "brewery": "Steam Whistle Brewing",
+        "type": "Pilsner",
+        "abv": "5.0%",
+        "description": "Toronto pilsner. Premium and crisp.",
+        "emoji": "🚂",
+        "country": "Canada"
+    },
+    {
+        "id": "local-389",
+        "name": "Mill Street Organic",
+        "brewery": "Mill Street Brewery",
+        "type": "Lager",
+        "abv": "4.2%",
+        "description": "Toronto organic lager. Clean and smooth.",
+        "emoji": "🌾",
+        "country": "Canada"
+    },
+    {
+        "id": "local-390",
+        "name": "Unibroue La Fin du Monde",
+        "brewery": "Unibroue",
+        "type": "Tripel",
+        "abv": "9.0%",
+        "description": "Quebec tripel. Complex and fruity.",
+        "emoji": "🌍",
+        "country": "Canada"
+    },
+    {
+        "id": "local-391",
+        "name": "Unibroue Maudite",
+        "brewery": "Unibroue",
+        "type": "Belgian Strong Ale",
+        "abv": "8.0%",
+        "description": "Quebec strong ale. Spicy and complex.",
+        "emoji": "😈",
+        "country": "Canada"
+    },
+    {
+        "id": "local-392",
+        "name": "Dieu du Ciel Péché Mortel",
+        "brewery": "Dieu du Ciel",
+        "type": "Imperial Stout",
+        "abv": "9.5%",
+        "description": "Montreal coffee stout. Rich and bold.",
+        "emoji": "☕",
+        "country": "Canada"
+    },
+    {
+        "id": "local-393",
+        "name": "Collective Arts IPA",
+        "brewery": "Collective Arts Brewing",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Ontario IPA. Hoppy and artistic.",
+        "emoji": "🎨",
+        "country": "Canada"
+    },
+    {
+        "id": "local-394",
+        "name": "Beau's Lug Tread",
+        "brewery": "Beau's All Natural Brewing",
+        "type": "Lager",
+        "abv": "5.2%",
+        "description": "Ontario lagered ale. Crisp and hoppy.",
+        "emoji": "🚜",
+        "country": "Canada"
+    },
+    {
+        "id": "local-395",
+        "name": "Parallel 49 Filthy Dirty IPA",
+        "brewery": "Parallel 49 Brewing",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Vancouver IPA. Bold and hoppy.",
+        "emoji": "💎",
+        "country": "Canada"
+    },
+    {
+        "id": "local-396",
+        "name": "Sol",
+        "brewery": "Cervecería Cuauhtémoc Moctezuma",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Mexican beach beer. Light and refreshing.",
+        "emoji": "☀️",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-397",
+        "name": "Victoria",
+        "brewery": "Grupo Modelo",
+        "type": "Vienna Lager",
+        "abv": "4.0%",
+        "description": "Mexican Vienna lager. Smooth and malty.",
+        "emoji": "👑",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-398",
+        "name": "Indio",
+        "brewery": "Cervecería Cuauhtémoc Moctezuma",
+        "type": "Dark Lager",
+        "abv": "4.5%",
+        "description": "Mexican dark lager. Rich and smooth.",
+        "emoji": "🌑",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-399",
+        "name": "Bohemia",
+        "brewery": "Cervecería Cuauhtémoc Moctezuma",
+        "type": "Pilsner",
+        "abv": "5.3%",
+        "description": "Mexican premium pilsner. Crisp and hoppy.",
+        "emoji": "🍺",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-400",
+        "name": "Carta Blanca",
+        "brewery": "Cervecería Cuauhtémoc Moctezuma",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Mexican lager. Light and crisp.",
+        "emoji": "📄",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-401",
+        "name": "Cucapá Clásica",
+        "brewery": "Cervecería de Baja California",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Baja California craft lager. Crisp and clean.",
+        "emoji": "🏜️",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-402",
+        "name": "Cucapá Honey",
+        "brewery": "Cervecería de Baja California",
+        "type": "Blonde Ale",
+        "abv": "5.0%",
+        "description": "Mexican honey ale. Sweet and smooth.",
+        "emoji": "🍯",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-403",
+        "name": "Minerva Colonial",
+        "brewery": "Cervecería Minerva",
+        "type": "Pale Ale",
+        "abv": "5.5%",
+        "description": "Guadalajara pale ale. Hoppy and balanced.",
+        "emoji": "🦉",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-404",
+        "name": "Tempus Dorada",
+        "brewery": "Cervecería Primus",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Mexican craft lager. Golden and crisp.",
+        "emoji": "⏰",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-405",
+        "name": "Insurgente Lupulosa",
+        "brewery": "Cervecería Insurgente",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Tijuana IPA. Hoppy and bold.",
+        "emoji": "🌺",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-406",
+        "name": "Calavera",
+        "brewery": "Cervecería Mexicana",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Mexican lager. Crisp and refreshing.",
+        "emoji": "💀",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-407",
+        "name": "Estrella Jalisco",
+        "brewery": "Cervecería Estrella",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Jalisco lager. Light and easy-drinking.",
+        "emoji": "⭐",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-408",
+        "name": "Montejo",
+        "brewery": "Grupo Modelo",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Yucatan lager. Crisp and refreshing.",
+        "emoji": "🏛️",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-409",
+        "name": "León",
+        "brewery": "Grupo Modelo",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Mexican lager. Smooth and balanced.",
+        "emoji": "🦁",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-410",
+        "name": "Barrilito",
+        "brewery": "Grupo Modelo",
+        "type": "Lager",
+        "abv": "3.6%",
+        "description": "Light Mexican lager. Refreshing and mild.",
+        "emoji": "🛢️",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-411",
+        "name": "Noche Buena",
+        "brewery": "Cervecería Cuauhtémoc Moctezuma",
+        "type": "Bock",
+        "abv": "5.9%",
+        "description": "Christmas beer. Rich and malty.",
+        "emoji": "🎄",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-412",
+        "name": "Pacífico Clara",
+        "brewery": "Grupo Modelo",
+        "type": "Pilsner",
+        "abv": "4.5%",
+        "description": "Mexican pilsner. Crisp and refreshing.",
+        "emoji": "🌊",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-413",
+        "name": "Negra Modelo",
+        "brewery": "Grupo Modelo",
+        "type": "Vienna Lager",
+        "abv": "5.4%",
+        "description": "Rich dark lager. Malty and smooth.",
+        "emoji": "🌑",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-414",
+        "name": "Modelo Especial",
+        "brewery": "Grupo Modelo",
+        "type": "Lager",
+        "abv": "4.4%",
+        "description": "Mexican pilsner-style lager. Crisp and clean.",
+        "emoji": "🌮",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-415",
+        "name": "Corona Extra",
+        "brewery": "Grupo Modelo",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Classic Mexican beer with lime. Refreshing.",
+        "emoji": "🍋",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-416",
+        "name": "Dos Equis",
+        "brewery": "Cervecería Cuauhtémoc Moctezuma",
+        "type": "Lager",
+        "abv": "4.2%",
+        "description": "The most interesting beer. Smooth and crisp.",
+        "emoji": "❌❌",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-417",
+        "name": "Tecate",
+        "brewery": "Cervecería Cuauhtémoc Moctezuma",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Mexican lager with lime and salt. Refreshing.",
+        "emoji": "🧂",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-418",
+        "name": "Yuengling Black & Tan",
+        "brewery": "D.G. Yuengling & Son",
+        "type": "Black & Tan",
+        "abv": "4.7%",
+        "description": "Porter and lager blend. Smooth and balanced.",
+        "emoji": "🍺",
+        "country": "USA"
+    },
+    {
+        "id": "local-419",
+        "name": "Narragansett Del's Shandy",
+        "brewery": "Narragansett Brewing",
+        "type": "Shandy",
+        "abv": "4.7%",
+        "description": "Lemonade beer. Refreshing summer drink.",
+        "emoji": "🍋",
+        "country": "USA"
+    },
+    {
+        "id": "local-420",
+        "name": "Leinenkugel's Summer Shandy",
+        "brewery": "Jacob Leinenkugel Brewing",
+        "type": "Shandy",
+        "abv": "4.2%",
+        "description": "Wheat beer with lemonade. Summer favorite.",
+        "emoji": "☀️",
+        "country": "USA"
+    },
+    {
+        "id": "local-421",
+        "name": "Shock Top",
+        "brewery": "Anheuser-Busch",
+        "type": "Wheat",
+        "abv": "5.2%",
+        "description": "Belgian-style wheat. Citrusy and smooth.",
+        "emoji": "🍊",
+        "country": "USA"
+    },
+    {
+        "id": "local-422",
+        "name": "Coors Banquet",
+        "brewery": "Molson Coors",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Original Coors. Full-flavored lager.",
+        "emoji": "🏔️",
+        "country": "USA"
+    },
+    {
+        "id": "local-423",
+        "name": "Miller High Life",
+        "brewery": "Molson Coors",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Champagne of beers. Crisp and clean.",
+        "emoji": "🥂",
+        "country": "USA"
+    },
+    {
+        "id": "local-424",
+        "name": "Rolling Rock",
+        "brewery": "Anheuser-Busch",
+        "type": "Lager",
+        "abv": "4.4%",
+        "description": "Pennsylvania lager. Crisp and refreshing.",
+        "emoji": "🪨",
+        "country": "USA"
+    },
+    {
+        "id": "local-425",
+        "name": "Lone Star",
+        "brewery": "Pabst Brewing Company",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "National beer of Texas. Crisp and clean.",
+        "emoji": "⭐",
+        "country": "USA"
+    },
+    {
+        "id": "local-426",
+        "name": "Rainier Beer",
+        "brewery": "Pabst Brewing Company",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Pacific Northwest classic. Crisp and refreshing.",
+        "emoji": "🏔️",
+        "country": "USA"
+    },
+    {
+        "id": "local-427",
+        "name": "Olympia Beer",
+        "brewery": "Pabst Brewing Company",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "It's the water. Crisp and clean.",
+        "emoji": "💧",
+        "country": "USA"
+    },
+    {
+        "id": "local-428",
+        "name": "Schlitz",
+        "brewery": "Pabst Brewing Company",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "The beer that made Milwaukee famous.",
+        "emoji": "🍺",
+        "country": "USA"
+    },
+    {
+        "id": "local-429",
+        "name": "Old Milwaukee",
+        "brewery": "Pabst Brewing Company",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Classic American lager. Smooth and easy.",
+        "emoji": "🍺",
+        "country": "USA"
+    },
+    {
+        "id": "local-430",
+        "name": "Skol",
+        "brewery": "Ambev",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Brazil's most popular beer. Light and refreshing.",
+        "emoji": "🇧🇷",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-431",
+        "name": "Brahma",
+        "brewery": "Ambev",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Brazilian classic. Crisp and clean.",
+        "emoji": "🍺",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-432",
+        "name": "Antarctica",
+        "brewery": "Ambev",
+        "type": "Lager",
+        "abv": "4.9%",
+        "description": "Brazilian lager. Smooth and balanced.",
+        "emoji": "🐧",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-433",
+        "name": "Bohemia",
+        "brewery": "Ambev",
+        "type": "Pilsner",
+        "abv": "5.0%",
+        "description": "Brazilian premium pilsner. Hoppy and crisp.",
+        "emoji": "🍺",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-434",
+        "name": "Original",
+        "brewery": "Ambev",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Brazilian lager. Light and easy-drinking.",
+        "emoji": "⭐",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-435",
+        "name": "Itaipava",
+        "brewery": "Grupo Petrópolis",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Brazilian lager. Crisp and refreshing.",
+        "emoji": "🏔️",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-436",
+        "name": "Crystal",
+        "brewery": "Grupo Petrópolis",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Brazilian lager. Smooth and clean.",
+        "emoji": "💎",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-437",
+        "name": "Petra",
+        "brewery": "Grupo Petrópolis",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Brazilian premium lager. Crisp and balanced.",
+        "emoji": "🍺",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-438",
+        "name": "Kaiser",
+        "brewery": "Heineken Brasil",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Brazilian lager. Light and refreshing.",
+        "emoji": "👑",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-439",
+        "name": "Bavaria",
+        "brewery": "Heineken Brasil",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Brazilian lager. Smooth and easy-drinking.",
+        "emoji": "🍺",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-440",
+        "name": "Eisenbahn Pilsen",
+        "brewery": "Heineken Brasil",
+        "type": "Pilsner",
+        "abv": "4.8%",
+        "description": "Brazilian craft pilsner. Hoppy and aromatic.",
+        "emoji": "🚂",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-441",
+        "name": "Colorado Indica",
+        "brewery": "Cervejaria Colorado",
+        "type": "IPA",
+        "abv": "7.0%",
+        "description": "Brazilian IPA. Hoppy and tropical.",
+        "emoji": "🌴",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-442",
+        "name": "Colorado Appia",
+        "brewery": "Cervejaria Colorado",
+        "type": "Wheat",
+        "abv": "5.5%",
+        "description": "Brazilian wheat beer with honey. Sweet and smooth.",
+        "emoji": "🍯",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-443",
+        "name": "Wäls Petroleum",
+        "brewery": "Cervejaria Wäls",
+        "type": "Imperial Stout",
+        "abv": "10.0%",
+        "description": "Brazilian imperial stout. Rich and bold.",
+        "emoji": "⚫",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-444",
+        "name": "Wäls Session Citra",
+        "brewery": "Cervejaria Wäls",
+        "type": "Session IPA",
+        "abv": "4.5%",
+        "description": "Brazilian session IPA. Citrusy and hoppy.",
+        "emoji": "🍊",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-445",
+        "name": "Quilmes",
+        "brewery": "Cervecería y Maltería Quilmes",
+        "type": "Lager",
+        "abv": "4.9%",
+        "description": "Argentina's iconic beer. Crisp and refreshing.",
+        "emoji": "🇦🇷",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-446",
+        "name": "Quilmes Stout",
+        "brewery": "Cervecería y Maltería Quilmes",
+        "type": "Stout",
+        "abv": "5.0%",
+        "description": "Argentine stout. Rich and creamy.",
+        "emoji": "⚫",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-447",
+        "name": "Andes Origen",
+        "brewery": "Cervecería y Maltería Quilmes",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Argentine lager. Smooth and balanced.",
+        "emoji": "🏔️",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-448",
+        "name": "Brahma Argentina",
+        "brewery": "Cervecería y Maltería Quilmes",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Brazilian beer brewed in Argentina. Crisp and clean.",
+        "emoji": "🍺",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-449",
+        "name": "Schneider",
+        "brewery": "Cervecería y Maltería Quilmes",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Argentine lager. Light and refreshing.",
+        "emoji": "🍺",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-450",
+        "name": "Isenbeck",
+        "brewery": "Cervecería y Maltería Quilmes",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Argentine lager. Smooth and easy-drinking.",
+        "emoji": "🍺",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-451",
+        "name": "Patagonia Bohemian Pilsner",
+        "brewery": "Cervecería Patagonia",
+        "type": "Pilsner",
+        "abv": "5.0%",
+        "description": "Patagonian pilsner. Hoppy and crisp.",
+        "emoji": "🏔️",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-452",
+        "name": "Patagonia Weisse",
+        "brewery": "Cervecería Patagonia",
+        "type": "Wheat",
+        "abv": "5.0%",
+        "description": "Argentine wheat beer. Fruity and refreshing.",
+        "emoji": "🌾",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-453",
+        "name": "Patagonia Amber Lager",
+        "brewery": "Cervecería Patagonia",
+        "type": "Amber Lager",
+        "abv": "5.5%",
+        "description": "Patagonian amber lager. Malty and smooth.",
+        "emoji": "🟤",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-454",
+        "name": "Antares Kölsch",
+        "brewery": "Cervecería Antares",
+        "type": "Kölsch",
+        "abv": "4.8%",
+        "description": "Argentine kölsch. Light and crisp.",
+        "emoji": "⭐",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-455",
+        "name": "Antares Imperial Stout",
+        "brewery": "Cervecería Antares",
+        "type": "Imperial Stout",
+        "abv": "8.5%",
+        "description": "Argentine imperial stout. Rich and bold.",
+        "emoji": "⚫",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-456",
+        "name": "Cristal",
+        "brewery": "Compañía Cervecerías Unidas",
+        "type": "Lager",
+        "abv": "4.9%",
+        "description": "Chile's most popular beer. Crisp and refreshing.",
+        "emoji": "🇨🇱",
+        "country": "Chile"
+    },
+    {
+        "id": "local-457",
+        "name": "Escudo",
+        "brewery": "Compañía Cervecerías Unidas",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Chilean lager. Smooth and balanced.",
+        "emoji": "🛡️",
+        "country": "Chile"
+    },
+    {
+        "id": "local-458",
+        "name": "Royal Guard",
+        "brewery": "Compañía Cervecerías Unidas",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Chilean lager. Light and easy-drinking.",
+        "emoji": "👑",
+        "country": "Chile"
+    },
+    {
+        "id": "local-459",
+        "name": "Becker",
+        "brewery": "Compañía Cervecerías Unidas",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Chilean lager. Crisp and clean.",
+        "emoji": "🍺",
+        "country": "Chile"
+    },
+    {
+        "id": "local-460",
+        "name": "Kunstmann Torobayo",
+        "brewery": "Cervecería Kunstmann",
+        "type": "Wheat",
+        "abv": "5.0%",
+        "description": "Chilean wheat beer. Fruity and refreshing.",
+        "emoji": "🌾",
+        "country": "Chile"
+    },
+    {
+        "id": "local-461",
+        "name": "Kunstmann Gran Torobayo",
+        "brewery": "Cervecería Kunstmann",
+        "type": "Wheat Bock",
+        "abv": "7.5%",
+        "description": "Chilean strong wheat beer. Rich and malty.",
+        "emoji": "🐂",
+        "country": "Chile"
+    },
+    {
+        "id": "local-462",
+        "name": "Austral Calafate",
+        "brewery": "Cervecería Austral",
+        "type": "Fruit Beer",
+        "abv": "5.0%",
+        "description": "Chilean beer with Patagonian berries. Fruity and unique.",
+        "emoji": "🫐",
+        "country": "Chile"
+    },
+    {
+        "id": "local-463",
+        "name": "Austral Lager",
+        "brewery": "Cervecería Austral",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Southern Chilean lager. Crisp and refreshing.",
+        "emoji": "🏔️",
+        "country": "Chile"
+    },
+    {
+        "id": "local-464",
+        "name": "Kross Pale Ale",
+        "brewery": "Cervecería Kross",
+        "type": "Pale Ale",
+        "abv": "5.5%",
+        "description": "Chilean craft pale ale. Hoppy and balanced.",
+        "emoji": "🍺",
+        "country": "Chile"
+    },
+    {
+        "id": "local-465",
+        "name": "Szot Barley Wine",
+        "brewery": "Cervecería Szot",
+        "type": "Barley Wine",
+        "abv": "10.0%",
+        "description": "Chilean barley wine. Rich and complex.",
+        "emoji": "🍷",
+        "country": "Chile"
+    },
+    {
+        "id": "local-466",
+        "name": "Cusqueña",
+        "brewery": "Backus and Johnston",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Peru's premium beer. Crisp and clean.",
+        "emoji": "🇵🇪",
+        "country": "Peru"
+    },
+    {
+        "id": "local-467",
+        "name": "Cusqueña Negra",
+        "brewery": "Backus and Johnston",
+        "type": "Dark Lager",
+        "abv": "5.6%",
+        "description": "Peruvian dark lager. Rich and malty.",
+        "emoji": "⚫",
+        "country": "Peru"
+    },
+    {
+        "id": "local-468",
+        "name": "Pilsen Callao",
+        "brewery": "Backus and Johnston",
+        "type": "Pilsner",
+        "abv": "5.0%",
+        "description": "Peru's most popular beer. Crisp and refreshing.",
+        "emoji": "🍺",
+        "country": "Peru"
+    },
+    {
+        "id": "local-469",
+        "name": "Cristal Perú",
+        "brewery": "Backus and Johnston",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Peruvian lager. Light and easy-drinking.",
+        "emoji": "💎",
+        "country": "Peru"
+    },
+    {
+        "id": "local-470",
+        "name": "Arequipeña",
+        "brewery": "Backus and Johnston",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Beer from Arequipa. Smooth and balanced.",
+        "emoji": "🏔️",
+        "country": "Peru"
+    },
+    {
+        "id": "local-471",
+        "name": "Barbarian IPA",
+        "brewery": "Cervecería Barbarian",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Peruvian craft IPA. Hoppy and bold.",
+        "emoji": "🍺",
+        "country": "Peru"
+    },
+    {
+        "id": "local-472",
+        "name": "Barranco Beer Pale Ale",
+        "brewery": "Barranco Beer Company",
+        "type": "Pale Ale",
+        "abv": "5.5%",
+        "description": "Lima craft pale ale. Hoppy and refreshing.",
+        "emoji": "🌊",
+        "country": "Peru"
+    },
+    {
+        "id": "local-473",
+        "name": "Club Colombia",
+        "brewery": "Bavaria",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Colombia's premium beer. Crisp and clean.",
+        "emoji": "🇨🇴",
+        "country": "Colombia"
+    },
+    {
+        "id": "local-474",
+        "name": "Águila",
+        "brewery": "Bavaria",
+        "type": "Lager",
+        "abv": "4.0%",
+        "description": "Colombian lager. Light and refreshing.",
+        "emoji": "🦅",
+        "country": "Colombia"
+    },
+    {
+        "id": "local-475",
+        "name": "Poker",
+        "brewery": "Bavaria",
+        "type": "Lager",
+        "abv": "4.0%",
+        "description": "Colombian lager. Smooth and easy-drinking.",
+        "emoji": "🃏",
+        "country": "Colombia"
+    },
+    {
+        "id": "local-476",
+        "name": "Costeña",
+        "brewery": "Bavaria",
+        "type": "Lager",
+        "abv": "4.0%",
+        "description": "Colombian coastal beer. Light and crisp.",
+        "emoji": "🏖️",
+        "country": "Colombia"
+    },
+    {
+        "id": "local-477",
+        "name": "Pilsen",
+        "brewery": "Bavaria",
+        "type": "Pilsner",
+        "abv": "4.2%",
+        "description": "Colombian pilsner. Crisp and hoppy.",
+        "emoji": "🍺",
+        "country": "Colombia"
+    },
+    {
+        "id": "local-478",
+        "name": "BBC Chapinero Porter",
+        "brewery": "Bogotá Beer Company",
+        "type": "Porter",
+        "abv": "5.5%",
+        "description": "Colombian craft porter. Rich and chocolatey.",
+        "emoji": "⚫",
+        "country": "Colombia"
+    },
+    {
+        "id": "local-479",
+        "name": "3 Cordilleras Mestiza",
+        "brewery": "3 Cordilleras",
+        "type": "Red Ale",
+        "abv": "5.5%",
+        "description": "Colombian red ale. Malty and smooth.",
+        "emoji": "🔴",
+        "country": "Colombia"
+    },
+    {
+        "id": "local-480",
+        "name": "Apóstol IPA",
+        "brewery": "Cervecería Apóstol",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Colombian craft IPA. Hoppy and tropical.",
+        "emoji": "🍺",
+        "country": "Colombia"
+    },
+    {
+        "id": "local-481",
+        "name": "Polar",
+        "brewery": "Empresas Polar",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Venezuela's iconic beer. Crisp and refreshing.",
+        "emoji": "🇻🇪",
+        "country": "Venezuela"
+    },
+    {
+        "id": "local-482",
+        "name": "Polar Ice",
+        "brewery": "Empresas Polar",
+        "type": "Light Lager",
+        "abv": "4.5%",
+        "description": "Venezuelan light beer. Crisp and clean.",
+        "emoji": "🧊",
+        "country": "Venezuela"
+    },
+    {
+        "id": "local-483",
+        "name": "Solera",
+        "brewery": "Empresas Polar",
+        "type": "Lager",
+        "abv": "5.2%",
+        "description": "Venezuelan lager. Smooth and balanced.",
+        "emoji": "☀️",
+        "country": "Venezuela"
+    },
+    {
+        "id": "local-484",
+        "name": "Regional",
+        "brewery": "Cervecería Regional",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Venezuelan lager. Light and easy-drinking.",
+        "emoji": "🍺",
+        "country": "Venezuela"
+    },
+    {
+        "id": "local-485",
+        "name": "Pilsener",
+        "brewery": "Cervecería Nacional",
+        "type": "Pilsner",
+        "abv": "4.2%",
+        "description": "Ecuador's most popular beer. Crisp and refreshing.",
+        "emoji": "🇪🇨",
+        "country": "Ecuador"
+    },
+    {
+        "id": "local-486",
+        "name": "Club Premium",
+        "brewery": "Cervecería Nacional",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Ecuadorian premium lager. Smooth and balanced.",
+        "emoji": "🍺",
+        "country": "Ecuador"
+    },
+    {
+        "id": "local-487",
+        "name": "Brahma Ecuador",
+        "brewery": "Cervecería Nacional",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Brazilian beer brewed in Ecuador. Crisp and clean.",
+        "emoji": "🍺",
+        "country": "Ecuador"
+    },
+    {
+        "id": "local-488",
+        "name": "Paceña",
+        "brewery": "Cervecería Boliviana Nacional",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Bolivia's most popular beer. Crisp and refreshing.",
+        "emoji": "🇧🇴",
+        "country": "Bolivia"
+    },
+    {
+        "id": "local-489",
+        "name": "Huari",
+        "brewery": "Cervecería Boliviana Nacional",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Bolivian lager. Smooth and balanced.",
+        "emoji": "🏔️",
+        "country": "Bolivia"
+    },
+    {
+        "id": "local-490",
+        "name": "Taquiña",
+        "brewery": "Cervecería Taquiña",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Bolivian lager from Cochabamba. Light and crisp.",
+        "emoji": "🍺",
+        "country": "Bolivia"
+    },
+    {
+        "id": "local-491",
+        "name": "Sureña",
+        "brewery": "Cervecería Boliviana Nacional",
+        "type": "Lager",
+        "abv": "4.3%",
+        "description": "Southern Bolivian beer. Refreshing and easy-drinking.",
+        "emoji": "🍺",
+        "country": "Bolivia"
+    },
+    {
+        "id": "local-492",
+        "name": "Parbo",
+        "brewery": "Surinaamse Brouwerij",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Suriname's national beer. Crisp and refreshing.",
+        "emoji": "🇸🇷",
+        "country": "Suriname"
+    },
+    {
+        "id": "local-493",
+        "name": "Parbo Djogo",
+        "brewery": "Surinaamse Brouwerij",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Surinamese lager. Smooth and balanced.",
+        "emoji": "🍺",
+        "country": "Suriname"
+    },
+    {
+        "id": "local-494",
+        "name": "Banks",
+        "brewery": "Banks Breweries",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Barbados beer. Crisp and refreshing.",
+        "emoji": "🏝️",
+        "country": "Barbados"
+    },
+    {
+        "id": "local-495",
+        "name": "Pilsener Uruguay",
+        "brewery": "FNC",
+        "type": "Pilsner",
+        "abv": "5.0%",
+        "description": "Uruguay's popular pilsner. Crisp and hoppy.",
+        "emoji": "🇺🇾",
+        "country": "Uruguay"
+    },
+    {
+        "id": "local-496",
+        "name": "Patricia",
+        "brewery": "FNC",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Uruguayan lager. Smooth and balanced.",
+        "emoji": "🍺",
+        "country": "Uruguay"
+    },
+    {
+        "id": "local-497",
+        "name": "Zillertal",
+        "brewery": "FNC",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Uruguayan lager. Light and refreshing.",
+        "emoji": "🏔️",
+        "country": "Uruguay"
+    },
+    {
+        "id": "local-498",
+        "name": "Norteña",
+        "brewery": "FNC",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Northern Uruguayan beer. Crisp and clean.",
+        "emoji": "🍺",
+        "country": "Uruguay"
+    },
+    {
+        "id": "local-499",
+        "name": "Cabesas IPA",
+        "brewery": "Cabesas Beer Factory",
+        "type": "IPA",
+        "abv": "6.0%",
+        "description": "Uruguayan craft IPA. Hoppy and bold.",
+        "emoji": "🍺",
+        "country": "Uruguay"
+    },
+    {
+        "id": "local-500",
+        "name": "Davok Honey",
+        "brewery": "Cervecería Davok",
+        "type": "Honey Ale",
+        "abv": "5.5%",
+        "description": "Uruguayan honey ale. Sweet and smooth.",
+        "emoji": "🍯",
+        "country": "Uruguay"
+    },
+    {
+        "id": "local-501",
+        "name": "Volcanica",
+        "brewery": "Cervecería Volcanica",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Uruguayan craft lager. Crisp and refreshing.",
+        "emoji": "🌋",
+        "country": "Uruguay"
+    },
+    {
+        "id": "local-502",
+        "name": "Eisenbahn Dunkel",
+        "brewery": "Heineken Brasil",
+        "type": "Dunkel",
+        "abv": "5.5%",
+        "description": "Brazilian dark lager. Rich and malty.",
+        "emoji": "⚫",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-503",
+        "name": "Eisenbahn Weizenbock",
+        "brewery": "Heineken Brasil",
+        "type": "Weizenbock",
+        "abv": "8.0%",
+        "description": "Brazilian wheat bock. Strong and fruity.",
+        "emoji": "🌾",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-504",
+        "name": "Devassa Tropical",
+        "brewery": "Grupo Petrópolis",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Brazilian tropical lager. Light and fruity.",
+        "emoji": "🌴",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-505",
+        "name": "Serramalte",
+        "brewery": "Grupo Petrópolis",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Brazilian lager. Crisp and clean.",
+        "emoji": "🏔️",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-506",
+        "name": "Lokal Bier",
+        "brewery": "Cervejaria Lokal",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Brazilian craft lager. Smooth and balanced.",
+        "emoji": "🍺",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-507",
+        "name": "Seasons Bohemian Pilsner",
+        "brewery": "Cervejaria Seasons",
+        "type": "Pilsner",
+        "abv": "5.0%",
+        "description": "Brazilian craft pilsner. Hoppy and crisp.",
+        "emoji": "🍺",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-508",
+        "name": "Dado Bier",
+        "brewery": "Cervejaria Dado Bier",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Brazilian craft lager. Light and refreshing.",
+        "emoji": "🎲",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-509",
+        "name": "Bodebrown Perigosa",
+        "brewery": "Cervejaria Bodebrown",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Brazilian IPA. Hoppy and tropical.",
+        "emoji": "🍺",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-510",
+        "name": "Way Beer Amburana Lager",
+        "brewery": "Way Beer",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Brazilian lager aged in Amburana wood. Unique and smooth.",
+        "emoji": "🌳",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-511",
+        "name": "Patagonia IPA",
+        "brewery": "Cervecería Patagonia",
+        "type": "IPA",
+        "abv": "6.0%",
+        "description": "Argentine IPA. Hoppy and citrusy.",
+        "emoji": "🍊",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-512",
+        "name": "Antares Barley Wine",
+        "brewery": "Cervecería Antares",
+        "type": "Barley Wine",
+        "abv": "10.0%",
+        "description": "Argentine barley wine. Rich and complex.",
+        "emoji": "🍷",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-513",
+        "name": "Strange Brewing IPA",
+        "brewery": "Strange Brewing",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Argentine craft IPA. Hoppy and bold.",
+        "emoji": "👽",
+        "country": "Argentina"
+    },
+    {
+        "id": "local-514",
+        "name": "Kunstmann Lager",
+        "brewery": "Cervecería Kunstmann",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Chilean lager. Crisp and clean.",
+        "emoji": "🍺",
+        "country": "Chile"
+    },
+    {
+        "id": "local-515",
+        "name": "Kunstmann Bock",
+        "brewery": "Cervecería Kunstmann",
+        "type": "Bock",
+        "abv": "6.5%",
+        "description": "Chilean bock. Malty and strong.",
+        "emoji": "🐐",
+        "country": "Chile"
+    },
+    {
+        "id": "local-516",
+        "name": "Kross Golden Ale",
+        "brewery": "Cervecería Kross",
+        "type": "Golden Ale",
+        "abv": "5.0%",
+        "description": "Chilean golden ale. Light and hoppy.",
+        "emoji": "🥇",
+        "country": "Chile"
+    },
+    {
+        "id": "local-517",
+        "name": "Bundor IPA",
+        "brewery": "Cervecería Bundor",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Chilean craft IPA. Hoppy and aromatic.",
+        "emoji": "🍺",
+        "country": "Chile"
+    },
+    {
+        "id": "local-518",
+        "name": "Barbarian Chaski",
+        "brewery": "Cervecería Barbarian",
+        "type": "Pale Ale",
+        "abv": "5.5%",
+        "description": "Peruvian pale ale. Hoppy and balanced.",
+        "emoji": "🏃",
+        "country": "Peru"
+    },
+    {
+        "id": "local-519",
+        "name": "Sierra Andina Pachacutec",
+        "brewery": "Sierra Andina",
+        "type": "Porter",
+        "abv": "6.0%",
+        "description": "Peruvian porter. Rich and chocolatey.",
+        "emoji": "⚫",
+        "country": "Peru"
+    },
+    {
+        "id": "local-520",
+        "name": "Candelaria Red Ale",
+        "brewery": "Cervecería Candelaria",
+        "type": "Red Ale",
+        "abv": "5.5%",
+        "description": "Peruvian red ale. Malty and smooth.",
+        "emoji": "🔴",
+        "country": "Peru"
+    },
+    {
+        "id": "local-521",
+        "name": "Chelaweza",
+        "brewery": "Chelaweza Public House",
+        "type": "IPA",
+        "abv": "6.0%",
+        "description": "Colombian craft IPA. Hoppy and tropical.",
+        "emoji": "🍺",
+        "country": "Colombia"
+    },
+    {
+        "id": "local-522",
+        "name": "Moonshine Pale Ale",
+        "brewery": "Moonshine Brewing",
+        "type": "Pale Ale",
+        "abv": "5.5%",
+        "description": "Colombian pale ale. Hoppy and refreshing.",
+        "emoji": "🌙",
+        "country": "Colombia"
+    },
+    {
+        "id": "local-523",
+        "name": "Statua Rota IPA",
+        "brewery": "Statua Rota",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Colombian craft IPA. Bold and hoppy.",
+        "emoji": "🗿",
+        "country": "Colombia"
+    },
+    {
+        "id": "local-524",
+        "name": "Primus Paraguay",
+        "brewery": "Cervecería Paraguaya",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Paraguay's popular lager. Crisp and refreshing.",
+        "emoji": "🇵🇾",
+        "country": "Paraguay"
+    },
+    {
+        "id": "local-525",
+        "name": "Brahma Paraguay",
+        "brewery": "Cervecería Paraguaya",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Brazilian beer brewed in Paraguay. Smooth and clean.",
+        "emoji": "🍺",
+        "country": "Paraguay"
+    },
+    {
+        "id": "local-526",
+        "name": "Sajonia",
+        "brewery": "Cervecería Sajonia",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Paraguayan lager. Crisp and balanced.",
+        "emoji": "🍺",
+        "country": "Paraguay"
+    },
+    {
+        "id": "local-527",
+        "name": "Oettinger Paraguay",
+        "brewery": "Cervecería Paraguaya",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "German-style Paraguayan lager. Clean and crisp.",
+        "emoji": "🍺",
+        "country": "Paraguay"
+    },
+    {
+        "id": "local-528",
+        "name": "Toña",
+        "brewery": "Cervecería Toña",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Nicaraguan lager. Light and refreshing.",
+        "emoji": "🇳🇮",
+        "country": "Nicaragua"
+    },
+    {
+        "id": "local-529",
+        "name": "Brahma Chopp",
+        "brewery": "Ambev",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Brazilian draft-style lager. Fresh and crisp.",
+        "emoji": "🍺",
+        "country": "Brazil"
+    },
+    {
+        "id": "local-530",
+        "name": "Red Stripe",
+        "brewery": "Desnoes & Geddes",
+        "type": "Lager",
+        "abv": "4.7%",
+        "description": "Jamaica's iconic beer. Crisp and refreshing.",
+        "emoji": "🇯🇲",
+        "country": "Jamaica"
+    },
+    {
+        "id": "local-531",
+        "name": "Dragon Stout",
+        "brewery": "Desnoes & Geddes",
+        "type": "Stout",
+        "abv": "7.5%",
+        "description": "Jamaican stout. Rich and bold.",
+        "emoji": "🐉",
+        "country": "Jamaica"
+    },
+    {
+        "id": "local-532",
+        "name": "Carib Lager",
+        "brewery": "Carib Brewery",
+        "type": "Lager",
+        "abv": "5.2%",
+        "description": "Trinidad's premium lager. Crisp and clean.",
+        "emoji": "🇹🇹",
+        "country": "Trinidad and Tobago"
+    },
+    {
+        "id": "local-533",
+        "name": "Stag Lager",
+        "brewery": "Carib Brewery",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Trinidadian lager. Light and refreshing.",
+        "emoji": "🦌",
+        "country": "Trinidad and Tobago"
+    },
+    {
+        "id": "local-534",
+        "name": "Presidente",
+        "brewery": "Cervecería Nacional Dominicana",
+        "type": "Pilsner",
+        "abv": "5.0%",
+        "description": "Dominican Republic's iconic beer. Crisp and hoppy.",
+        "emoji": "🇩🇴",
+        "country": "Dominican Republic"
+    },
+    {
+        "id": "local-535",
+        "name": "Bohemia Dominicana",
+        "brewery": "Cervecería Nacional Dominicana",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Dominican lager. Smooth and balanced.",
+        "emoji": "🍺",
+        "country": "Dominican Republic"
+    },
+    {
+        "id": "local-536",
+        "name": "Medalla Light",
+        "brewery": "Compañía Cervecera de Puerto Rico",
+        "type": "Light Lager",
+        "abv": "4.2%",
+        "description": "Puerto Rico's favorite. Light and crisp.",
+        "emoji": "🇵🇷",
+        "country": "Puerto Rico"
+    },
+    {
+        "id": "local-537",
+        "name": "Cristal Cuba",
+        "brewery": "Bucanero",
+        "type": "Lager",
+        "abv": "4.9%",
+        "description": "Cuban lager. Crisp and refreshing.",
+        "emoji": "🇨🇺",
+        "country": "Cuba"
+    },
+    {
+        "id": "local-538",
+        "name": "Bucanero Fuerte",
+        "brewery": "Bucanero",
+        "type": "Strong Lager",
+        "abv": "5.4%",
+        "description": "Cuban strong lager. Bold and full-flavored.",
+        "emoji": "🏴‍☠️",
+        "country": "Cuba"
+    },
+    {
+        "id": "local-539",
+        "name": "Imperial Costa Rica",
+        "brewery": "Florida Ice & Farm",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Costa Rica's most popular beer. Crisp and clean.",
+        "emoji": "🇨🇷",
+        "country": "Costa Rica"
+    },
+    {
+        "id": "local-540",
+        "name": "Pilsen Costa Rica",
+        "brewery": "Florida Ice & Farm",
+        "type": "Pilsner",
+        "abv": "5.1%",
+        "description": "Costa Rican pilsner. Hoppy and refreshing.",
+        "emoji": "🍺",
+        "country": "Costa Rica"
+    },
+    {
+        "id": "local-541",
+        "name": "Bavaria Costa Rica",
+        "brewery": "Florida Ice & Farm",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Costa Rican premium lager. Smooth and balanced.",
+        "emoji": "🌴",
+        "country": "Costa Rica"
+    },
+    {
+        "id": "local-542",
+        "name": "Gallo",
+        "brewery": "Cervecería Centroamericana",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Guatemala's national beer. Crisp and refreshing.",
+        "emoji": "🐓",
+        "country": "Guatemala"
+    },
+    {
+        "id": "local-543",
+        "name": "Brahva",
+        "brewery": "Cervecería Centroamericana",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Guatemalan lager. Light and easy-drinking.",
+        "emoji": "🍺",
+        "country": "Guatemala"
+    },
+    {
+        "id": "local-544",
+        "name": "Salva Vida",
+        "brewery": "Cervecería Hondureña",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Honduras' iconic beer. Crisp and clean.",
+        "emoji": "🇭🇳",
+        "country": "Honduras"
+    },
+    {
+        "id": "local-545",
+        "name": "Imperial Honduras",
+        "brewery": "Cervecería Hondureña",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Honduran lager. Smooth and refreshing.",
+        "emoji": "👑",
+        "country": "Honduras"
+    },
+    {
+        "id": "local-546",
+        "name": "Balboa",
+        "brewery": "Cervecería Nacional",
+        "type": "Lager",
+        "abv": "4.9%",
+        "description": "Panama's classic beer. Crisp and balanced.",
+        "emoji": "🇵🇦",
+        "country": "Panama"
+    },
+    {
+        "id": "local-547",
+        "name": "Atlas",
+        "brewery": "Cervecería Nacional",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Panamanian lager. Light and refreshing.",
+        "emoji": "🗺️",
+        "country": "Panama"
+    },
+    {
+        "id": "local-548",
+        "name": "Pilsener El Salvador",
+        "brewery": "Industrias La Constancia",
+        "type": "Pilsner",
+        "abv": "4.8%",
+        "description": "El Salvador's favorite. Crisp and hoppy.",
+        "emoji": "🇸🇻",
+        "country": "El Salvador"
+    },
+    {
+        "id": "local-549",
+        "name": "Suprema",
+        "brewery": "Industrias La Constancia",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Salvadoran premium lager. Smooth and clean.",
+        "emoji": "👑",
+        "country": "El Salvador"
+    },
+    {
+        "id": "local-550",
+        "name": "Stella Egypt",
+        "brewery": "Al Ahram Beverages",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Egypt's iconic beer. Crisp and refreshing.",
+        "emoji": "🇪🇬",
+        "country": "Egypt"
+    },
+    {
+        "id": "local-551",
+        "name": "Sakara Gold",
+        "brewery": "Al Ahram Beverages",
+        "type": "Lager",
+        "abv": "4.0%",
+        "description": "Egyptian lager. Light and easy-drinking.",
+        "emoji": "🏺",
+        "country": "Egypt"
+    },
+    {
+        "id": "local-552",
+        "name": "Zambezi Lager",
+        "brewery": "Delta Beverages",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Zimbabwe's premium lager. Crisp and clean.",
+        "emoji": "🇿🇼",
+        "country": "Zimbabwe"
+    },
+    {
+        "id": "local-553",
+        "name": "Bohlingers",
+        "brewery": "Delta Beverages",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Zimbabwean lager. Smooth and balanced.",
+        "emoji": "🍺",
+        "country": "Zimbabwe"
+    },
+    {
+        "id": "local-554",
+        "name": "St. Louis Botswana",
+        "brewery": "Kgalagadi Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Botswana's popular lager. Crisp and refreshing.",
+        "emoji": "🇧🇼",
+        "country": "Botswana"
+    },
+    {
+        "id": "local-555",
+        "name": "Lion Lager Botswana",
+        "brewery": "Kgalagadi Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Botswanan lager. Smooth and clean.",
+        "emoji": "🦁",
+        "country": "Botswana"
+    },
+    {
+        "id": "local-556",
+        "name": "St. George Beer",
+        "brewery": "St. George Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Ethiopia's iconic beer. Crisp and refreshing.",
+        "emoji": "🇪🇹",
+        "country": "Ethiopia"
+    },
+    {
+        "id": "local-557",
+        "name": "Bedele Special",
+        "brewery": "Bedele Brewery",
+        "type": "Lager",
+        "abv": "5.2%",
+        "description": "Ethiopian lager. Smooth and balanced.",
+        "emoji": "🍺",
+        "country": "Ethiopia"
+    },
+    {
+        "id": "local-558",
+        "name": "Castel Beer Cameroon",
+        "brewery": "SABC",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Cameroon's popular lager. Crisp and clean.",
+        "emoji": "🇨🇲",
+        "country": "Cameroon"
+    },
+    {
+        "id": "local-559",
+        "name": "33 Export",
+        "brewery": "SABC",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Cameroonian lager. Light and refreshing.",
+        "emoji": "3️⃣3️⃣",
+        "country": "Cameroon"
+    },
+    {
+        "id": "local-560",
+        "name": "Flag Ivory Coast",
+        "brewery": "Solibra",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Ivory Coast's premium lager. Crisp and hoppy.",
+        "emoji": "🇨🇮",
+        "country": "Ivory Coast"
+    },
+    {
+        "id": "local-561",
+        "name": "Bock Ivory Coast",
+        "brewery": "Solibra",
+        "type": "Bock",
+        "abv": "6.5%",
+        "description": "Ivorian bock. Rich and malty.",
+        "emoji": "🐐",
+        "country": "Ivory Coast"
+    },
+    {
+        "id": "local-562",
+        "name": "Flag Senegal",
+        "brewery": "Société des Brasseries de l'Ouest Africain",
+        "type": "Lager",
+        "abv": "4.9%",
+        "description": "Senegal's popular lager. Crisp and refreshing.",
+        "emoji": "🇸🇳",
+        "country": "Senegal"
+    },
+    {
+        "id": "local-563",
+        "name": "Gazelle",
+        "brewery": "Société des Brasseries de l'Ouest Africain",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Senegalese lager. Light and easy-drinking.",
+        "emoji": "🦌",
+        "country": "Senegal"
+    },
+    {
+        "id": "local-564",
+        "name": "Chinggis Khan",
+        "brewery": "Apu Brewing",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Mongolia's iconic beer. Crisp and clean.",
+        "emoji": "🇲🇳",
+        "country": "Mongolia"
+    },
+    {
+        "id": "local-565",
+        "name": "Sengur",
+        "brewery": "Mongol Brewery",
+        "type": "Lager",
+        "abv": "4.5%",
+        "description": "Mongolian lager. Smooth and refreshing.",
+        "emoji": "🏇",
+        "country": "Mongolia"
+    },
+    {
+        "id": "local-566",
+        "name": "Fiji Bitter",
+        "brewery": "Paradise Beverages",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Fiji's iconic beer. Crisp and tropical.",
+        "emoji": "🇫🇯",
+        "country": "Fiji"
+    },
+    {
+        "id": "local-567",
+        "name": "Fiji Gold",
+        "brewery": "Paradise Beverages",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Fijian premium lager. Smooth and balanced.",
+        "emoji": "🥇",
+        "country": "Fiji"
+    },
+    {
+        "id": "local-568",
+        "name": "SP Lager",
+        "brewery": "South Pacific Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Papua New Guinea's beer. Crisp and refreshing.",
+        "emoji": "🇵🇬",
+        "country": "Papua New Guinea"
+    },
+    {
+        "id": "local-569",
+        "name": "Vailima",
+        "brewery": "Samoa Breweries",
+        "type": "Lager",
+        "abv": "4.9%",
+        "description": "Samoa's national beer. Crisp and clean.",
+        "emoji": "🇼🇸",
+        "country": "Samoa"
+    },
+    {
+        "id": "local-570",
+        "name": "Ikale",
+        "brewery": "Royal Beer",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Tonga's beer. Light and refreshing.",
+        "emoji": "🇹🇴",
+        "country": "Tonga"
+    },
+    {
+        "id": "local-571",
+        "name": "Classic Hazy Double IPA",
+        "brewery": "Garage Brewing Co.",
+        "type": "Hazy Double IPA",
+        "abv": "8.5%",
+        "description": "#1 Beer of 2023 (99 pts). Perfectly balanced hazy DIPA.",
+        "emoji": "🏆",
+        "country": "USA"
+    },
+    {
+        "id": "local-572",
+        "name": "Hopcelot",
+        "brewery": "Lawson's Finest Liquids",
+        "type": "IPA",
+        "abv": "7.5%",
+        "description": "Vermont IPA (97 pts). Eight hop varieties, complex and balanced.",
+        "emoji": "🎸",
+        "country": "USA"
+    },
+    {
+        "id": "local-573",
+        "name": "Double Sunshine",
+        "brewery": "Lawson's Finest Liquids",
+        "type": "Double IPA",
+        "abv": "8.0%",
+        "description": "Vermont DIPA (93 pts). Hoppy and bold.",
+        "emoji": "☀️",
+        "country": "USA"
+    },
+    {
+        "id": "local-574",
+        "name": "Super Lemonova",
+        "brewery": "Lawson's Finest Liquids",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Citrus-forward IPA (93 pts). Bright and refreshing.",
+        "emoji": "🍋",
+        "country": "USA"
+    },
+    {
+        "id": "local-575",
+        "name": "Hazy Rays",
+        "brewery": "Lawson's Finest Liquids",
+        "type": "Hazy IPA",
+        "abv": "6.8%",
+        "description": "Vermont hazy IPA (91 pts). Juicy and tropical.",
+        "emoji": "🌞",
+        "country": "USA"
+    },
+    {
+        "id": "local-576",
+        "name": "Big Hazy",
+        "brewery": "Lawson's Finest Liquids",
+        "type": "Hazy IPA",
+        "abv": "7.2%",
+        "description": "Big hazy IPA (88 pts). Full-bodied and hoppy.",
+        "emoji": "🌫️",
+        "country": "USA"
+    },
+    {
+        "id": "local-577",
+        "name": "Lone Buffalo: Cinnamon Maple Vanilla",
+        "brewery": "Wild Leap Brew Co.",
+        "type": "Barrel-Aged Stout",
+        "abv": "12.0%",
+        "description": "#2 Beer of 2023 (97 pts). Whiskey barrel-aged perfection.",
+        "emoji": "🦬",
+        "country": "USA"
+    },
+    {
+        "id": "local-578",
+        "name": "Side Bae Double IPA: Idaho 7",
+        "brewery": "Wild Leap Brew Co.",
+        "type": "Double IPA",
+        "abv": "8.5%",
+        "description": "Idaho 7 hops showcase (97 pts). Incredible aroma.",
+        "emoji": "🌲",
+        "country": "USA"
+    },
+    {
+        "id": "local-579",
+        "name": "Side Bae Double IPA: HBC 472 Cryo",
+        "brewery": "Wild Leap Brew Co.",
+        "type": "Double IPA",
+        "abv": "8.5%",
+        "description": "Cryo hops DIPA (95 pts). Juicy and bold.",
+        "emoji": "❄️",
+        "country": "USA"
+    },
+    {
+        "id": "local-580",
+        "name": "SouthDown Double IPA",
+        "brewery": "Wild Leap Brew Co.",
+        "type": "Double IPA",
+        "abv": "8.2%",
+        "description": "Georgia DIPA (95 pts). Hoppy and balanced.",
+        "emoji": "🍺",
+        "country": "USA"
+    },
+    {
+        "id": "local-581",
+        "name": "Alpha Abstraction Vol. 22",
+        "brewery": "Wild Leap Brew Co.",
+        "type": "Hazy IPA",
+        "abv": "7.0%",
+        "description": "#8 Beer of 2023 (97 pts). Nectaron hops, stone fruit.",
+        "emoji": "🍑",
+        "country": "USA"
+    },
+    {
+        "id": "local-582",
+        "name": "Alpha Abstraction Vol. 23",
+        "brewery": "Wild Leap Brew Co.",
+        "type": "Hazy IPA",
+        "abv": "7.0%",
+        "description": "Hazy IPA (92 pts). Tropical and juicy.",
+        "emoji": "🌴",
+        "country": "USA"
+    },
+    {
+        "id": "local-583",
+        "name": "Alpha Abstraction Vol. 24",
+        "brewery": "Wild Leap Brew Co.",
+        "type": "Hazy IPA",
+        "abv": "7.0%",
+        "description": "Hazy IPA (92 pts). Hoppy and aromatic.",
+        "emoji": "🍊",
+        "country": "USA"
+    },
+    {
+        "id": "local-584",
+        "name": "Vacanza Peach Pie Imperial Gose",
+        "brewery": "Wild Leap Brew Co.",
+        "type": "Imperial Gose",
+        "abv": "8.0%",
+        "description": "Peach pie gose (92 pts). Sweet and tart.",
+        "emoji": "🥧",
+        "country": "USA"
+    },
+    {
+        "id": "local-585",
+        "name": "Truck Chaser Creamsicle",
+        "brewery": "Wild Leap Brew Co.",
+        "type": "Cream Ale",
+        "abv": "5.5%",
+        "description": "Creamsicle ale (91 pts). Nostalgic and smooth.",
+        "emoji": "🍦",
+        "country": "USA"
+    },
+    {
+        "id": "local-586",
+        "name": "Tank Dog West Coast Imperial IPA",
+        "brewery": "New Realm Brewing",
+        "type": "Imperial IPA",
+        "abv": "9.3%",
+        "description": "#4 Beer of 2023 (97 pts). Classic West Coast DIPA.",
+        "emoji": "🐕",
+        "country": "USA"
+    },
+    {
+        "id": "local-587",
+        "name": "Haze Dipper",
+        "brewery": "New Realm Brewing",
+        "type": "Hazy IPA",
+        "abv": "7.0%",
+        "description": "Hazy IPA (95 pts). Juicy and smooth.",
+        "emoji": "🌊",
+        "country": "USA"
+    },
+    {
+        "id": "local-588",
+        "name": "Tank Dog Tangerine Mango Imperial IPA",
+        "brewery": "New Realm Brewing",
+        "type": "Imperial IPA",
+        "abv": "9.0%",
+        "description": "Fruit-forward DIPA (92 pts). Tropical explosion.",
+        "emoji": "🥭",
+        "country": "USA"
+    },
+    {
+        "id": "local-589",
+        "name": "Hold On Juicy",
+        "brewery": "New Realm Brewing",
+        "type": "Hazy IPA",
+        "abv": "6.8%",
+        "description": "Juicy hazy IPA (91 pts). Soft and fruity.",
+        "emoji": "🍹",
+        "country": "USA"
+    },
+    {
+        "id": "local-590",
+        "name": "Tropic Dream",
+        "brewery": "New Realm Brewing",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Tropical IPA (89 pts). Bright and hoppy.",
+        "emoji": "🏝️",
+        "country": "USA"
+    },
+    {
+        "id": "local-591",
+        "name": "Tank Dog Hazy Imperial IPA",
+        "brewery": "New Realm Brewing",
+        "type": "Hazy Imperial IPA",
+        "abv": "9.0%",
+        "description": "Hazy DIPA (88 pts). Bold and juicy.",
+        "emoji": "🌫️",
+        "country": "USA"
+    },
+    {
+        "id": "local-592",
+        "name": "Psychedelic Rabbit Transcendent IPA",
+        "brewery": "New Realm Brewing",
+        "type": "IPA",
+        "abv": "7.5%",
+        "description": "Transcendent IPA (90 pts). Mind-bending hops.",
+        "emoji": "🐰",
+        "country": "USA"
+    },
+    {
+        "id": "local-593",
+        "name": "Blackberry Smoke Lager",
+        "brewery": "New Realm Brewing",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Blackberry lager (94 pts). Fruity and crisp.",
+        "emoji": "🫐",
+        "country": "USA"
+    },
+    {
+        "id": "local-594",
+        "name": "Bat Wit Crazy",
+        "brewery": "New Realm Brewing",
+        "type": "Witbier",
+        "abv": "5.2%",
+        "description": "Belgian witbier (87 pts). Spicy and refreshing.",
+        "emoji": "🦇",
+        "country": "USA"
+    },
+    {
+        "id": "local-595",
+        "name": "Chocolate Factory",
+        "brewery": "Clocktown Brewing Co.",
+        "type": "Stout",
+        "abv": "8.0%",
+        "description": "#12 Beer of 2023 (96 pts). Chocolate-forward stout.",
+        "emoji": "🍫",
+        "country": "USA"
+    },
+    {
+        "id": "local-596",
+        "name": "When Pigs Fly",
+        "brewery": "Clocktown Brewing Co.",
+        "type": "Hazy IPA",
+        "abv": "6.8%",
+        "description": "#10 Beer of 2023 (96 pts). Soft, fruity hazy IPA.",
+        "emoji": "🐷",
+        "country": "USA"
+    },
+    {
+        "id": "local-597",
+        "name": "Clocktoberfest",
+        "brewery": "Clocktown Brewing Co.",
+        "type": "Oktoberfest",
+        "abv": "5.5%",
+        "description": "Oktoberfest lager (90 pts). Malty and smooth.",
+        "emoji": "🍻",
+        "country": "USA"
+    },
+    {
+        "id": "local-598",
+        "name": "Dragon's Milk Triple Mash",
+        "brewery": "New Holland Brewing Co.",
+        "type": "Imperial Stout",
+        "abv": "17.0%",
+        "description": "#9 Beer of 2023 (96 pts). Massive barrel-aged stout.",
+        "emoji": "🐉",
+        "country": "USA"
+    },
+    {
+        "id": "local-599",
+        "name": "Full Circle",
+        "brewery": "New Holland Brewing Co.",
+        "type": "Barrel-Aged Stout",
+        "abv": "11.0%",
+        "description": "Barrel-aged stout (95 pts). Rich and complex.",
+        "emoji": "⭕",
+        "country": "USA"
+    },
+    {
+        "id": "local-600",
+        "name": "Dragon's Milk Crimson Keep",
+        "brewery": "New Holland Brewing Co.",
+        "type": "Barrel-Aged Stout",
+        "abv": "11.0%",
+        "description": "Barrel-aged stout (93 pts). Bold and boozy.",
+        "emoji": "🏰",
+        "country": "USA"
+    },
+    {
+        "id": "local-601",
+        "name": "Dragon's Milk Tales of Gold",
+        "brewery": "New Holland Brewing Co.",
+        "type": "Barrel-Aged Stout",
+        "abv": "11.0%",
+        "description": "Barrel-aged stout (92 pts). Golden barrel character.",
+        "emoji": "🥇",
+        "country": "USA"
+    },
+    {
+        "id": "local-602",
+        "name": "pFriem Tequila Barrel Aged Mole Stout",
+        "brewery": "pFriem Family Brewers",
+        "type": "Barrel-Aged Stout",
+        "abv": "10.5%",
+        "description": "Tequila barrel stout (95 pts). Spicy and complex.",
+        "emoji": "🌶️",
+        "country": "USA"
+    },
+    {
+        "id": "local-603",
+        "name": "pFriem Cognac Barrel-Aged Double Mash Imperial Stout",
+        "brewery": "pFriem Family Brewers",
+        "type": "Imperial Stout",
+        "abv": "12.0%",
+        "description": "Cognac barrel stout (95 pts). Luxurious and rich.",
+        "emoji": "🥃",
+        "country": "USA"
+    },
+    {
+        "id": "local-604",
+        "name": "pFriem Amaro Barrel-Aged Barleywine",
+        "brewery": "pFriem Family Brewers",
+        "type": "Barleywine",
+        "abv": "11.5%",
+        "description": "Amaro barrel barleywine (95 pts). Herbal and complex.",
+        "emoji": "🍷",
+        "country": "USA"
+    },
+    {
+        "id": "local-605",
+        "name": "pFriem New Zealand Pale",
+        "brewery": "pFriem Family Brewers",
+        "type": "Pale Ale",
+        "abv": "5.5%",
+        "description": "NZ pale ale (94 pts). Hoppy and crisp.",
+        "emoji": "🇳🇿",
+        "country": "USA"
+    },
+    {
+        "id": "local-606",
+        "name": "pFriem Schwarzbier",
+        "brewery": "pFriem Family Brewers",
+        "type": "Schwarzbier",
+        "abv": "5.0%",
+        "description": "German dark lager (94 pts). Smooth and roasty.",
+        "emoji": "⚫",
+        "country": "USA"
+    },
+    {
+        "id": "local-607",
+        "name": "pFriem West Coast IPA",
+        "brewery": "pFriem Family Brewers",
+        "type": "IPA",
+        "abv": "7.0%",
+        "description": "West Coast IPA (92 pts). Classic and hoppy.",
+        "emoji": "🌲",
+        "country": "USA"
+    },
+    {
+        "id": "local-608",
+        "name": "pFriem Oktoberfest",
+        "brewery": "pFriem Family Brewers",
+        "type": "Oktoberfest",
+        "abv": "5.6%",
+        "description": "Oktoberfest lager (91 pts). Malty and traditional.",
+        "emoji": "🍺",
+        "country": "USA"
+    },
+    {
+        "id": "local-609",
+        "name": "Geräuchert Smoked Helles Lager",
+        "brewery": "Moniker Brewery",
+        "type": "Smoked Lager",
+        "abv": "5.2%",
+        "description": "#7 Beer of 2023 (97 pts). Perfectly balanced smoke.",
+        "emoji": "🔥",
+        "country": "USA"
+    },
+    {
+        "id": "local-610",
+        "name": "Lager Drink",
+        "brewery": "Moniker Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Clean lager (94 pts). Crisp and refreshing.",
+        "emoji": "🍺",
+        "country": "USA"
+    },
+    {
+        "id": "local-611",
+        "name": "What the F?!?! Is a Kilometer",
+        "brewery": "Moniker Brewery",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Hoppy IPA (91 pts). Bold and aromatic.",
+        "emoji": "🚗",
+        "country": "USA"
+    },
+    {
+        "id": "local-612",
+        "name": "Pickerel",
+        "brewery": "Moniker Brewery",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Light lager (92 pts). Clean and crisp.",
+        "emoji": "🐟",
+        "country": "USA"
+    },
+    {
+        "id": "local-613",
+        "name": "El Rhodeo",
+        "brewery": "Moniker Brewery",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Mexican-style lager (92 pts). Refreshing.",
+        "emoji": "🤠",
+        "country": "USA"
+    },
+    {
+        "id": "local-614",
+        "name": "State of Flow",
+        "brewery": "Moniker Brewery",
+        "type": "IPA",
+        "abv": "6.8%",
+        "description": "Hazy IPA (90 pts). Smooth and juicy.",
+        "emoji": "🌊",
+        "country": "USA"
+    },
+    {
+        "id": "local-615",
+        "name": "Ruby's Red",
+        "brewery": "Garage Brewing Co.",
+        "type": "Red Ale",
+        "abv": "6.0%",
+        "description": "Red ale (95 pts). Malty and balanced.",
+        "emoji": "🔴",
+        "country": "USA"
+    },
+    {
+        "id": "local-616",
+        "name": "French Toast Hef",
+        "brewery": "Garage Brewing Co.",
+        "type": "Hefeweizen",
+        "abv": "5.5%",
+        "description": "French toast hefeweizen (93 pts). Sweet and spicy.",
+        "emoji": "🍞",
+        "country": "USA"
+    },
+    {
+        "id": "local-617",
+        "name": "Off the Line Hazy IPA",
+        "brewery": "Garage Brewing Co.",
+        "type": "Hazy IPA",
+        "abv": "7.0%",
+        "description": "Hazy IPA (93 pts). Juicy and hoppy.",
+        "emoji": "🏁",
+        "country": "USA"
+    },
+    {
+        "id": "local-618",
+        "name": "Prickly Pear Hef",
+        "brewery": "Garage Brewing Co.",
+        "type": "Hefeweizen",
+        "abv": "5.2%",
+        "description": "Prickly pear hefeweizen (94 pts). Fruity and unique.",
+        "emoji": "🌵",
+        "country": "USA"
+    },
+    {
+        "id": "local-619",
+        "name": "After Burn Hazy IPA",
+        "brewery": "Garage Brewing Co.",
+        "type": "Hazy IPA",
+        "abv": "7.2%",
+        "description": "Hazy IPA (91 pts). Bold and tropical.",
+        "emoji": "🔥",
+        "country": "USA"
+    },
+    {
+        "id": "local-620",
+        "name": "Banana Foster Hef",
+        "brewery": "Garage Brewing Co.",
+        "type": "Hefeweizen",
+        "abv": "5.5%",
+        "description": "Banana foster hefeweizen (90 pts). Dessert beer.",
+        "emoji": "🍌",
+        "country": "USA"
+    },
+    {
+        "id": "local-621",
+        "name": "Cotton Candy",
+        "brewery": "Garage Brewing Co.",
+        "type": "Ale",
+        "abv": "5.0%",
+        "description": "Cotton candy ale (90 pts). Sweet and fun.",
+        "emoji": "🍭",
+        "country": "USA"
+    },
+    {
+        "id": "local-622",
+        "name": "Peaches 'n Orange Creamsicle",
+        "brewery": "Garage Brewing Co.",
+        "type": "Cream Ale",
+        "abv": "5.5%",
+        "description": "Creamsicle ale (89 pts). Nostalgic and smooth.",
+        "emoji": "🍑",
+        "country": "USA"
+    },
+    {
+        "id": "local-623",
+        "name": "Tynt Meadow",
+        "brewery": "Mount Saint Bernard Abbey",
+        "type": "Trappist Ale",
+        "abv": "7.4%",
+        "description": "#11 Beer of 2023 (96 pts). English Trappist ale.",
+        "emoji": "⛪",
+        "country": "United Kingdom"
+    },
+    {
+        "id": "local-624",
+        "name": "Westmalle Tripel",
+        "brewery": "Brouwerij Westmalle",
+        "type": "Trappist Tripel",
+        "abv": "9.5%",
+        "description": "Legendary Trappist tripel (95 pts). Complex and fruity.",
+        "emoji": "🇧🇪",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-625",
+        "name": "Westmalle Extra",
+        "brewery": "Brouwerij Westmalle",
+        "type": "Trappist Ale",
+        "abv": "4.8%",
+        "description": "Monks' table beer (93 pts). Light and refreshing.",
+        "emoji": "⛪",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-626",
+        "name": "Orval",
+        "brewery": "Brasserie d'Orval",
+        "type": "Trappist Ale",
+        "abv": "6.2%",
+        "description": "Iconic Trappist ale (94 pts). Dry-hopped and unique.",
+        "emoji": "🍺",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-627",
+        "name": "Signature",
+        "brewery": "Nine Pin Ciderworks",
+        "type": "Cider",
+        "abv": "6.5%",
+        "description": "#6 of 2023 (97 pts). NY apples, aged up to a year.",
+        "emoji": "🍎",
+        "country": "USA"
+    },
+    {
+        "id": "local-628",
+        "name": "Abita Light Lager",
+        "brewery": "Abita Brewing Co.",
+        "type": "Light Lager",
+        "abv": "4.0%",
+        "description": "Louisiana light lager (91 pts). Crisp and clean.",
+        "emoji": "🌴",
+        "country": "USA"
+    },
+    {
+        "id": "local-629",
+        "name": "Ride Share",
+        "brewery": "Abita Brewing Co.",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Louisiana IPA (86 pts). Hoppy and balanced.",
+        "emoji": "🚗",
+        "country": "USA"
+    },
+    {
+        "id": "local-630",
+        "name": "Neon Roses",
+        "brewery": "Wild Heaven Beer",
+        "type": "Sour Ale",
+        "abv": "5.5%",
+        "description": "Georgia sour (95 pts). Tart and fruity.",
+        "emoji": "🌹",
+        "country": "USA"
+    },
+    {
+        "id": "local-631",
+        "name": "Orange Blossom Belgian Blonde",
+        "brewery": "Moody Tongue Brewing Co.",
+        "type": "Belgian Blonde",
+        "abv": "6.0%",
+        "description": "Chicago blonde ale (94 pts). Floral and elegant.",
+        "emoji": "🍊",
+        "country": "USA"
+    },
+    {
+        "id": "local-632",
+        "name": "Juiced Lychee IPA",
+        "brewery": "Moody Tongue Brewing Co.",
+        "type": "IPA",
+        "abv": "7.0%",
+        "description": "Lychee IPA (94 pts). Exotic and aromatic.",
+        "emoji": "🍈",
+        "country": "USA"
+    },
+    {
+        "id": "local-633",
+        "name": "Vibacious Double IPA",
+        "brewery": "Great Lakes Brewing Co.",
+        "type": "Double IPA",
+        "abv": "8.5%",
+        "description": "Ohio DIPA (94 pts). Vibrant and hoppy.",
+        "emoji": "🌊",
+        "country": "USA"
+    },
+    {
+        "id": "local-634",
+        "name": "HTX IPA",
+        "brewery": "Urban South Brewery",
+        "type": "IPA",
+        "abv": "6.8%",
+        "description": "Houston IPA (89 pts). Hoppy and tropical.",
+        "emoji": "🚀",
+        "country": "USA"
+    },
+    {
+        "id": "local-635",
+        "name": "Velvet Uppercut",
+        "brewery": "Flying Lion Brewing",
+        "type": "Stout",
+        "abv": "7.0%",
+        "description": "Smooth stout (94 pts). Velvety and rich.",
+        "emoji": "🥊",
+        "country": "USA"
+    },
+    {
+        "id": "local-636",
+        "name": "Where's Bonnie? Belgian Witbier",
+        "brewery": "Flying Lion Brewing",
+        "type": "Witbier",
+        "abv": "5.0%",
+        "description": "Belgian witbier (90 pts). Spicy and refreshing.",
+        "emoji": "🐕",
+        "country": "USA"
+    },
+    {
+        "id": "local-637",
+        "name": "Loon Call",
+        "brewery": "Batson River Brewing & Distilling",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "New England IPA (91 pts). Hoppy and aromatic.",
+        "emoji": "🦆",
+        "country": "USA"
+    },
+    {
+        "id": "local-638",
+        "name": "Low Road Saison",
+        "brewery": "Low Road Brewing",
+        "type": "Saison",
+        "abv": "6.0%",
+        "description": "Farmhouse saison (90 pts). Spicy and dry.",
+        "emoji": "🌾",
+        "country": "USA"
+    },
+    {
+        "id": "local-639",
+        "name": "Double Trouble",
+        "brewery": "Low Road Brewing",
+        "type": "Double IPA",
+        "abv": "8.5%",
+        "description": "Double IPA (92 pts). Bold and hoppy.",
+        "emoji": "⚠️",
+        "country": "USA"
+    },
+    {
+        "id": "local-640",
+        "name": "ALT 51",
+        "brewery": "Low Road Brewing",
+        "type": "Altbier",
+        "abv": "5.0%",
+        "description": "German altbier (94 pts). Malty and smooth.",
+        "emoji": "🍺",
+        "country": "USA"
+    },
+    {
+        "id": "local-641",
+        "name": "Hugh Hefe",
+        "brewery": "Low Road Brewing",
+        "type": "Hefeweizen",
+        "abv": "5.2%",
+        "description": "Hefeweizen (93 pts). Banana and clove.",
+        "emoji": "🍌",
+        "country": "USA"
+    },
+    {
+        "id": "local-642",
+        "name": "Tripped Up",
+        "brewery": "Low Road Brewing",
+        "type": "Tripel",
+        "abv": "9.0%",
+        "description": "Belgian tripel (92 pts). Strong and fruity.",
+        "emoji": "3️⃣",
+        "country": "USA"
+    },
+    {
+        "id": "local-643",
+        "name": "Hot Cocoa Stout",
+        "brewery": "Low Road Brewing",
+        "type": "Stout",
+        "abv": "6.5%",
+        "description": "Hot cocoa stout (88 pts). Rich and chocolatey.",
+        "emoji": "☕",
+        "country": "USA"
+    },
+    {
+        "id": "local-644",
+        "name": "Marsh Madness",
+        "brewery": "Low Road Brewing",
+        "type": "IPA",
+        "abv": "6.8%",
+        "description": "IPA (88 pts). Hoppy and balanced.",
+        "emoji": "🏀",
+        "country": "USA"
+    },
+    {
+        "id": "local-645",
+        "name": "Social Fox Oktoberfest",
+        "brewery": "Social Fox Brewing",
+        "type": "Oktoberfest",
+        "abv": "5.5%",
+        "description": "Oktoberfest lager (91 pts). Traditional and malty.",
+        "emoji": "🦊",
+        "country": "USA"
+    },
+    {
+        "id": "local-646",
+        "name": "B & W Brew",
+        "brewery": "Social Fox Brewing",
+        "type": "Schwarzbier",
+        "abv": "5.0%",
+        "description": "Black lager (94 pts). Smooth and roasty.",
+        "emoji": "⚫⚪",
+        "country": "USA"
+    },
+    {
+        "id": "local-647",
+        "name": "In Between Times - Raspberry",
+        "brewery": "Social Fox Brewing",
+        "type": "Sour Ale",
+        "abv": "5.5%",
+        "description": "Raspberry sour (92 pts). Tart and fruity.",
+        "emoji": "🫐",
+        "country": "USA"
+    },
+    {
+        "id": "local-648",
+        "name": "Van Damme Strong",
+        "brewery": "Social Fox Brewing",
+        "type": "Belgian Strong Ale",
+        "abv": "9.0%",
+        "description": "Belgian strong ale (89 pts). Bold and complex.",
+        "emoji": "💪",
+        "country": "USA"
+    },
+    {
+        "id": "local-649",
+        "name": "Dubbel or Nothing",
+        "brewery": "Social Fox Brewing",
+        "type": "Dubbel",
+        "abv": "7.5%",
+        "description": "Belgian dubbel (87 pts). Malty and fruity.",
+        "emoji": "2️⃣",
+        "country": "USA"
+    },
+    {
+        "id": "local-650",
+        "name": "Apex Predator",
+        "brewery": "Ghost Hawk Brewing Co.",
+        "type": "IPA",
+        "abv": "7.0%",
+        "description": "IPA (92 pts). Hoppy and bold.",
+        "emoji": "🦅",
+        "country": "USA"
+    },
+    {
+        "id": "local-651",
+        "name": "Attention Ritual",
+        "brewery": "Ghost Hawk Brewing Co.",
+        "type": "IPA",
+        "abv": "6.8%",
+        "description": "IPA (93 pts). Aromatic and hoppy.",
+        "emoji": "🔮",
+        "country": "USA"
+    },
+    {
+        "id": "local-652",
+        "name": "Hallerbos Belgian Strong Ale",
+        "brewery": "Ghost Hawk Brewing Co.",
+        "type": "Belgian Strong Ale",
+        "abv": "9.5%",
+        "description": "Amburana barrel-aged (92 pts). Complex and unique.",
+        "emoji": "🌳",
+        "country": "USA"
+    },
+    {
+        "id": "local-653",
+        "name": "Gear Me",
+        "brewery": "Gnarly Barley Brewing Co.",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "IPA (90 pts). Hoppy and balanced.",
+        "emoji": "⚙️",
+        "country": "USA"
+    },
+    {
+        "id": "local-654",
+        "name": "Social Lubricant DIPA",
+        "brewery": "Gnarly Barley Brewing Co.",
+        "type": "Double IPA",
+        "abv": "8.0%",
+        "description": "Double IPA (87 pts). Bold and hoppy.",
+        "emoji": "🍻",
+        "country": "USA"
+    },
+    {
+        "id": "local-655",
+        "name": "Lookin' Sharp Berliner Weisse",
+        "brewery": "Gnarly Barley Brewing Co.",
+        "type": "Berliner Weisse",
+        "abv": "4.5%",
+        "description": "Berliner weisse (93 pts). Tart and refreshing.",
+        "emoji": "🔪",
+        "country": "USA"
+    },
+    {
+        "id": "local-656",
+        "name": "Barrel Aged Bad Abbot",
+        "brewery": "Gnarly Barley Brewing Co.",
+        "type": "Barrel-Aged Ale",
+        "abv": "10.0%",
+        "description": "Barrel-aged ale (86 pts). Rich and complex.",
+        "emoji": "🛢️",
+        "country": "USA"
+    },
+    {
+        "id": "local-657",
+        "name": "Forbidden Fields",
+        "brewery": "Grain Theory",
+        "type": "IPA",
+        "abv": "6.8%",
+        "description": "IPA (88 pts). Hoppy and aromatic.",
+        "emoji": "🌾",
+        "country": "USA"
+    },
+    {
+        "id": "local-658",
+        "name": "Imperial Raspberry Vanilla Porter",
+        "brewery": "Breckenridge Brewery",
+        "type": "Porter",
+        "abv": "9.5%",
+        "description": "Whiskey-port barrel porter (92 pts). Decadent.",
+        "emoji": "🫐",
+        "country": "USA"
     }
 ]
