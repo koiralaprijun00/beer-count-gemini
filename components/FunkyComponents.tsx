@@ -38,21 +38,21 @@ export const FunkyButton: React.FC<ButtonProps> = ({
 
   const variants = {
     primary:
-      "w-full rounded-xl bg-indigo-600 text-white py-3 px-6 shadow-lg shadow-indigo-500/30 hover:bg-indigo-700 hover:shadow-indigo-600/40",
+      "w-full rounded-xl bg-gray-800 text-white py-3 px-6 shadow-md shadow-gray-900/20 hover:bg-gray-700 hover:shadow-gray-900/30",
     secondary:
-      "w-full rounded-xl border-2 border-slate-200 text-slate-600 py-3 px-6 bg-white hover:border-indigo-200 hover:text-indigo-600 hover:bg-indigo-50/50",
+      "w-full rounded-xl border-2 border-gray-200 text-gray-600 py-3 px-6 bg-white hover:border-gray-300 hover:text-gray-800 hover:bg-gray-50",
     icon:
-      "p-2 rounded-full hover:bg-slate-100 text-slate-500 hover:text-indigo-600 transition-colors",
+      "p-2 rounded-full hover:bg-gray-100 text-gray-500 hover:text-gray-800 transition-colors",
     danger:
-      "w-full rounded-xl bg-red-50 text-red-600 border border-red-100 hover:bg-red-100",
+      "w-full rounded-xl bg-red-50 text-red-600 border border-red-100 hover:bg-red-100"
   };
 
   const pulseVariants = {
     primary:
-      "w-full rounded-xl bg-indigo-400 text-white py-3 px-6 shadow-lg shadow-indigo-300/40",
-    secondary: "bg-indigo-50 border-indigo-200 text-indigo-700",
-    icon: "bg-slate-100",
-    danger: "bg-red-100",
+      "w-full rounded-xl bg-gray-600 text-white py-3 px-6 shadow-md shadow-gray-800/30",
+    secondary: "bg-gray-100 border-gray-300 text-gray-800",
+    icon: "bg-gray-100",
+    danger: "bg-red-100"
   };
 
   const triggerPulse = () => {
@@ -158,9 +158,9 @@ export const FunkyCard: React.FC<{ children: React.ReactNode; className?: string
   </div>
 );
 
-export const FunkyInput: React.FC<React.InputHTMLAttributes<HTMLInputElement>> = (props) => (
+export const FunkyInput: React.FC<React.InputHTMLAttributes<HTMLInputElement>> = ({ className = '', ...props }) => (
   <input
-    className="w-full rounded-xl border-2 border-slate-100 px-5 py-4 text-base bg-slate-50/50 text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-500 transition-all shadow-sm"
+    className={`w-full rounded-xl border-2 border-gray-200 px-5 py-4 text-base bg-gray-50 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500/20 focus:border-gray-500 transition-all shadow-sm ${className}`}
     {...props}
   />
 );

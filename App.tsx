@@ -37,15 +37,15 @@ const NavItem: React.FC<{
     className={`
       transition-all duration-200 flex items-center gap-2 group
       ${desktop
-        ? `px-5 py-2.5 rounded-full font-bold text-sm ${active ? 'bg-indigo-600 text-white shadow-md shadow-indigo-500/30' : 'text-slate-500 hover:bg-indigo-50 hover:text-indigo-600'}`
-        : `flex-col justify-center w-full py-3 relative ${active ? 'text-indigo-600' : 'text-slate-400 hover:text-slate-500'}`
+        ? `px-5 py-2.5 rounded-full font-bold text-sm ${active ? 'bg-gray-600 text-white shadow-md shadow-gray-500/30' : 'text-slate-500 hover:bg-gray-50 hover:text-gray-600'}`
+        : `flex-col justify-center w-full py-3 relative ${active ? 'text-gray-600' : 'text-slate-400 hover:text-slate-500'}`
       }
     `}
   >
     <div className={`relative ${!desktop && active ? '-translate-y-1 transition-transform duration-300' : ''}`}>
       {icon}
       {!desktop && active && (
-        <span className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-1 h-1 bg-indigo-600 rounded-full"></span>
+        <span className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-1 h-1 bg-gray-600 rounded-full"></span>
       )}
     </div>
     {desktop && <span>{label}</span>}
@@ -111,301 +111,346 @@ const LoginScreen = ({
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col font-sans text-slate-900">
-      {/* Navbar */}
-      <nav className="w-full max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-        <div className="flex items-center gap-2 font-black text-xl text-slate-800">
-          <span className="bg-indigo-600 text-white p-1.5 rounded-lg"><BeerIcon size={20} /></span> BeerCount
-        </div>
-        <div className="hidden md:flex gap-6 text-sm font-bold text-slate-500">
-          <a href="#" className="hover:text-indigo-600">Features</a>
-          <a href="#" className="hover:text-indigo-600">About</a>
-        </div>
-      </nav>
+    <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-[#0c0f1c] via-[#0e1224] to-[#190f18] text-slate-50 font-sans">
+      <div className="pointer-events-none absolute inset-0 opacity-90 bg-[radial-gradient(circle_at_20%_20%,rgba(255,205,133,0.16),transparent_38%),radial-gradient(circle_at_85%_10%,rgba(130,86,255,0.25),transparent_32%),radial-gradient(circle_at_70%_80%,rgba(255,108,64,0.18),transparent_40%)]"></div>
+      <div className="absolute inset-0 bg-[linear-gradient(120deg,rgba(255,255,255,0.05),rgba(255,255,255,0))]"></div>
 
-      {/* Hero Section */}
-      <main className="flex-1 w-full max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center pb-12">
-
-        {/* Left: Content */}
-        <div className="space-y-8 animate-fade-in">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-xs font-bold uppercase tracking-wider border border-indigo-100">
-            <Sparkles size={12} /> The #1 Beer Tracker
+      <div className="relative flex flex-col min-h-screen">
+        {/* Navbar */}
+        <nav className="w-full max-w-6xl mx-auto px-6 pt-8 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="h-11 w-11 rounded-2xl bg-gradient-to-br from-amber-400 via-orange-400 to-pink-500 text-slate-950 flex items-center justify-center shadow-[0_12px_50px_rgba(255,153,51,0.45)] border border-white/30">
+              <BeerIcon size={20} />
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="font-black text-2xl tracking-tight">ChugLog</span>
+              <span className="px-3 py-1 rounded-full text-[11px] font-bold uppercase bg-white/10 text-amber-100 border border-amber-200/20">Beer-first</span>
+            </div>
           </div>
+          <div className="hidden md:flex gap-5 text-sm font-semibold text-slate-200">
+            <a href="#" className="hover:text-white transition-colors">Features</a>
+            <a href="#" className="hover:text-white transition-colors">About</a>
+          </div>
+        </nav>
 
-          <h1 className="text-5xl md:text-7xl font-black tracking-tight leading-[1.1] text-slate-900">
-            Every Sip <br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600">Tells a Story.</span>
-          </h1>
+        {/* Hero Section */}
+        <main className="flex-1 w-full max-w-6xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center pb-16 pt-4">
 
-          <p className="text-lg text-slate-600 max-w-md leading-relaxed">
-            Build your liquid legacy. Track your history, discover new favorites from a global catalog, and never forget a great pint again.
-          </p>
+          {/* Left: Content */}
+          <div className="space-y-8 animate-fade-in">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 text-amber-100 text-xs font-bold uppercase tracking-wider border border-amber-200/20 shadow-[0_10px_40px_rgba(255,175,72,0.15)]">
+              <Sparkles size={12} /> Built for beer people
+            </div>
 
-          <div className="flex flex-col gap-3 max-w-md">
-            {authMode === 'default' && (
-              <>
-                {/* Google */}
-                <FunkyButton onClick={handleGoogle} isLoading={loadingState === 'google'} className="bg-slate-900 text-white hover:bg-slate-800 shadow-xl shadow-slate-900/20">
-                  <span className="w-5 h-5 bg-white rounded-full mr-2 inline-flex items-center justify-center">
-                    <span className="text-slate-900 font-bold text-xs">G</span>
-                  </span>
-                  Sign in with Google
-                </FunkyButton>
+            <h1 className="text-5xl md:text-6xl font-black tracking-tight leading-[1.05] text-white drop-shadow-[0_10px_50px_rgba(0,0,0,0.35)]">
+              Every sip gets <br />
+              <span className="text-amber-200">remembered.</span>
+            </h1>
 
-                {/* Email Options */}
-                <div className="grid grid-cols-2 gap-3">
-                  <FunkyButton variant="secondary" onClick={() => setAuthMode('magic')}>
-                    Magic Link ✨
+            <p className="text-lg text-slate-200/80 max-w-xl leading-relaxed">
+              A moodier taproom for your stats. Track pours, unlock badges, and never forget the brew that made your night. Zero corporate gloss, all beer energy.
+            </p>
+
+            <div className="flex flex-wrap items-center gap-3 text-sm text-amber-100/90">
+              <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-3 py-2 backdrop-blur-sm">
+                <Trophy size={14} className="text-amber-200" /> Live streaks
+              </div>
+              <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-3 py-2 backdrop-blur-sm">
+                <Percent size={14} className="text-amber-200" /> Zero ads
+              </div>
+              <div className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-3 py-2 backdrop-blur-sm">
+                <GlassWater size={14} className="text-amber-200" /> Cloud + offline
+              </div>
+            </div>
+
+            <div className="flex flex-col gap-3 max-w-md">
+              {authMode === 'default' && (
+                <>
+                  {/* Google */}
+                  <FunkyButton onClick={handleGoogle} isLoading={loadingState === 'google'} className="bg-gradient-to-r from-amber-300 via-orange-400 to-pink-500 text-slate-900 shadow-[0_10px_50px_rgba(255,154,68,0.35)] hover:shadow-[0_14px_60px_rgba(255,154,68,0.45)] border border-amber-200/40">
+                    <span className="w-7 h-7 bg-white rounded-full mr-2 inline-flex items-center justify-center text-slate-900 font-black text-xs shadow-md shadow-amber-500/30">G</span>
+                    Pour in with Google
                   </FunkyButton>
-                  <FunkyButton variant="secondary" onClick={() => setAuthMode('email')}>
-                    Email/Pass 🔑
+
+                  {/* Email Options */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <FunkyButton variant="secondary" onClick={() => setAuthMode('magic')} className="border-white/20 text-slate-50 bg-white/5 hover:bg-white/10 hover:border-white/30">
+                      Magic Link ✨
+                    </FunkyButton>
+                    <FunkyButton variant="secondary" onClick={() => setAuthMode('email')} className="border-white/20 text-slate-50 bg-white/5 hover:bg-white/10 hover:border-white/30">
+                      Email/Pass 🔑
+                    </FunkyButton>
+                  </div>
+
+                  <div className="relative py-2">
+                    <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-white/20"></div></div>
+                    <div className="relative flex justify-center text-xs uppercase"><span className="bg-white/5 px-3 py-1 text-amber-100 font-bold rounded-full border border-white/10">Or</span></div>
+                  </div>
+
+                  <FunkyButton variant="secondary" onClick={onGuest} className="border-white/20 text-slate-50 bg-white/5 hover:bg-white/10 hover:border-white/30">
+                    Try as Guest
                   </FunkyButton>
-                </div>
+                </>
+              )}
 
-                <div className="relative py-2">
-                  <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-slate-200"></div></div>
-                  <div className="relative flex justify-center text-xs uppercase"><span className="bg-slate-50 px-2 text-slate-400 font-bold">Or</span></div>
-                </div>
-
-                <FunkyButton variant="secondary" onClick={onGuest}>
-                  Try as Guest
-                </FunkyButton>
-              </>
-            )}
-
-            {authMode === 'magic' && (
-              <div className="space-y-4 animate-fade-in">
-                <div className="flex items-center justify-between">
-                  <h3 className="font-bold text-slate-800">Magic Link Sign In</h3>
-                  <button onClick={() => setAuthMode('default')} className="text-xs text-slate-500 hover:text-slate-800 font-bold">Cancel</button>
-                </div>
-                <p className="text-sm text-slate-500">We'll send a secure link to your email. No password needed.</p>
-                <FunkyInput
-                  placeholder="name@example.com"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <FunkyButton onClick={async () => {
-                  if (!email) return setError("Email is required");
-                  setLoadingState('magic'); setError('');
-                  try {
-                    await sendMagicLink(email);
-                    setAuthMode('magic-success');
-                  } catch (e: any) { setError(getErrorMessage(e)); }
-                  finally { setLoadingState(null); }
-                }} isLoading={loadingState === 'magic'}>
-                  Send Magic Link 🪄
-                </FunkyButton>
-              </div>
-            )}
-
-            {authMode === 'magic-success' && (
-              <div className="space-y-6 animate-fade-in text-center py-4">
-                <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto text-3xl">
-                  ✉️
-                </div>
-                <div className="space-y-2">
-                  <h3 className="font-bold text-xl text-slate-800">Check your email!</h3>
-                  <p className="text-slate-600 text-sm">
-                    We sent a magic link to <span className="font-bold text-slate-800">{email}</span>.
-                    <br />Click it to sign in instantly.
-                  </p>
-                </div>
-                <FunkyButton variant="secondary" onClick={() => setAuthMode('default')}>
-                  Back to Login
-                </FunkyButton>
-              </div>
-            )}
-
-            {authMode === 'magic-confirm' && (
-              <div className="space-y-4 animate-fade-in">
-                <div className="flex items-center justify-between">
-                  <h3 className="font-bold text-slate-800">Complete Sign In</h3>
-                  <button onClick={() => setAuthMode('default')} className="text-xs text-slate-500 hover:text-slate-800 font-bold">Cancel</button>
-                </div>
-                <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 text-left text-sm text-slate-600">
-                  <p className="font-bold text-blue-700 mb-1">📧 Email Required</p>
-                  <p>Please enter the email address you used to request the magic link.</p>
-                </div>
-                <FunkyInput
-                  placeholder="Email Address"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <FunkyButton onClick={async () => {
-                  if (!email) return setError("Email is required");
-                  setLoadingState('magic-confirm'); setError('');
-                  try {
-                    await completeMagicLinkSignIn(email);
-                    onLogin();
-                  } catch (e: any) {
-                    setError(getErrorMessage(e));
-                  } finally {
-                    setLoadingState(null);
-                  }
-                }} isLoading={loadingState === 'magic-confirm'}>
-                  Complete Sign In
-                </FunkyButton>
-              </div>
-            )}
-
-            {authMode === 'email' && (
-              <div className="space-y-4 animate-fade-in">
-                <div className="flex items-center justify-between">
-                  <h3 className="font-bold text-slate-800">Email & Password</h3>
-                  <button onClick={() => setAuthMode('default')} className="text-xs text-slate-500 hover:text-slate-800 font-bold">Cancel</button>
-                </div>
-                <FunkyInput
-                  placeholder="Email Address"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <FunkyInput
-                  placeholder="Password"
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-                <div className="grid grid-cols-2 gap-3 pt-2">
+              {authMode === 'magic' && (
+                <div className="space-y-4 animate-fade-in">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-bold text-white">Magic Link Sign In</h3>
+                    <button onClick={() => setAuthMode('default')} className="text-xs text-slate-200 hover:text-white font-bold">Cancel</button>
+                  </div>
+                  <p className="text-sm text-slate-200/80">We'll send a secure link to your email. No password needed.</p>
+                  <FunkyInput
+                    placeholder="name@example.com"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="bg-white/5 border-white/10 text-white placeholder-white/60 focus:ring-amber-300/50 focus:border-amber-200"
+                  />
                   <FunkyButton onClick={async () => {
-                    if (!email || !password) return setError("Email and password required");
-                    setLoadingState('email-signin'); setError('');
-                    try { await signInWithEmail(email, password); onLogin(); }
-                    catch (e: any) { setError(getErrorMessage(e)); setLoadingState(null); }
-                  }} isLoading={loadingState === 'email-signin'}>
-                    Sign In
-                  </FunkyButton>
-                  <FunkyButton variant="secondary" onClick={async () => {
-                    if (!email || !password) return setError("Email and password required");
-                    setLoadingState('email-signup'); setError('');
+                    if (!email) return setError("Email is required");
+                    setLoadingState('magic'); setError('');
                     try {
-                      await signUpWithEmail(email, password);
-                      setAuthMode('email-verify');
-                    }
-                    catch (e: any) { setError(getErrorMessage(e)); setLoadingState(null); }
-                  }} isLoading={loadingState === 'email-signup'}>
-                    Sign Up
+                      await sendMagicLink(email);
+                      setAuthMode('magic-success');
+                    } catch (e: any) { setError(getErrorMessage(e)); }
+                    finally { setLoadingState(null); }
+                  }} isLoading={loadingState === 'magic'}>
+                    Send Magic Link 🪄
                   </FunkyButton>
                 </div>
+              )}
 
-                <div className="relative py-2">
-                  <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-slate-200"></div></div>
-                  <div className="relative flex justify-center text-xs uppercase"><span className="bg-slate-50 px-2 text-slate-400 font-bold">Or</span></div>
+              {authMode === 'magic-success' && (
+                <div className="space-y-6 animate-fade-in text-center py-4">
+                  <div className="w-16 h-16 bg-emerald-400/20 text-emerald-100 rounded-full flex items-center justify-center mx-auto text-3xl border border-emerald-200/30">
+                    ✉️
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="font-bold text-xl text-white">Check your email!</h3>
+                    <p className="text-slate-200 text-sm">
+                      We sent a magic link to <span className="font-bold text-white">{email}</span>.
+                      <br />Click it to sign in instantly.
+                    </p>
+                  </div>
+                  <FunkyButton variant="secondary" onClick={() => setAuthMode('default')} className="border-white/20 text-slate-50 bg-white/5 hover:bg-white/10 hover:border-white/30">
+                    Back to Login
+                  </FunkyButton>
                 </div>
+              )}
 
-                <FunkyButton onClick={handleGoogle} isLoading={loadingState === 'google'} className="bg-slate-900 text-white hover:bg-slate-800 shadow-xl shadow-slate-900/20">
-                  <span className="w-5 h-5 bg-white rounded-full mr-2 inline-flex items-center justify-center">
-                    <span className="text-slate-900 font-bold text-xs">G</span>
-                  </span>
-                  Sign in with Google
-                </FunkyButton>
+              {authMode === 'magic-confirm' && (
+                <div className="space-y-4 animate-fade-in">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-bold text-white">Complete Sign In</h3>
+                    <button onClick={() => setAuthMode('default')} className="text-xs text-slate-200 hover:text-white font-bold">Cancel</button>
+                  </div>
+                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-left text-sm text-slate-200">
+                    <p className="font-bold text-amber-100 mb-1">📧 Email Required</p>
+                    <p>Please enter the email address you used to request the magic link.</p>
+                  </div>
+                  <FunkyInput
+                    placeholder="Email Address"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="bg-white/5 border-white/10 text-white placeholder-white/60 focus:ring-amber-300/50 focus:border-amber-200"
+                  />
+                  <FunkyButton onClick={async () => {
+                    if (!email) return setError("Email is required");
+                    setLoadingState('magic-confirm'); setError('');
+                    try {
+                      await completeMagicLinkSignIn(email);
+                      onLogin();
+                    } catch (e: any) {
+                      setError(getErrorMessage(e));
+                    } finally {
+                      setLoadingState(null);
+                    }
+                  }} isLoading={loadingState === 'magic-confirm'}>
+                    Complete Sign In
+                  </FunkyButton>
+                </div>
+              )}
+
+              {authMode === 'email' && (
+                <div className="space-y-4 animate-fade-in">
+                  <div className="flex items-center justify-between">
+                    <h3 className="font-bold text-white">Email & Password</h3>
+                    <button onClick={() => setAuthMode('default')} className="text-xs text-slate-200 hover:text-white font-bold">Cancel</button>
+                  </div>
+                  <FunkyInput
+                    placeholder="Email Address"
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    className="bg-white/5 border-white/10 text-white placeholder-white/60 focus:ring-amber-300/50 focus:border-amber-200"
+                  />
+                  <FunkyInput
+                    placeholder="Password"
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    className="bg-white/5 border-white/10 text-white placeholder-white/60 focus:ring-amber-300/50 focus:border-amber-200"
+                  />
+                  <div className="grid grid-cols-2 gap-3 pt-2">
+                    <FunkyButton onClick={async () => {
+                      if (!email || !password) return setError("Email and password required");
+                      setLoadingState('email-signin'); setError('');
+                      try { await signInWithEmail(email, password); onLogin(); }
+                      catch (e: any) { setError(getErrorMessage(e)); setLoadingState(null); }
+                    }} isLoading={loadingState === 'email-signin'} className="bg-gradient-to-r from-amber-300 via-orange-400 to-pink-500 text-slate-900 border border-amber-200/40 shadow-[0_10px_40px_rgba(255,154,68,0.35)]">
+                      Sign In
+                    </FunkyButton>
+                    <FunkyButton variant="secondary" onClick={async () => {
+                      if (!email || !password) return setError("Email and password required");
+                      setLoadingState('email-signup'); setError('');
+                      try {
+                        await signUpWithEmail(email, password);
+                        setAuthMode('email-verify');
+                      }
+                      catch (e: any) { setError(getErrorMessage(e)); setLoadingState(null); }
+                    }} isLoading={loadingState === 'email-signup'} className="border-white/20 text-slate-50 bg-white/5 hover:bg-white/10 hover:border-white/30">
+                      Sign Up
+                    </FunkyButton>
+                  </div>
+
+                  <div className="relative py-2">
+                    <div className="absolute inset-0 flex items-center"><div className="w-full border-t border-white/20"></div></div>
+                    <div className="relative flex justify-center text-xs uppercase"><span className="bg-white/5 px-3 py-1 text-amber-100 font-bold rounded-full border border-white/10">Or</span></div>
+                  </div>
+
+                  <FunkyButton onClick={handleGoogle} isLoading={loadingState === 'google'} className="bg-white text-slate-900 hover:bg-amber-50 shadow-xl shadow-amber-500/20 border border-amber-100">
+                    <span className="w-5 h-5 bg-amber-100 text-slate-900 rounded-full mr-2 inline-flex items-center justify-center">
+                      <span className="font-bold text-xs">G</span>
+                    </span>
+                    Sign in with Google
+                  </FunkyButton>
+                </div>
+              )}
+
+              {authMode === 'email-verify' && (
+                <div className="space-y-6 animate-fade-in text-center py-4">
+                  <div className="w-16 h-16 bg-amber-400/20 text-amber-100 rounded-full flex items-center justify-center mx-auto text-3xl border border-amber-200/30">
+                    📧
+                  </div>
+                  <div className="space-y-2">
+                    <h3 className="font-bold text-xl text-white">Verify your email</h3>
+                    <p className="text-slate-200 text-sm">
+                      We sent a verification link to <span className="font-bold text-white">{email}</span>.
+                      <br />Click the link in your email to activate your account.
+                    </p>
+                  </div>
+                  <div className="bg-white/5 border border-white/10 rounded-xl p-4 text-left text-sm text-slate-200">
+                    <p className="font-bold text-amber-100 mb-2">📌 Next steps:</p>
+                    <ol className="list-decimal list-inside space-y-1">
+                      <li>Check your inbox (and spam folder)</li>
+                      <li>Click the verification link</li>
+                      <li>Return here and sign in</li>
+                    </ol>
+                  </div>
+                  <FunkyButton variant="secondary" onClick={() => setAuthMode('default')} className="border-white/20 text-slate-50 bg-white/5 hover:bg-white/10 hover:border-white/30">
+                    Back to Login
+                  </FunkyButton>
+                </div>
+              )}
+            </div>
+
+            <div className="flex items-center gap-4 text-xs font-bold text-amber-100/80 pt-4 flex-wrap">
+              <div className="flex items-center gap-2 bg-white/5 px-3 py-2 rounded-full border border-white/10">
+                <div className="w-1.5 h-1.5 rounded-full bg-amber-200"></div> No Credit Card
+              </div>
+              <div className="flex items-center gap-2 bg-white/5 px-3 py-2 rounded-full border border-white/10">
+                <div className="w-1.5 h-1.5 rounded-full bg-amber-200"></div> Free Forever
+              </div>
+              <div className="flex items-center gap-2 bg-white/5 px-3 py-2 rounded-full border border-white/10">
+                <div className="w-1.5 h-1.5 rounded-full bg-amber-200"></div> Offline Capable
+              </div>
+            </div>
+
+            {error && (
+              <div className="p-4 bg-rose-500/10 text-rose-50 text-sm rounded-xl border border-rose-400/30 flex items-start gap-3 animate-fade-in">
+                <span className="text-lg">⚠️</span>
+                <span className="flex-1">{error}</span>
               </div>
             )}
-
-            {authMode === 'email-verify' && (
-              <div className="space-y-6 animate-fade-in text-center py-4">
-                <div className="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto text-3xl">
-                  📧
-                </div>
-                <div className="space-y-2">
-                  <h3 className="font-bold text-xl text-slate-800">Verify your email</h3>
-                  <p className="text-slate-600 text-sm">
-                    We sent a verification link to <span className="font-bold text-slate-800">{email}</span>.
-                    <br />Click the link in your email to activate your account.
-                  </p>
-                </div>
-                <div className="bg-blue-50 border border-blue-100 rounded-xl p-4 text-left text-sm text-slate-600">
-                  <p className="font-bold text-blue-700 mb-2">📌 Next steps:</p>
-                  <ol className="list-decimal list-inside space-y-1">
-                    <li>Check your inbox (and spam folder)</li>
-                    <li>Click the verification link</li>
-                    <li>Return here and sign in</li>
-                  </ol>
-                </div>
-                <FunkyButton variant="secondary" onClick={() => setAuthMode('default')}>
-                  Back to Login
-                </FunkyButton>
-              </div>
-            )}
           </div>
 
-          <div className="flex items-center gap-6 text-xs font-bold text-slate-400 pt-4">
-            <div className="flex items-center gap-2">
-              <div className="w-1 h-1 rounded-full bg-slate-300"></div> No Credit Card
+          {/* Right: Visuals */}
+          <div className="relative hidden lg:block h-[620px]">
+            {/* Abstract Background Blobs */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] bg-amber-400/10 rounded-full blur-3xl animate-pulse"></div>
+            <div className="absolute top-1/3 left-1/2 -translate-x-1/3 -translate-y-1/3 w-[420px] h-[420px] bg-purple-500/20 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-6 right-6 w-40 h-40 bg-orange-400/20 rounded-full blur-3xl"></div>
+
+            {/* Floating Cards Composition */}
+            <div className="absolute top-16 left-6 w-72 rotate-[-6deg] hover:rotate-0 transition-transform duration-500 z-10">
+              <FunkyCard className="shadow-2xl shadow-amber-500/20 border-white/20 backdrop-blur-xl bg-white/90">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-12 h-12 rounded-xl bg-amber-100 text-2xl flex items-center justify-center shadow-inner">🍻</div>
+                  <div>
+                    <h4 className="font-bold text-slate-900">Guinness Draught</h4>
+                    <p className="text-xs text-slate-500">Stout • 4.2%</p>
+                  </div>
+                </div>
+                <div className="flex gap-2">
+                  <FunkyBadge color="indigo">Creamy</FunkyBadge>
+                  <FunkyBadge color="slate">Classic</FunkyBadge>
+                </div>
+              </FunkyCard>
             </div>
-            <div className="flex items-center gap-2">
-              <div className="w-1 h-1 rounded-full bg-slate-300"></div> Free Forever
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-1 h-1 rounded-full bg-slate-300"></div> Offline Capable
-            </div>
-          </div>
 
-          {error && (
-            <div className="p-4 bg-red-50 text-red-700 text-sm rounded-xl border border-red-100 flex items-start gap-3 animate-fade-in">
-              <span className="text-lg">⚠️</span>
-              <span className="flex-1">{error}</span>
-            </div>
-          )}
-        </div>
-
-        {/* Right: Visuals */}
-        <div className="relative hidden lg:block h-[600px]">
-          {/* Abstract Background Blobs */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-200/30 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/3 -translate-y-1/3 w-[400px] h-[400px] bg-violet-200/30 rounded-full blur-3xl"></div>
-
-          {/* Floating Cards Composition */}
-          <div className="absolute top-20 left-10 w-72 rotate-[-6deg] hover:rotate-0 transition-transform duration-500 z-10">
-            <FunkyCard className="shadow-2xl shadow-indigo-900/10 border-slate-200/60 backdrop-blur-sm bg-white/90">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-xl bg-slate-50 text-2xl flex items-center justify-center">🍺</div>
-                <div>
-                  <h4 className="font-bold text-slate-800">Guinness Draught</h4>
-                  <p className="text-xs text-slate-500">Stout • 4.2%</p>
+            <div className="absolute top-44 right-4 w-64 rotate-[6deg] hover:rotate-0 transition-transform duration-500 z-20">
+              <FunkyCard className="bg-[#0f1628] text-white shadow-2xl shadow-amber-500/30 border border-white/10">
+                <div className="flex items-center gap-3 mb-2">
+                  <Trophy className="text-amber-300" size={20} />
+                  <span className="font-bold text-sm uppercase tracking-wider text-slate-300">Achievement</span>
                 </div>
-              </div>
-              <div className="flex gap-2">
-                <FunkyBadge color="indigo">Creamy</FunkyBadge>
-                <FunkyBadge color="slate">Classic</FunkyBadge>
-              </div>
-            </FunkyCard>
-          </div>
-
-          <div className="absolute top-48 right-10 w-64 rotate-[6deg] hover:rotate-0 transition-transform duration-500 z-20">
-            <FunkyCard className="bg-slate-900 text-white shadow-2xl shadow-slate-900/20 border-slate-700">
-              <div className="flex items-center gap-3 mb-2">
-                <Trophy className="text-yellow-400" size={20} />
-                <span className="font-bold text-sm uppercase tracking-wider text-slate-400">Achievement</span>
-              </div>
-              <div className="text-2xl font-black mb-1">Beer Baron</div>
-              <p className="text-slate-400 text-xs">Logged 10 unique brews.</p>
-              <div className="mt-4 h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
-                <div className="h-full bg-gradient-to-r from-yellow-400 to-orange-500 w-full"></div>
-              </div>
-            </FunkyCard>
-          </div>
-
-          <div className="absolute bottom-20 left-20 w-80 rotate-[-3deg] hover:rotate-0 transition-transform duration-500 z-30">
-            <FunkyCard className="shadow-xl shadow-indigo-900/5 border-slate-200/60 bg-white">
-              <div className="flex justify-between items-end">
-                <div>
-                  <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Total Volume</p>
-                  <p className="text-4xl font-black text-indigo-600">42.5 L</p>
+                <div className="text-2xl font-black mb-1">Beer Baron</div>
+                <p className="text-slate-400 text-xs">Logged 10 unique brews.</p>
+                <div className="mt-4 h-1.5 w-full bg-white/10 rounded-full overflow-hidden">
+                  <div className="h-full bg-gradient-to-r from-amber-300 via-orange-400 to-pink-500 w-[90%]"></div>
                 </div>
-                <div className="text-right">
-                  <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-1">Unique</p>
-                  <p className="text-2xl font-black text-slate-800">86</p>
-                </div>
-              </div>
-            </FunkyCard>
-          </div>
-        </div>
+              </FunkyCard>
+            </div>
 
-      </main>
+            <div className="absolute bottom-20 left-12 w-80 rotate-[-3deg] hover:rotate-0 transition-transform duration-500 z-30">
+              <FunkyCard className="shadow-xl shadow-amber-500/20 border-white/20 bg-white/95">
+                <div className="flex justify-between items-end">
+                  <div>
+                    <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Total Volume</p>
+                    <p className="text-4xl font-black text-slate-800">42.5 L</p>
+                  </div>
+                  <div className="text-right">
+                    <p className="text-xs font-bold text-slate-500 uppercase tracking-wider mb-1">Unique</p>
+                    <p className="text-2xl font-black text-slate-900">86</p>
+                  </div>
+                </div>
+                <div className="mt-4 w-full h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                  <div className="h-full bg-gradient-to-r from-amber-300 via-orange-400 to-pink-500 w-[75%]"></div>
+                </div>
+              </FunkyCard>
+            </div>
+
+            <div className="absolute bottom-6 right-10 w-64 rotate-[2deg] hover:rotate-0 transition-transform duration-500 z-20">
+              <FunkyCard className="bg-white/90 shadow-xl shadow-purple-500/20 border border-white/30 backdrop-blur">
+                <div className="flex items-center gap-3 mb-3">
+                  <Zap className="text-purple-500" size={18} />
+                  <div className="text-xs font-bold uppercase tracking-wider text-slate-500">Session Heat</div>
+                </div>
+                <div className="flex items-end justify-between">
+                  <div>
+                    <p className="text-sm text-slate-500">Longest streak</p>
+                    <p className="text-3xl font-black text-slate-900">12 days</p>
+                  </div>
+                  <FunkyBadge color="rose">🔥 Fresh</FunkyBadge>
+                </div>
+              </FunkyCard>
+            </div>
+          </div>
+
+        </main>
+      </div>
     </div>
   );
 }
@@ -666,7 +711,7 @@ export default function App() {
   if (!authChecked) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50">
-        <Loader2 className="w-8 h-8 animate-spin text-indigo-600" />
+        <Loader2 className="w-8 h-8 animate-spin text-gray-600" />
       </div>
     );
   }
@@ -710,35 +755,36 @@ export default function App() {
     return (
       <div className="space-y-8 pb-24 animate-fade-in">
         {/* Hero Section */}
-        <section className="relative overflow-hidden rounded-3xl bg-gradient-to-r from-indigo-600 to-violet-600 text-white p-8 shadow-2xl shadow-indigo-500/30">
+        <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#0f1628] via-[#111b2f] to-[#1b1016] text-white p-8 shadow-2xl shadow-amber-500/20 border border-white/10">
+          <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(circle_at_20%_20%,rgba(255,196,99,0.22),transparent_45%),radial-gradient(circle_at_85%_0%,rgba(120,88,255,0.18),transparent_35%),radial-gradient(circle_at_70%_80%,rgba(255,116,73,0.18),transparent_40%)]"></div>
           <div className="relative z-10 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
             <div className="max-w-lg">
-              <div className="flex items-center gap-2 mb-2 opacity-80">
-                <span className="px-2 py-0.5 rounded-full bg-white/20 text-xs font-bold tracking-wider uppercase">Beta</span>
+              <div className="flex items-center gap-2 mb-3">
+                <span className="px-3 py-1 rounded-full bg-white/10 text-xs font-bold tracking-wider uppercase text-amber-100 border border-amber-200/30">Taproom Pulse</span>
                 {user ? (
-                  <span className="flex items-center gap-1 text-xs font-medium"><Cloud size={12} /> Cloud Synced</span>
+                  <span className="flex items-center gap-1 text-xs font-semibold text-amber-50"><Cloud size={12} /> Cloud Synced</span>
                 ) : (
-                  <span className="text-xs font-medium">Guest Mode 💾</span>
+                  <span className="text-xs font-semibold text-slate-100">Guest Mode 💾</span>
                 )}
               </div>
               <h1 className="text-3xl md:text-5xl font-black mb-2 tracking-tight leading-tight">
-                Your Liquid <br /> Legacy.
+                Your liquid <span className="text-amber-200">legend</span>.
               </h1>
-              <p className="text-indigo-100 text-sm md:text-base font-medium opacity-90 max-w-xs">
+              <p className="text-slate-100 text-sm md:text-base font-medium opacity-90 max-w-xs">
                 {user ? `Welcome back, ${user.displayName?.split(' ')[0] || 'Legend'}.` : 'Track locally. Sign in to sync.'}
               </p>
             </div>
 
             <div className="grid grid-cols-2 gap-4 w-full md:w-auto">
               <div className="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20">
-                <div className="flex items-center gap-2 text-indigo-200 mb-1">
+                <div className="flex items-center gap-2 text-amber-100 mb-1">
                   <GlassWater size={14} className="fill-current" />
-                  <p className="text-xs font-bold uppercase tracking-wider">Empty Bottles</p>
+                  <p className="text-xs font-bold uppercase tracking-wider">Pints Logged</p>
                 </div>
                 <p className="text-3xl font-black">{totalCount}</p>
               </div>
               <div className="bg-white/10 backdrop-blur-md rounded-2xl p-5 border border-white/20">
-                <div className="flex items-center gap-2 text-teal-200 mb-1">
+                <div className="flex items-center gap-2 text-amber-100 mb-1">
                   <Trophy size={14} className="fill-current" />
                   <p className="text-xs font-bold uppercase tracking-wider">Distinct Brews</p>
                 </div>
@@ -747,8 +793,8 @@ export default function App() {
             </div>
           </div>
           {/* Decorative Blobs */}
-          <div className="absolute top-0 right-0 w-64 h-64 bg-violet-400/30 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
-          <div className="absolute bottom-0 left-0 w-48 h-48 bg-indigo-400/20 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none"></div>
+          <div className="absolute top-0 right-0 w-64 h-64 bg-amber-400/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4 pointer-events-none"></div>
+          <div className="absolute bottom-0 left-0 w-48 h-48 bg-purple-500/15 rounded-full blur-3xl translate-y-1/3 -translate-x-1/4 pointer-events-none"></div>
         </section>
 
         {/* Main Content Grid */}
@@ -758,10 +804,10 @@ export default function App() {
           <div className="lg:col-span-2 space-y-6">
             <div className="flex items-center justify-between">
               <h2 className="text-xl font-bold text-slate-800 flex items-center gap-2">
-                <History className="w-5 h-5 text-indigo-500" /> Your History
+                <History className="w-5 h-5 text-gray-500" /> Your History
               </h2>
               {logs.length > 0 && (
-                <button onClick={() => setView(ViewState.SEARCH)} className="text-sm font-bold text-indigo-600 hover:text-indigo-700 hover:bg-indigo-50 px-3 py-1 rounded-lg transition-colors">
+                <button onClick={() => setView(ViewState.SEARCH)} className="text-sm font-bold text-gray-600 hover:text-gray-700 hover:bg-gray-50 px-3 py-1 rounded-lg transition-colors">
                   + Pour One
                 </button>
               )}
@@ -781,7 +827,7 @@ export default function App() {
                 {recentGroupedLogs.map(group => {
                   const { beer, count, latest } = group;
                   return (
-                    <FunkyCard key={beer.id} onClick={() => { setSelectedBeer(beer); setView(ViewState.DETAIL); }} className="hover:border-indigo-200 group">
+                    <FunkyCard key={beer.id} onClick={() => { setSelectedBeer(beer); setView(ViewState.DETAIL); }} className="hover:border-gray-200 text-slate-500">
                       <div className="flex items-center gap-4">
                         <div className="w-12 h-12 rounded-xl bg-slate-50 text-2xl flex items-center justify-center group-hover:scale-110 transition-transform">
                           {beer.emoji || '🍺'}
@@ -789,12 +835,12 @@ export default function App() {
                         <div className="flex-1 min-w-0">
                           <h4 className="font-bold text-slate-800 truncate text-sm">{beer.name}</h4>
                           <p className="text-xs text-slate-500 truncate">{beer.brewery}</p>
-                          <p className="text-[10px] text-indigo-400 mt-1 font-medium">
+                          <p className="text-[10px] text-gray-400 mt-1 font-medium">
                             {new Date(latest).toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' })}
                           </p>
                         </div>
                         <div className="flex flex-col items-end gap-1">
-                          <FunkyBadge color="indigo">x{count}</FunkyBadge>
+                          <FunkyBadge color="gray">x{count}</FunkyBadge>
                         </div>
                       </div>
                     </FunkyCard>
@@ -811,11 +857,11 @@ export default function App() {
                 <Sparkles className="w-4 h-4 text-teal-500" /> Hall of Foam
               </h3>
               <div className="space-y-3">
-                <div className={`p-3 rounded-xl flex items-center gap-3 border ${totalCount > 0 ? 'bg-indigo-50 border-indigo-100 text-indigo-800' : 'bg-slate-50 border-slate-100 text-slate-400'}`}>
+                <div className={`p-3 rounded-xl flex items-center gap-3 border ${totalCount > 0 ? 'bg-gray-50 border-gray-100 text-gray-800' : 'bg-slate-50 border-slate-100 text-slate-400'}`}>
                   <span className="text-xl">{totalCount > 0 ? '🌱' : '🔒'}</span>
                   <div className="text-sm font-bold">First Drop</div>
                 </div>
-                <div className={`p-3 rounded-xl flex items-center gap-3 border ${totalCount >= 10 ? 'bg-indigo-50 border-indigo-100 text-indigo-800' : 'bg-slate-50 border-slate-100 text-slate-400'}`}>
+                <div className={`p-3 rounded-xl flex items-center gap-3 border ${totalCount >= 10 ? 'bg-gray-50 border-gray-100 text-gray-800' : 'bg-slate-50 border-slate-100 text-slate-400'}`}>
                   <span className="text-xl">{totalCount >= 10 ? '🚀' : '🔒'}</span>
                   <div className="text-sm font-bold">Beer Baron (10)</div>
                 </div>
@@ -826,12 +872,12 @@ export default function App() {
               </div>
             </div>
 
-            <div className="bg-indigo-900 rounded-3xl p-6 text-white shadow-lg hidden md:block relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-indigo-600 rounded-full blur-2xl -mr-10 -mt-10"></div>
+            <div className="bg-gray-900 rounded-3xl p-6 text-white shadow-lg hidden md:block relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-32 h-32 bg-gray-600 rounded-full blur-2xl -mr-10 -mt-10"></div>
               <div className="relative z-10">
                 <h3 className="font-bold mb-2">Parched?</h3>
-                <p className="text-indigo-200 text-sm mb-4">Search our global cellar of 300+ distinct beers.</p>
-                <button onClick={() => setView(ViewState.SEARCH)} className="w-full py-3 bg-white text-indigo-900 font-bold rounded-xl hover:bg-indigo-50 transition-colors text-sm">
+                <p className="text-gray-200 text-sm mb-4">Search our global cellar of 300+ distinct beers.</p>
+                <button onClick={() => setView(ViewState.SEARCH)} className="w-full py-3 bg-white text-gray-900 font-bold rounded-xl hover:bg-gray-50 transition-colors text-sm">
                   Fill the Fridge
                 </button>
               </div>
@@ -839,6 +885,8 @@ export default function App() {
           </div>
         </div>
       </div>
+
+
     );
   };
 
@@ -875,7 +923,7 @@ export default function App() {
                   <button
                     key={cat.label}
                     onClick={() => { setSelectedCategory(cat.query); setSearchQuery(cat.query); executeSearch(cat.query); }}
-                    className={`px-3 py-2 rounded-lg text-sm font-bold border transition-colors ${selectedCategory === cat.query ? 'bg-indigo-600 text-white border-indigo-600' : 'border-slate-200 text-slate-600 hover:border-indigo-200 hover:text-indigo-600 hover:bg-indigo-50'}`}
+                    className={`px-3 py-2 rounded-lg text-sm font-bold border transition-colors ${selectedCategory === cat.query ? 'bg-gray-600 text-white border-gray-600' : 'border-slate-200 text-slate-600 hover:border-gray-200 hover:text-gray-600 hover:bg-gray-50'}`}
                   >
                     {cat.label}
                   </button>
@@ -887,7 +935,7 @@ export default function App() {
               <div className="flex items-center justify-between">
                 <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">Style</p>
                 {selectedCategory && (
-                  <button className="text-[11px] font-bold text-indigo-600" onClick={() => { setSelectedCategory(null); setSearchResults(allBeers); }}>Reset</button>
+                  <button className="text-[11px] font-bold text-gray-600" onClick={() => { setSelectedCategory(null); setSearchResults(allBeers); }}>Reset</button>
                 )}
               </div>
               <div className="flex flex-wrap gap-2">
@@ -895,7 +943,7 @@ export default function App() {
                   <button
                     key={cat.label}
                     onClick={() => { setSelectedCategory(cat.query); setSearchQuery(cat.query); executeSearch(cat.query); }}
-                    className={`px-3 py-2 rounded-full text-xs font-bold border transition-colors ${selectedCategory === cat.query ? 'bg-indigo-600 text-white border-indigo-600' : 'border-slate-200 text-slate-600 hover:border-indigo-200 hover:text-indigo-600 hover:bg-indigo-50'}`}
+                    className={`px-3 py-2 rounded-full text-xs font-bold border transition-colors ${selectedCategory === cat.query ? 'bg-gray-600 text-white border-gray-600' : 'border-slate-200 text-slate-600 hover:border-gray-200 hover:text-gray-600 hover:bg-gray-50'}`}
                   >
                     {cat.label}
                   </button>
@@ -907,7 +955,7 @@ export default function App() {
               <div className="flex items-center justify-between">
                 <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">Country</p>
                 {selectedCountry !== 'all' && (
-                  <button className="text-[11px] font-bold text-indigo-600" onClick={() => { setSelectedCountry('all'); setSearchResults(allBeers); }}>Reset</button>
+                  <button className="text-[11px] font-bold text-gray-600" onClick={() => { setSelectedCountry('all'); setSearchResults(allBeers); }}>Reset</button>
                 )}
               </div>
               <div className="flex flex-wrap gap-2">
@@ -933,7 +981,7 @@ export default function App() {
                 </div>
                 {(selectedCategory || selectedCountry !== 'all') && (
                   <button
-                    className="text-sm font-bold text-indigo-600 hover:text-indigo-700"
+                    className="text-sm font-bold text-gray-600 hover:text-gray-700"
                     onClick={() => {
                       setSelectedCategory(null);
                       setSelectedCountry('all');
@@ -955,7 +1003,7 @@ export default function App() {
                 />
                 <button
                   type="submit"
-                  className="absolute right-2 top-2 p-2 bg-indigo-600 rounded-xl text-white hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/30"
+                  className="absolute right-2 top-2 p-2 bg-gray-600 rounded-xl text-white hover:bg-gray-700 transition-colors shadow-lg shadow-gray-500/30"
                   disabled={isSearching}
                 >
                   {isSearching ? <Loader2 className="animate-spin w-5 h-5" /> : <Search className="w-5 h-5" />}
@@ -965,12 +1013,12 @@ export default function App() {
 
             {isSearching ? (
               <div className="flex flex-col items-center justify-center py-20 text-slate-400 bg-white rounded-2xl border border-slate-100 shadow-sm">
-                <Loader2 className="w-10 h-10 animate-spin text-indigo-500 mb-4" />
+                <Loader2 className="w-10 h-10 animate-spin text-gray-500 mb-4" />
                 <p className="font-medium animate-pulse">Scanning the global archives...</p>
               </div>
             ) : isCatalogLoading ? (
               <div className="flex flex-col items-center justify-center py-8 text-slate-400 bg-white rounded-2xl border border-slate-100 shadow-sm">
-                <Loader2 className="w-6 h-6 animate-spin text-indigo-500 mb-3" />
+                <Loader2 className="w-6 h-6 animate-spin text-gray-500 mb-3" />
                 <p className="text-sm font-medium">Loading Catalog.beer listings...</p>
               </div>
             ) : (
@@ -998,7 +1046,7 @@ export default function App() {
                               <h4 className="font-bold text-slate-800 leading-tight">{beer.name}</h4>
                               <p className="text-xs text-slate-500 font-medium mb-1">{beer.brewery}</p>
                               <div className="flex gap-2 mt-2 flex-wrap">
-                                <span className="flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-indigo-50 text-indigo-700 border border-indigo-100">
+                                <span className="flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-gray-50 text-gray-700 border border-gray-100">
                                   <Sparkles className="w-3 h-3" /> {beer.type}
                                 </span>
                                 <span className="flex items-center gap-1 px-3 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-slate-100 text-slate-700 border border-slate-200">
@@ -1043,7 +1091,7 @@ export default function App() {
                     <div className="text-4xl mb-4">🤷‍♂️</div>
                     <p className="text-slate-500 font-medium">No brews found for that combo. Try another style or clear filters.</p>
                     <button
-                      className="mt-4 text-sm font-bold text-indigo-600 hover:text-indigo-700"
+                      className="mt-4 text-sm font-bold text-gray-600 hover:text-gray-700"
                       onClick={() => { setSelectedCategory(null); setSelectedCountry('all'); setSearchQuery(''); setSearchResults([]); }}
                     >
                       Reset search
@@ -1065,7 +1113,7 @@ export default function App() {
 
     return (
       <div className="animate-fade-in pb-24 max-w-5xl mx-auto">
-        <button onClick={() => setView(ViewState.SEARCH)} className="mb-6 flex items-center gap-2 text-slate-500 hover:text-indigo-600 font-bold transition-colors">
+        <button onClick={() => setView(ViewState.SEARCH)} className="mb-6 flex items-center gap-2 text-slate-500 hover:text-gray-600 font-bold transition-colors">
           <ChevronLeft size={20} /> Back to Cellar
         </button>
 
@@ -1106,7 +1154,7 @@ export default function App() {
                   )}
                 </div>
                 {detail.brewerUrl && (
-                  <a href={detail.brewerUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm font-semibold text-indigo-600 hover:text-indigo-700">
+                  <a href={detail.brewerUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 text-sm font-semibold text-gray-600 hover:text-gray-700">
                     Visit Brewer Site
                   </a>
                 )}
@@ -1157,7 +1205,7 @@ export default function App() {
 
                 <FunkyButton
                   onClick={() => handleAddBeerLog(selectedBeer)}
-                  className="w-full py-4 text-lg shadow-xl shadow-indigo-500/20"
+                  className="w-full py-4 text-lg shadow-xl shadow-gray-500/20"
                   pulseOnClick
                   pulseDurationMs={750}
                   pressText={<span className="flex items-center gap-2">🎉 <span className="font-bold">Chugged!</span></span>}
@@ -1177,21 +1225,21 @@ export default function App() {
       <div className="pb-24 animate-fade-in space-y-8">
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-black text-slate-800 flex items-center gap-2">
-            <User className="w-6 h-6 text-indigo-500" /> My Tab
+            <User className="w-6 h-6 text-gray-500" /> My Tab
           </h2>
           {user ? (
             <button onClick={handleLogout} className="text-sm text-red-500 font-bold flex items-center gap-1 hover:bg-red-50 px-3 py-1 rounded-lg transition-colors">
               <LogOut size={16} /> Sign Out
             </button>
           ) : (
-            <button onClick={() => setIsGuest(false)} className="text-sm text-indigo-600 font-bold flex items-center gap-1 hover:bg-indigo-50 px-3 py-1 rounded-lg transition-colors">
+            <button onClick={() => setIsGuest(false)} className="text-sm text-gray-600 font-bold flex items-center gap-1 hover:bg-gray-50 px-3 py-1 rounded-lg transition-colors">
               Sign In to Cloud
             </button>
           )}
         </div>
 
         <div className="bg-white rounded-3xl p-8 shadow-sm border border-slate-100 text-center">
-          <div className="w-24 h-24 bg-gradient-to-tr from-indigo-500 to-violet-500 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl shadow-lg shadow-indigo-500/30 border-4 border-white text-white overflow-hidden">
+          <div className="w-24 h-24 bg-gradient-to-tr from-gray-500 to-gray-400 rounded-full mx-auto mb-6 flex items-center justify-center text-4xl shadow-lg shadow-gray-500/30 border-4 border-white text-white overflow-hidden">
             {user?.photoURL ? <img src={user.photoURL} alt="User" /> : '😎'}
           </div>
           <h3 className="text-2xl font-bold text-slate-800">{user?.displayName || 'Master Brewer'}</h3>
@@ -1199,24 +1247,24 @@ export default function App() {
 
           <div className="grid grid-cols-3 gap-4 text-center divide-x divide-slate-100">
             <div>
-              <div className="text-2xl font-black text-indigo-600">{logs.length}</div>
+              <div className="text-2xl font-black text-gray-600">{logs.length}</div>
               <div className="text-xs text-slate-400 font-bold uppercase tracking-wider mt-1">Pints</div>
             </div>
             <div>
-              <div className="text-2xl font-black text-indigo-600">{new Set(logs.map(l => l.beerId)).size}</div>
+              <div className="text-2xl font-black text-gray-600">{new Set(logs.map(l => l.beerId)).size}</div>
               <div className="text-xs text-slate-400 font-bold uppercase tracking-wider mt-1">Unique</div>
             </div>
             <div>
-              <div className="text-2xl font-black text-indigo-600">{Math.floor(logs.length * 0.33)}L</div>
+              <div className="text-2xl font-black text-gray-600">{Math.floor(logs.length * 0.33)}L</div>
               <div className="text-xs text-slate-400 font-bold uppercase tracking-wider mt-1">Volume</div>
             </div>
           </div>
         </div>
 
         {!user && (
-          <div className="bg-indigo-50 rounded-2xl p-6 text-center border border-indigo-100">
-            <p className="text-indigo-800 font-bold mb-2">💾 Data stored on this device only.</p>
-            <p className="text-indigo-600 text-sm mb-4">Sign in to sync your stats across all your devices.</p>
+          <div className="bg-gray-50 rounded-2xl p-6 text-center border border-gray-100">
+            <p className="text-gray-800 font-bold mb-2">💾 Data stored on this device only.</p>
+            <p className="text-gray-600 text-sm mb-4">Sign in to sync your stats across all your devices.</p>
             <FunkyButton onClick={() => setIsGuest(false)}>Connect Cloud Account</FunkyButton>
           </div>
         )}
@@ -1232,7 +1280,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen font-sans text-slate-600 bg-[#f8fafc]">
+    <div className="min-h-screen font-sans text-slate-600 bg-gradient-to-b from-[#fff4e0] via-[#f8fafc] to-[#eef2ff]">
       {/* Desktop Header */}
       <header className="hidden md:block sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
@@ -1240,7 +1288,7 @@ export default function App() {
             className="flex items-center gap-2 font-black text-xl text-slate-800 cursor-pointer"
             onClick={() => setView(ViewState.DASHBOARD)}
           >
-            <span className="bg-indigo-600 text-white p-1.5 rounded-lg"><BeerIcon size={20} /></span> BeerCount
+            <span className="bg-gradient-to-br from-amber-400 to-pink-500 text-slate-950 p-1.5 rounded-lg shadow-sm shadow-amber-500/40"><BeerIcon size={20} /></span> ChugLog
           </div>
           <nav className="flex gap-2">
             {NAV_ITEMS.map(item => (
@@ -1260,9 +1308,9 @@ export default function App() {
       {/* Mobile Header (Simple) */}
       <header className="md:hidden sticky top-0 z-30 bg-white/90 backdrop-blur-md border-b border-slate-100 px-4 h-14 flex items-center justify-between">
         <div className="font-black text-lg text-slate-800 flex items-center gap-2">
-          <span className="text-indigo-600"><BeerIcon size={20} /></span> BeerCount
+          <span className="text-amber-500"><BeerIcon size={20} /></span> ChugLog
         </div>
-        <div className="text-xs font-bold text-indigo-600 bg-indigo-50 px-2 py-1 rounded-md">
+        <div className="text-xs font-bold text-gray-600 bg-gray-50 px-2 py-1 rounded-md">
           {view === ViewState.DASHBOARD ? 'Taproom' : view === ViewState.SEARCH ? 'Cellar' : 'My Tab'}
         </div>
       </header>
