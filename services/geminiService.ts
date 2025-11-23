@@ -1,19 +1,20 @@
 import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { Beer } from '../types';
 import { STATIC_BEERS } from './staticBeerData';
+import { searchCatalogBeers } from './localBeerService';
 
 // Lazy initialization of AI client to handle missing API keys gracefully
 let ai: GoogleGenAI | null = null;
 
 const getAI = (): GoogleGenAI | null => {
   if (ai) return ai;
-  
+
   const apiKey = process.env.API_KEY || process.env.GEMINI_API_KEY;
   if (!apiKey) {
     console.warn("Gemini API key not found. AI features will be disabled. Using static data only.");
     return null;
   }
-  
+
   try {
     ai = new GoogleGenAI({ apiKey });
     return ai;
@@ -44,23 +45,30 @@ export const searchBeersWithGemini = async (query: string): Promise<Beer[]> => {
   const normalizedQuery = query.toLowerCase().trim();
 
   // 1. SEARCH LOCAL STATIC DATA FIRST (Instant & Huge Database)
-  const localMatches = STATIC_BEERS.filter(b => 
-    b.name.toLowerCase().includes(normalizedQuery) || 
+  const localMatches = STATIC_BEERS.filter(b =>
+    b.name.toLowerCase().includes(normalizedQuery) ||
     b.brewery.toLowerCase().includes(normalizedQuery) ||
     b.type.toLowerCase().includes(normalizedQuery)
   ).map(b => ({ ...b, id: crypto.randomUUID() }));
 
-  // If we have enough local matches, return them to save API calls
-  if (localMatches.length >= 10) {
-    return localMatches;
+  // 2. TRY CATALOG.BEER (auth-based, richer dataset)
+  const catalogResults = await searchCatalogBeers(normalizedQuery);
+  const dedupedCatalog = catalogResults.filter(cat =>
+    !localMatches.some(existing => existing.name.toLowerCase() === cat.name.toLowerCase())
+  );
+  const combinedAfterCatalog = [...localMatches, ...dedupedCatalog];
+
+  // If we have a solid set already, skip AI; otherwise ask Gemini.
+  if (combinedAfterCatalog.length >= 12) {
+    return combinedAfterCatalog;
   }
 
   // 2. IF NOT ENOUGH LOCAL MATCHES, ASK GEMINI
   const aiClient = getAI();
   if (!aiClient) {
-    return localMatches; // Return local matches if AI is not available
+    return combinedAfterCatalog; // Return available matches if AI is not available
   }
-  
+
   try {
     const response = await aiClient.models.generateContent({
       model,
@@ -82,7 +90,7 @@ export const searchBeersWithGemini = async (query: string): Promise<Beer[]> => {
     if (!text) return localMatches; // Fallback to just local matches if API fails
 
     const rawBeers = JSON.parse(text);
-    
+
     const aiBeers = rawBeers.map((b: any) => ({
       id: crypto.randomUUID(),
       name: b.name,
@@ -93,12 +101,12 @@ export const searchBeersWithGemini = async (query: string): Promise<Beer[]> => {
       emoji: b.emoji || '🍺'
     }));
 
-    // Combine local matches with AI results (Local first)
-    return [...localMatches, ...aiBeers];
+    // Combine local + API matches with AI results (Local first)
+    return [...combinedAfterCatalog, ...aiBeers];
 
   } catch (error) {
     console.error("Error searching beers:", error);
-    return localMatches; // Fail gracefully to local data
+    return combinedAfterCatalog; // Fail gracefully to available data
   }
 };
 
@@ -111,11 +119,11 @@ export const getTrendingBeers = async (): Promise<Beer[]> => {
 
   const model = 'gemini-2.5-flash';
   const aiClient = getAI();
-  
+
   if (!aiClient) {
     return shuffledStatic; // Return static beers if AI is not available
   }
-  
+
   try {
     const response = await aiClient.models.generateContent({
       model,
@@ -151,18 +159,18 @@ export const getTrendingBeers = async (): Promise<Beer[]> => {
 };
 
 export const generateFunFact = async (beerName: string): Promise<string> => {
-    const aiClient = getAI();
-    if (!aiClient) {
-        return "A mysterious brew with no known history!";
-    }
-    
-    try {
-        const response = await aiClient.models.generateContent({
-            model: 'gemini-2.5-flash',
-            contents: `Tell me a very short, hilarious, or interesting fact about ${beerName} in one sentence. Keep it under 20 words.`,
-        });
-        return response.text || "A mysterious brew with no known history!";
-    } catch (e) {
-        return "This beer is too cool for facts right now.";
-    }
+  const aiClient = getAI();
+  if (!aiClient) {
+    return "A mysterious brew with no known history!";
+  }
+
+  try {
+    const response = await aiClient.models.generateContent({
+      model: 'gemini-2.5-flash',
+      contents: `Tell me a very short, hilarious, or interesting fact about ${beerName} in one sentence. Keep it under 20 words.`,
+    });
+    return response.text || "A mysterious brew with no known history!";
+  } catch (e) {
+    return "This beer is too cool for facts right now.";
+  }
 }

@@ -1,0 +1,122 @@
+[
+    {
+        "id": "local-1",
+        "name": "Guinness Draught",
+        "brewery": "Guinness",
+        "type": "Stout",
+        "abv": "4.2%",
+        "description": "Rich and creamy. Distinctively black. Velvety in its finish. This iconic beer is defined by harmony.",
+        "emoji": "🍺",
+        "country": "Ireland"
+    },
+    {
+        "id": "local-2",
+        "name": "Heineken",
+        "brewery": "Heineken",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Crisp and refreshing lager with a slightly bitter finish.",
+        "emoji": "🍺",
+        "country": "Netherlands"
+    },
+    {
+        "id": "local-3",
+        "name": "Punk IPA",
+        "brewery": "BrewDog",
+        "type": "IPA",
+        "abv": "5.6%",
+        "description": "A post modern classic. Spiky. Tropical. Hoppy.",
+        "emoji": "🎸",
+        "country": "UK"
+    },
+    {
+        "id": "local-4",
+        "name": "Corona Extra",
+        "brewery": "Grupo Modelo",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "The classic Mexican beer, best served with a lime wedge.",
+        "emoji": "🍋",
+        "country": "Mexico"
+    },
+    {
+        "id": "local-5",
+        "name": "Sierra Nevada Pale Ale",
+        "brewery": "Sierra Nevada",
+        "type": "Pale Ale",
+        "abv": "5.6%",
+        "description": "A delight of American piney hops and grapefruit aromas.",
+        "emoji": "🌲",
+        "country": "USA"
+    },
+    {
+        "id": "local-6",
+        "name": "Chimay Blue",
+        "brewery": "Bières de Chimay",
+        "type": "Belgian Strong Ale",
+        "abv": "9.0%",
+        "description": "Dark, complex, and rich with flavors of dried fruit and caramel.",
+        "emoji": "🇧🇪",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-7",
+        "name": "Asahi Super Dry",
+        "brewery": "Asahi Breweries",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Japan's No.1 beer. Crisp, dry, and quick finish.",
+        "emoji": "🇯🇵",
+        "country": "Japan"
+    },
+    {
+        "id": "local-8",
+        "name": "Weihenstephaner Hefe Weissbier",
+        "brewery": "Bayerische Staatsbrauerei Weihenstephan",
+        "type": "Wheat",
+        "abv": "5.4%",
+        "description": "The oldest brewery in the world. A classic wheat beer with banana and clove notes.",
+        "emoji": "🌾",
+        "country": "Germany"
+    },
+    {
+        "id": "local-9",
+        "name": "Stone IPA",
+        "brewery": "Stone Brewing",
+        "type": "IPA",
+        "abv": "6.9%",
+        "description": "An iconic West Coast IPA. Citrusy, piney, and hop-forward.",
+        "emoji": "🗿",
+        "country": "USA"
+    },
+    {
+        "id": "local-10",
+        "name": "Duvel",
+        "brewery": "Duvel Moortgat",
+        "type": "Belgian Strong Ale",
+        "abv": "8.5%",
+        "description": "A natural beer with a subtle bitterness, a refined flavour and a distinctive hop character.",
+        "emoji": "😈",
+        "country": "Belgium"
+    },
+    {
+        "id": "local-11",
+        "name": "Pilsner Urquell",
+        "brewery": "Plzeňský Prazdroj",
+        "type": "Pilsner",
+        "abv": "4.4%",
+        "description": "The original Pilsner. Golden, clear, and perfectly balanced.",
+        "emoji": "🇨🇿",
+        "country": "Czechia"
+    },
+    {
+        "id": "local-12",
+        "name": "Lagunitas IPA",
+        "brewery": "Lagunitas Brewing Company",
+        "type": "IPA",
+        "abv": "6.2%",
+        "description": "A well-rounded, highly drinkable IPA. A bit of Caramel Malt barley provides the richness that mellows out the twang of the hops.",
+        "emoji": "🐶",
+        "country": "USA"
+    }
+]
