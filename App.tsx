@@ -134,6 +134,8 @@ export default function App() {
   const [searchResults, setSearchResults] = useState<Beer[]>([]);
   const [isSearching, setIsSearching] = useState(false);
   const [hasLoadedTrending, setHasLoadedTrending] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [selectedCountry, setSelectedCountry] = useState<string>('all');
 
   // --- Auth & Data Subscription ---
   useEffect(() => {
@@ -209,26 +211,20 @@ export default function App() {
       timestamp: Date.now(),
     };
 
+    // Optimistic UI update so stats move immediately
+    if (!myBeers.find(b => b.id === beer.id)) {
+        setMyBeers(prev => [...prev, beer]);
+    }
+    setLogs(prev => [newLog, ...prev]);
+
     if (user && !isGuest) {
-        // Save to Cloud
-        saveBeerLogToCloud(user.uid, newLog, beer);
-        // Optimistic UI update is handled by onSnapshot usually, but we can do it here for instant feel
-        // However, since we have a snapshot listener, we can just wait for it or update local state.
-        // For smoothness, let's rely on the snapshot listener for truth, but show Toast immediately.
-    } else {
-        // Save to Local
-        if (!myBeers.find(b => b.id === beer.id)) {
-            setMyBeers(prev => [...prev, beer]);
-        }
-        setLogs(prev => [newLog, ...prev]);
+        // Save to Cloud; snapshot will reconcile the optimistic state
+        saveBeerLogToCloud(user.uid, newLog, beer).catch(() => {
+            showToast("⚠️ Cloud save failed; data may be local only.");
+        });
     }
 
     showToast(`+1 ${beer.emoji || '🍺'} Chugged!`);
-    
-    if (view !== ViewState.DETAIL) {
-        setSelectedBeer(beer);
-        setView(ViewState.DETAIL);
-    }
   };
 
   const handleSearch = async (e: React.FormEvent) => {
@@ -244,6 +240,32 @@ export default function App() {
     setSearchResults(results);
     setIsSearching(false);
   }
+
+  const detectCountry = (beer: Beer): string | null => {
+    // Rough heuristic map; easy to extend later or replace with real metadata.
+    const label = `${beer.name} ${beer.brewery}`.toLowerCase();
+    const entries: { key: string | RegExp; country: string }[] = [
+      { key: /modelo|tecate|pacifico|dos equis|cuauhtémoc|sol/, country: 'Mexico' },
+      { key: /guinness|murphy|kilkenny/, country: 'Ireland' },
+      { key: /heineken|amstel|grolsch/, country: 'Netherlands' },
+      { key: /paulaner|spaten|warsteiner|bitburger|beck|hofbräu|kostritzer|weihenstephaner/, country: 'Germany' },
+      { key: /asahi|sapporo|kirin/, country: 'Japan' },
+      { key: /sierra nevada|bell's|bells|founders|lagunitas|stone|anheuser|bud|coors|miller|new belgium|dogfish|sam adams|goose island|anchor/, country: 'USA' },
+      { key: /fuller|samuel smith|bass|newcastle|london|orkney/, country: 'UK' },
+      { key: /chimay|duvel|leffe|rochefort|hoegaarden|stella artois|delirium|orval|westmalle|achouffe|lindemans/, country: 'Belgium' },
+      { key: /unibroue|molson|labatt|moosehead/, country: 'Canada' },
+      { key: /foster|coopers|victoria bitter|xxxx gold/, country: 'Australia' },
+      { key: /singha/, country: 'Thailand' },
+      { key: /tiger/, country: 'Singapore' },
+      { key: /tsingtao/, country: 'China' },
+      { key: /peroni|birra moretti/, country: 'Italy' },
+      { key: /pilsner urquell|staropramen|koz(e|ě)l/, country: 'Czechia' }
+    ];
+    const match = entries.find(entry => typeof entry.key === 'string'
+      ? label.includes(entry.key)
+      : entry.key.test(label));
+    return match?.country || null;
+  };
 
   const getBeerStats = (beerId: string) => {
     return logs.filter(l => l.beerId === beerId).length;
@@ -411,114 +433,190 @@ export default function App() {
   };
 
   const renderSearch = () => {
-    const CATEGORIES = [
-        { label: "Classic Lagers", query: "Lager" },
-        { label: "Hoppy IPAs", query: "IPA" },
-        { label: "Rich Stouts", query: "Stout" },
+    const CATEGORY_FILTERS = [
+        { label: "Lager", query: "Lager" },
+        { label: "IPA", query: "IPA" },
+        { label: "Pilsner", query: "Pilsner" },
+        { label: "Stout", query: "Stout" },
         { label: "Belgian", query: "Belgian" },
-        { label: "German", query: "German" },
-        { label: "Sours", query: "Sour" },
+        { label: "Sour", query: "Sour" },
+        { label: "Wheat", query: "Wheat" },
     ];
 
+    const COUNTRY_FILTERS = [
+        'all', 'USA', 'Belgium', 'Germany', 'UK', 'Ireland', 'Mexico', 'Japan', 'Canada', 'Australia', 'Singapore', 'Thailand', 'Italy', 'Czechia', 'Netherlands', 'China'
+    ];
+
+    const filteredResults = searchResults.filter(beer => {
+        const matchesCategory = !selectedCategory || beer.type.toLowerCase().includes(selectedCategory.toLowerCase());
+        const country = (beer as any).country || detectCountry(beer);
+        const matchesCountry = selectedCountry === 'all' || (country && country.toLowerCase() === selectedCountry.toLowerCase());
+        return matchesCategory && matchesCountry;
+    });
+
     return (
-    <div className="space-y-6 pb-24 animate-fade-in min-h-[80vh]">
-        <div className="sticky top-[60px] md:top-[70px] bg-[#f8fafc]/95 backdrop-blur-md z-20 py-4 -mx-4 px-4 md:mx-0 md:px-0 border-b border-slate-100/50">
-             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
-                 <div>
-                    <h2 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight">The Cellar</h2>
-                    <p className="text-slate-500 text-sm hidden md:block">Global database + AI Discovery.</p>
-                 </div>
-             </div>
-             
-             <form onSubmit={handleSearch} className="relative max-w-2xl mb-4">
-                <FunkyInput 
-                    placeholder="Search for a brew (e.g. Guinness, IPA, Asahi...)" 
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                    autoFocus={searchResults.length === 0 && !isSearching}
-                />
-                <button 
-                    type="submit"
-                    className="absolute right-2 top-2 p-2 bg-indigo-600 rounded-xl text-white hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/30"
-                    disabled={isSearching}
-                >
-                    {isSearching ? <Loader2 className="animate-spin w-5 h-5" /> : <Search className="w-5 h-5" />}
-                </button>
-             </form>
-
-             <div className="flex gap-2 overflow-x-auto pb-2 hide-scrollbar mask-linear-fade">
-                 {CATEGORIES.map(cat => (
-                     <button
-                        key={cat.label}
-                        onClick={() => performSearch(cat.query)}
-                        className="whitespace-nowrap px-4 py-2 rounded-full bg-white border border-slate-200 text-slate-600 text-sm font-bold hover:bg-indigo-50 hover:text-indigo-600 hover:border-indigo-200 transition-colors shadow-sm"
-                     >
-                        {cat.label}
-                     </button>
-                 ))}
-             </div>
-        </div>
-
-        {isSearching ? (
-             <div className="flex flex-col items-center justify-center py-20 text-slate-400">
-                <Loader2 className="w-10 h-10 animate-spin text-indigo-500 mb-4" />
-                <p className="font-medium animate-pulse">Scanning the global archives...</p>
-             </div>
-        ) : (
-            <>
-                {!searchQuery && <h3 className="font-bold text-slate-600 flex items-center gap-2 text-sm uppercase tracking-wider"><Zap className="w-4 h-4 text-teal-500" /> Bartender's Choice</h3>}
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    {searchResults.map(beer => {
-                         // Check if we've logged this beer before to show a badge
-                         const count = getBeerStats(beer.id);
-                         return (
-                            <FunkyCard key={beer.id} onClick={() => { setSelectedBeer(beer); setView(ViewState.DETAIL); }} className="hover:border-indigo-200 group transition-all">
-                                <div className="flex items-start justify-between gap-4">
-                                    <div className="flex gap-4">
-                                        <div className="w-14 h-14 rounded-2xl bg-slate-50 text-3xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-sm border border-slate-100">
-                                            {beer.emoji || '🍺'}
-                                        </div>
-                                        <div>
-                                            <h4 className="font-bold text-slate-800">{beer.name}</h4>
-                                            <p className="text-xs text-slate-500 font-medium mb-1">{beer.brewery}</p>
-                                            <div className="flex gap-2 mt-2">
-                                                <FunkyBadge color="indigo">{beer.type}</FunkyBadge>
-                                                <FunkyBadge color="slate">{beer.abv}</FunkyBadge>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    {count > 0 && <div className="bg-teal-50 text-teal-600 p-1.5 rounded-full"><Trophy size={14} /></div>}
-                                </div>
-                                <div className="mt-4 pt-4 border-t border-slate-50 flex gap-2">
-                                     <FunkyButton 
-                                        variant="secondary" 
-                                        className="flex-1 !py-2 !text-xs"
-                                        onClick={(e) => { e.stopPropagation(); setSelectedBeer(beer); setView(ViewState.DETAIL); }}
-                                     >
-                                        Details
-                                     </FunkyButton>
-                                     <FunkyButton 
-                                        variant="primary" 
-                                        className="flex-1 !py-2 !text-xs"
-                                        onClick={(e) => { e.stopPropagation(); handleAddBeerLog(beer); }}
-                                     >
-                                        Pour One
-                                     </FunkyButton>
-                                </div>
-                            </FunkyCard>
-                        );
-                    })}
-                </div>
-                
-                {searchResults.length === 0 && searchQuery && !isSearching && (
-                    <div className="text-center py-12">
-                        <div className="text-4xl mb-4">🤷‍♂️</div>
-                        <p className="text-slate-500 font-medium">No brews found.</p>
+    <div className="pb-24 animate-fade-in min-h-[80vh]">
+        <div className="grid md:grid-cols-[280px_1fr] gap-6">
+            <aside className="space-y-4 md:sticky md:top-[80px] h-max">
+                <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-5">
+                    <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-3">Quick Picks</p>
+                    <div className="grid grid-cols-2 gap-2">
+                        {CATEGORY_FILTERS.slice(0,4).map(cat => (
+                            <button
+                                key={cat.label}
+                                onClick={() => { setSelectedCategory(cat.query); performSearch(cat.query); }}
+                                className={`px-3 py-2 rounded-lg text-sm font-bold border transition-colors ${selectedCategory === cat.query ? 'bg-indigo-600 text-white border-indigo-600' : 'border-slate-200 text-slate-600 hover:border-indigo-200 hover:text-indigo-600 hover:bg-indigo-50'}`}
+                            >
+                                {cat.label}
+                            </button>
+                        ))}
                     </div>
+                </div>
+
+                <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-5 space-y-3">
+                    <div className="flex items-center justify-between">
+                        <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">Style</p>
+                        {selectedCategory && (
+                            <button className="text-[11px] font-bold text-indigo-600" onClick={() => setSelectedCategory(null)}>Reset</button>
+                        )}
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                        {CATEGORY_FILTERS.map(cat => (
+                            <button
+                                key={cat.label}
+                                onClick={() => { setSelectedCategory(cat.query); performSearch(cat.query); }}
+                                className={`px-3 py-2 rounded-full text-xs font-bold border transition-colors ${selectedCategory === cat.query ? 'bg-indigo-600 text-white border-indigo-600' : 'border-slate-200 text-slate-600 hover:border-indigo-200 hover:text-indigo-600 hover:bg-indigo-50'}`}
+                            >
+                                {cat.label}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+
+                <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-5 space-y-3">
+                    <div className="flex items-center justify-between">
+                        <p className="text-xs font-bold text-slate-400 uppercase tracking-wider">Country</p>
+                        {selectedCountry !== 'all' && (
+                            <button className="text-[11px] font-bold text-indigo-600" onClick={() => setSelectedCountry('all')}>Reset</button>
+                        )}
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                        {COUNTRY_FILTERS.map(country => (
+                            <button
+                                key={country}
+                                onClick={() => setSelectedCountry(country)}
+                                className={`px-3 py-2 rounded-full text-xs font-bold border transition-colors ${selectedCountry === country ? 'bg-indigo-600 text-white border-indigo-600' : 'border-slate-200 text-slate-600 hover:border-indigo-200 hover:text-indigo-600 hover:bg-indigo-50'}`}
+                            >
+                                {country === 'all' ? 'All' : country}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            </aside>
+
+            <div className="space-y-6">
+                <div className="bg-white rounded-2xl border border-slate-100 shadow-sm p-5">
+                    <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
+                        <div>
+                            <h2 className="text-2xl md:text-3xl font-black text-slate-800 tracking-tight">The Cellar</h2>
+                            <p className="text-slate-500 text-sm">Global database + AI Discovery.</p>
+                        </div>
+                        {(selectedCategory || selectedCountry !== 'all') && (
+                            <button
+                                className="text-sm font-bold text-indigo-600 hover:text-indigo-700"
+                                onClick={() => { setSelectedCategory(null); setSelectedCountry('all'); }}
+                            >
+                                Clear filters
+                            </button>
+                        )}
+                    </div>
+
+                    <form onSubmit={handleSearch} className="relative">
+                        <FunkyInput 
+                            placeholder="Search for a brew (e.g. Guinness, IPA, Asahi...)" 
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                            autoFocus={searchResults.length === 0 && !isSearching}
+                        />
+                        <button 
+                            type="submit"
+                            className="absolute right-2 top-2 p-2 bg-indigo-600 rounded-xl text-white hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-500/30"
+                            disabled={isSearching}
+                        >
+                            {isSearching ? <Loader2 className="animate-spin w-5 h-5" /> : <Search className="w-5 h-5" />}
+                        </button>
+                    </form>
+                </div>
+
+                {isSearching ? (
+                     <div className="flex flex-col items-center justify-center py-20 text-slate-400 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                        <Loader2 className="w-10 h-10 animate-spin text-indigo-500 mb-4" />
+                        <p className="font-medium animate-pulse">Scanning the global archives...</p>
+                     </div>
+                ) : (
+                    <>
+                        {!searchQuery && <h3 className="font-bold text-slate-600 flex items-center gap-2 text-sm uppercase tracking-wider"><Zap className="w-4 h-4 text-teal-500" /> Bartender's Choice</h3>}
+                        
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            {filteredResults.map(beer => {
+                                 const count = getBeerStats(beer.id);
+                                 const country = (beer as any).country || detectCountry(beer);
+                                 return (
+                                    <FunkyCard key={beer.id} onClick={() => { setSelectedBeer(beer); setView(ViewState.DETAIL); }} className="hover:border-indigo-200 group transition-all">
+                                        <div className="flex items-start justify-between gap-4">
+                                            <div className="flex gap-4">
+                                                <div className="w-14 h-14 rounded-2xl bg-slate-50 text-3xl flex items-center justify-center group-hover:scale-110 transition-transform shadow-sm border border-slate-100">
+                                                    {beer.emoji || '🍺'}
+                                                </div>
+                                                <div>
+                                                    <h4 className="font-bold text-slate-800">{beer.name}</h4>
+                                                    <p className="text-xs text-slate-500 font-medium mb-1">{beer.brewery}</p>
+                                                    <div className="flex gap-2 mt-2 flex-wrap">
+                                                        <FunkyBadge color="indigo">{beer.type}</FunkyBadge>
+                                                        <FunkyBadge color="slate">{beer.abv}</FunkyBadge>
+                                                        {country && <FunkyBadge color="slate">{country}</FunkyBadge>}
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            {count > 0 && <div className="bg-teal-50 text-teal-600 p-1.5 rounded-full"><Trophy size={14} /></div>}
+                                        </div>
+                                        <div className="mt-4 pt-4 border-t border-slate-50 flex gap-2">
+                                             <FunkyButton 
+                                                variant="secondary" 
+                                                className="flex-1 !py-2 !text-xs"
+                                                onClick={(e) => { e.stopPropagation(); setSelectedBeer(beer); setView(ViewState.DETAIL); }}
+                                             >
+                                                Details
+                                             </FunkyButton>
+                                             <FunkyButton 
+                                                variant="primary" 
+                                                className="flex-1 !py-2 !text-xs"
+                                                onClick={(e) => { e.stopPropagation(); handleAddBeerLog(beer); }}
+                                             >
+                                                Pour One
+                                             </FunkyButton>
+                                        </div>
+                                    </FunkyCard>
+                                );
+                            })}
+                        </div>
+                        
+                        {filteredResults.length === 0 && searchQuery && !isSearching && (
+                            <div className="text-center py-12 bg-white rounded-2xl border border-slate-100 shadow-sm">
+                                <div className="text-4xl mb-4">🤷‍♂️</div>
+                                <p className="text-slate-500 font-medium">No brews found for that combo. Try another style or clear filters.</p>
+                                <button 
+                                    className="mt-4 text-sm font-bold text-indigo-600 hover:text-indigo-700"
+                                    onClick={() => { setSelectedCategory(null); setSelectedCountry('all'); setSearchQuery(''); setSearchResults([]); }}
+                                >
+                                    Reset search
+                                </button>
+                            </div>
+                        )}
+                    </>
                 )}
-            </>
-        )}
+            </div>
+        </div>
     </div>
   )};
 
