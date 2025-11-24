@@ -158,9 +158,9 @@ export const FunkyCard: React.FC<{ children: React.ReactNode; className?: string
   </div>
 );
 
-export const FunkyInput: React.FC<React.InputHTMLAttributes<HTMLInputElement>> = ({ className = '', ...props }) => (
+export const FunkyInput: React.FC<React.InputHTMLAttributes<HTMLInputElement>> = (props) => (
   <input
-    className={`w-full rounded-xl border-2 border-gray-200 px-5 py-4 text-base bg-gray-50 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500/20 focus:border-gray-500 transition-all shadow-sm ${className}`}
+    className="w-full rounded-xl border-2 border-gray-200 px-5 py-4 text-base bg-gray-50 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500/20 focus:border-gray-500 transition-all shadow-sm"
     {...props}
   />
 );
