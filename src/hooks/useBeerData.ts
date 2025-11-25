@@ -4,6 +4,16 @@ import { Beer, LogEntry } from '../../types';
 import { fetchCatalogBulk, searchCatalogBeers } from '../../services/localBeerService';
 import { subscribeToUserData, saveBeerLogToCloud } from '../../services/firebase';
 
+const mergeBeers = (base: Beer[], extras: Beer[]) => {
+    const map = new Map<string, Beer>();
+    base.forEach(beer => map.set(beer.id, beer));
+    extras.forEach(beer => {
+        const existing = map.get(beer.id);
+        map.set(beer.id, existing ? { ...existing, ...beer } : beer);
+    });
+    return Array.from(map.values());
+};
+
 export const useBeerData = (user: FirebaseUser | null, isGuest: boolean) => {
     const [myBeers, setMyBeers] = useState<Beer[]>([]);
     const [logs, setLogs] = useState<LogEntry[]>([]);
@@ -45,6 +55,10 @@ export const useBeerData = (user: FirebaseUser | null, isGuest: boolean) => {
         const unsubscribe = subscribeToUserData(user.uid, (data) => {
             if (data?.logs) {
                 setLogs(data.logs);
+            }
+            if (data?.beers?.length) {
+                setAllBeers(prev => mergeBeers(prev, data.beers));
+                setMyBeers(prev => mergeBeers(prev, data.beers));
             }
         });
 

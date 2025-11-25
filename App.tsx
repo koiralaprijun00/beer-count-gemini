@@ -41,10 +41,15 @@ function App() {
       <header className="hidden md:block sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-2">
+            <button
+              type="button"
+              onClick={() => setView(ViewState.DASHBOARD)}
+              className="flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 rounded-lg"
+              aria-label="Go to Taproom"
+            >
               <BeerIcon className="w-6 h-6 text-black" />
               <span className="font-black text-xl text-black uppercase">BeerCount</span>
-            </div>
+            </button>
             <nav className="flex gap-2">
               {NAV_ITEMS.map(item => (
                 <NavItem

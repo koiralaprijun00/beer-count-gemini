@@ -24,14 +24,21 @@ const Dashboard: React.FC<DashboardProps> = ({
   setView,
   setSelectedBeer
 }) => {
-  const totalCount = logs.length;
-  const uniqueCount = new Set(logs.map(l => l.beerId)).size;
+  const beerMap = React.useMemo(() => {
+    const map = new Map<string, Beer>();
+    myBeers.forEach(beer => map.set(beer.id, beer));
+    return map;
+  }, [myBeers]);
+
+  const resolvedLogs = logs.filter(log => beerMap.has(log.beerId));
+  const totalCount = resolvedLogs.length;
+  const uniqueCount = new Set(resolvedLogs.map(l => l.beerId)).size;
 
   // Group logs by beer to avoid duplicates in Recent Chugs
   const recentGroupedLogs = (() => {
     const map = new Map<string, { beer: Beer; count: number; latest: number }>();
-    logs.forEach(log => {
-      const beer = myBeers.find(b => b.id === log.beerId);
+    resolvedLogs.forEach(log => {
+      const beer = beerMap.get(log.beerId);
       if (!beer) return;
       const existing = map.get(log.beerId);
       if (existing) {
