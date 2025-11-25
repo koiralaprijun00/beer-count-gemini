@@ -96,7 +96,11 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
           <div className="flex flex-col gap-3 max-w-md">
             {authMode === 'default' && (
               <>
-                <FunkyButton onClick={handleGoogle} isLoading={loadingState === 'google'} className="bg-black text-[var(--color-neon-green)] border-black hover:bg-gray-900 shadow-[4px_4px_0px_0px_rgba(204,255,0,1)]">
+                <FunkyButton
+                  onClick={handleGoogle}
+                  isLoading={loadingState === 'google'}
+                  className="bg-black text-[var(--color-neon-green)] hover:text-[var(--color-neon-green)] border-black hover:bg-gray-900 shadow-[4px_4px_0px_0px_rgba(204,255,0,1)]"
+                >
                   <span className="w-5 h-5 bg-[var(--color-neon-green)] text-black mr-2 inline-flex items-center justify-center border border-black">
                     <span className="font-bold text-xs">G</span>
                   </span>
@@ -246,7 +250,11 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
                   <div className="relative flex justify-center text-xs uppercase"><span className="bg-slate-50 px-2 text-slate-400 font-bold">Or</span></div>
                 </div>
 
-                <FunkyButton onClick={handleGoogle} isLoading={loadingState === 'google'} className="bg-black text-white hover:bg-gray-900 shadow-[4px_4px_0px_0px_rgba(204,255,0,1)]">
+                <FunkyButton
+                  onClick={handleGoogle}
+                  isLoading={loadingState === 'google'}
+                  className="bg-black text-[var(--color-neon-green)] hover:text-[var(--color-neon-green)] hover:bg-gray-900 shadow-[4px_4px_0px_0px_rgba(204,255,0,1)]"
+                >
                   <span className="w-5 h-5 bg-white text-black mr-2 inline-flex items-center justify-center border border-black">
                     <span className="font-bold text-xs">G</span>
                   </span>
