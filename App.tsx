@@ -49,7 +49,7 @@ function App() {
               aria-label="Go to Taproom"
             >
               <BeerIcon className="w-6 h-6 text-black" />
-              <span className="font-black text-xl text-black uppercase">BeerCount</span>
+              <span className="font-black text-xl text-black uppercase">Count My Beer</span>
             </button>
             <nav className="flex gap-2">
               {NAV_ITEMS.map(item => (

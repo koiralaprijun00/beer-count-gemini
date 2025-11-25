@@ -70,7 +70,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
     <div className="min-h-screen flex flex-col font-sans text-black">
       <nav className="w-full max-w-7xl mx-auto px-6 py-6 flex items-center justify-between border-b-2 border-black mb-8">
         <div className="flex items-center gap-2 font-black text-xl text-black uppercase tracking-tighter">
-          <span className="bg-[var(--color-neon-green)] text-black p-1.5 border-2 border-black"><BeerIcon size={20} /></span> ChugLog
+          <span className="bg-[var(--color-neon-green)] text-black p-1.5 border-2 border-black"><BeerIcon size={20} /></span> Count My Beer
         </div>
       </nav>
 

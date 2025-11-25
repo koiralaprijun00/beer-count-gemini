@@ -233,7 +233,7 @@ export const hasBreweryBestie = (logs: LogEntry[], beers: Beer[], threshold = 5)
     return Object.values(map).some(set => set.size >= threshold);
 };
 
-// BeerCount-specific: 5 unique beers logged within 5 minutes
+// Count My Beer-specific: 5 unique beers logged within 5 minutes
 export const hasFastFlight = (logs: LogEntry[]): boolean => {
     if (logs.length < 5) return false;
     const sorted = [...logs].sort((a, b) => a.timestamp - b.timestamp);
