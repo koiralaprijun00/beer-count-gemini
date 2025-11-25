@@ -67,14 +67,10 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
   };
 
   return (
-    <div className="min-h-screen bg-white flex flex-col font-sans text-black">
+    <div className="min-h-screen flex flex-col font-sans text-black">
       <nav className="w-full max-w-7xl mx-auto px-6 py-6 flex items-center justify-between border-b-2 border-black mb-8">
         <div className="flex items-center gap-2 font-black text-xl text-black uppercase tracking-tighter">
           <span className="bg-[var(--color-neon-green)] text-black p-1.5 border-2 border-black"><BeerIcon size={20} /></span> ChugLog
-        </div>
-        <div className="hidden md:flex gap-6 text-sm font-bold text-slate-500">
-          <a href="#" className="hover:text-gray-600">Features</a>
-          <a href="#" className="hover:text-gray-600">About</a>
         </div>
       </nav>
 
@@ -99,7 +95,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
                 <FunkyButton
                   onClick={handleGoogle}
                   isLoading={loadingState === 'google'}
-                  className="bg-black text-[var(--color-neon-green)] hover:text-[var(--color-neon-green)] border-black hover:bg-gray-900 shadow-[4px_4px_0px_0px_rgba(204,255,0,1)]"
+                  className="bg-black text-[var(--color-neon-green)] !text-[var(--color-neon-green)] !hover:text-[var(--color-neon-green)] border-black hover:bg-gray-900 shadow-[4px_4px_0px_0px_rgba(204,255,0,1)]"
                 >
                   <span className="w-5 h-5 bg-[var(--color-neon-green)] text-black mr-2 inline-flex items-center justify-center border border-black">
                     <span className="font-bold text-xs">G</span>
@@ -253,7 +249,7 @@ const LoginScreen: React.FC<LoginScreenProps> = ({
                 <FunkyButton
                   onClick={handleGoogle}
                   isLoading={loadingState === 'google'}
-                  className="bg-black text-[var(--color-neon-green)] hover:text-[var(--color-neon-green)] hover:bg-gray-900 shadow-[4px_4px_0px_0px_rgba(204,255,0,1)]"
+                  className="bg-black text-[var(--color-neon-green)] !text-[var(--color-neon-green)] !hover:text-[var(--color-neon-green)] hover:bg-gray-900 shadow-[4px_4px_0px_0px_rgba(204,255,0,1)]"
                 >
                   <span className="w-5 h-5 bg-white text-black mr-2 inline-flex items-center justify-center border border-black">
                     <span className="font-bold text-xs">G</span>

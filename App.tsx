@@ -38,12 +38,13 @@ function App() {
   return (
     <div className="min-h-screen font-sans text-slate-600 bg-[#f8fafc]">
       {/* Desktop Header */}
-      <header className="hidden md:block sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <button
-              type="button"
-              onClick={() => setView(ViewState.DASHBOARD)}
+      {!auth.user && !auth.isGuest ? null : (
+        <header className="hidden md:block sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between h-16">
+              <button
+                type="button"
+                onClick={() => setView(ViewState.DASHBOARD)}
               className="flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 rounded-lg"
               aria-label="Go to Taproom"
             >
@@ -62,9 +63,10 @@ function App() {
                 />
               ))}
             </nav>
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
+      )}
 
       {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -130,19 +132,21 @@ function App() {
       </main>
 
       {/* Mobile Navigation */}
-      <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-100 z-50">
-        <div className="grid grid-cols-3">
-          {NAV_ITEMS.map(item => (
-            <NavItem
-              key={item.id}
-              active={view === item.id}
-              icon={item.icon}
-              label={item.label}
-              onClick={() => setView(item.id)}
-            />
-          ))}
-        </div>
-      </nav>
+      {auth.user || auth.isGuest ? (
+        <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-100 z-50">
+          <div className="grid grid-cols-3">
+            {NAV_ITEMS.map(item => (
+              <NavItem
+                key={item.id}
+                active={view === item.id}
+                icon={item.icon}
+                label={item.label}
+                onClick={() => setView(item.id)}
+              />
+            ))}
+          </div>
+        </nav>
+      ) : null}
 
       {/* Toast Notifications */}
       {toast && <FunkyToast message={toast.message} type={toast.type} />}
