@@ -4,9 +4,17 @@ import { Beer, LogEntry, ViewState } from '../../types';
 import { FunkyButton, FunkyCard, FunkyBadge } from '../../components/FunkyComponents';
 import { History, GlassWater, Trophy, Sparkles } from 'lucide-react';
 import {
-  checkWeekendWarrior,
-  checkStyleMaster,
-  checkLocalHero
+  calculateStreak,
+  hasConsecutiveDayLogging,
+  hasConsecutiveWeeks,
+  hasWeekdayStreak,
+  getUniqueStyles,
+  countLogsByPredicate,
+  uniqueCountries,
+  hasBreweryBestie,
+  hasFastFlight,
+  countBucket,
+  ensureTimeBucket
 } from '../utils/calculations';
 
 interface DashboardProps {
@@ -30,9 +38,42 @@ const Dashboard: React.FC<DashboardProps> = ({
     return map;
   }, [myBeers]);
 
-  const resolvedLogs = logs.filter(log => beerMap.has(log.beerId));
+  const resolvedLogs = logs
+    .filter(log => beerMap.has(log.beerId))
+    .map(log => ensureTimeBucket(log));
   const totalCount = resolvedLogs.length;
   const uniqueCount = new Set(resolvedLogs.map(l => l.beerId)).size;
+  const streak = React.useMemo(() => calculateStreak(resolvedLogs), [resolvedLogs]);
+
+  const morningCount = countBucket(resolvedLogs, 'morning');
+  const afternoonCount = countBucket(resolvedLogs, 'afternoon');
+  const eveningCount = countBucket(resolvedLogs, 'evening');
+  const nightOwlCount = countBucket(resolvedLogs, 'latenight');
+  const marathonHours = new Set(resolvedLogs.map(log => new Date(log.timestamp).getHours())).size;
+  const weekdayOnly14 = hasWeekdayStreak(resolvedLogs, 14);
+  const stylesCount = getUniqueStyles(resolvedLogs, myBeers);
+  const sourCount = countLogsByPredicate(resolvedLogs, myBeers, beer => beer.type?.toLowerCase().includes('sour') || false);
+  const ipaCount = countLogsByPredicate(resolvedLogs, myBeers, beer => beer.type?.toLowerCase().includes('ipa') || false);
+  const darkCount = countLogsByPredicate(resolvedLogs, myBeers, beer => {
+    const type = beer.type?.toLowerCase() || '';
+    return type.includes('stout') || type.includes('porter');
+  });
+  const crispCount = countLogsByPredicate(resolvedLogs, myBeers, beer => {
+    const type = beer.type?.toLowerCase() || '';
+    return type.includes('lager') || type.includes('pilsner');
+  });
+  const barrelCount = countLogsByPredicate(resolvedLogs, myBeers, beer => {
+    const type = beer.type?.toLowerCase() || '';
+    return type.includes('barrel') || type.includes('aged');
+  });
+  const fruitCount = countLogsByPredicate(resolvedLogs, myBeers, beer => {
+    const type = beer.type?.toLowerCase() || '';
+    const name = beer.name?.toLowerCase() || '';
+    return type.includes('fruit') || name.includes('fruited') || name.includes('fruit');
+  });
+  const countryCount = uniqueCountries(resolvedLogs, myBeers);
+  const breweryBestie = hasBreweryBestie(resolvedLogs, myBeers, 5);
+  const fastFlight = hasFastFlight(resolvedLogs);
 
   // Group logs by beer to avoid duplicates in Recent Chugs
   const recentGroupedLogs = (() => {
@@ -51,6 +92,53 @@ const Dashboard: React.FC<DashboardProps> = ({
     return Array.from(map.values())
       .sort((a, b) => b.latest - a.latest);
   })();
+
+  const [showCompletedOnly, setShowCompletedOnly] = React.useState(false);
+
+  const achievements = React.useMemo(() => ([
+    { name: 'Early Sipper', unlocked: morningCount >= 3, progress: `${morningCount}/3 in the morning (06:00–10:59)` },
+    { name: 'Afternoon Adventurer', unlocked: afternoonCount >= 5, progress: `${afternoonCount}/5 in the afternoon (12:00–15:59)` },
+    { name: 'Evening Enjoyer', unlocked: eveningCount >= 10, progress: `${eveningCount}/10 in the evening (16:00–23:59)` },
+    { name: 'Night Owl', unlocked: nightOwlCount >= 5, progress: `${nightOwlCount}/5 in late night (00:00–05:59)` },
+    { name: 'Back-to-Back Banger', unlocked: hasConsecutiveDayLogging(resolvedLogs, 2), progress: '2-day streak' },
+    { name: 'Streak Lord', unlocked: streak >= 7, progress: `${streak}/7 day streak` },
+    { name: 'Weekly Warrior', unlocked: hasConsecutiveWeeks(resolvedLogs, 4), progress: '4 weeks in a row' },
+    { name: 'Marathon Drinker', unlocked: marathonHours >= 12, progress: `${marathonHours}/12 hours logged` },
+    { name: 'The Weekend Doesn’t Exist', unlocked: weekdayOnly14, progress: '14 weekday-only streak' },
+    { name: 'World Styles Explorer', unlocked: stylesCount >= 10, progress: `${stylesCount}/10 styles` },
+    { name: 'Sour Power', unlocked: sourCount >= 5, progress: `${sourCount}/5 sours` },
+    { name: 'Hop Head', unlocked: ipaCount >= 10, progress: `${ipaCount}/10 IPAs` },
+    { name: 'Crisp King', unlocked: crispCount >= 10, progress: `${crispCount}/10 lagers or pilsners` },
+    { name: 'Barrel Barbarian', unlocked: barrelCount >= 3, progress: `${barrelCount}/3 barrel-aged` },
+    { name: 'Fruit Freak', unlocked: fruitCount >= 5, progress: `${fruitCount}/5 fruited beers` },
+    { name: 'Dark Side', unlocked: darkCount >= 12, progress: `${darkCount}/12 stouts/porters` },
+    { name: 'Funky Five-Minute Flight', unlocked: fastFlight, progress: fastFlight ? 'Unlocked' : 'Log 5 different beers in 5 minutes' },
+    { name: 'The Globetrotter', unlocked: countryCount >= 10, progress: `${countryCount}/10 countries` },
+    { name: 'Brewery Bestie', unlocked: breweryBestie, progress: breweryBestie ? '5+ from one brewery' : 'Log 5 unique from one brewery' },
+    { name: 'Boss of the Barley', unlocked: totalCount >= 500, progress: `${totalCount}/500 total` },
+  ]), [
+    morningCount,
+    afternoonCount,
+    eveningCount,
+    nightOwlCount,
+    resolvedLogs,
+    streak,
+    marathonHours,
+    weekdayOnly14,
+    stylesCount,
+    sourCount,
+    ipaCount,
+    crispCount,
+    barrelCount,
+    fruitCount,
+    darkCount,
+    fastFlight,
+    countryCount,
+    breweryBestie,
+    totalCount
+  ]);
+  const completedAchievements = achievements.filter(a => a.unlocked).length;
+  const visibleAchievements = showCompletedOnly ? achievements.filter(a => a.unlocked) : achievements;
 
   return (
     <div className="space-y-8 pb-24 animate-fade-in">
@@ -139,42 +227,51 @@ const Dashboard: React.FC<DashboardProps> = ({
         {/* Right Col: Hall of Foam */}
         <div className="space-y-6">
           <div className="bg-white p-6 border-2 border-black">
-            <h3 className="font-bold text-black mb-4 flex items-center gap-2 text-sm uppercase tracking-wider">
-              <Sparkles className="w-4 h-4 text-[var(--color-neon-green)]" /> Hall of Foam
-            </h3>
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="font-bold text-black flex items-center gap-2 text-sm uppercase tracking-wider">
+                <Sparkles className="w-4 h-4 text-[var(--color-neon-green)]" /> Hall of Foam
+              </h3>
+              <div className="flex items-center gap-3 text-[12px] font-black uppercase text-slate-600">
+                <button
+                  type="button"
+                  onClick={() => setShowCompletedOnly(true)}
+                  className="hover:text-black transition-colors border-b-2 border-transparent pb-0.5 hover:border-black"
+                  aria-pressed={showCompletedOnly}
+                >
+                  Completed: <span className="text-black">{completedAchievements}</span>/<span className="text-slate-500">{achievements.length}</span>
+                </button>
+                {showCompletedOnly && (
+                  <button
+                    type="button"
+                    onClick={() => setShowCompletedOnly(false)}
+                    className="transition-colors border-b-2 border-transparent pb-0.5 text-black hover:border-black"
+                  >
+                    See All
+                  </button>
+                )}
+              </div>
+            </div>
             <div className="space-y-3">
-              <div className={`p-3 flex items-center gap-3 border-2 ${totalCount > 0 ? 'bg-black border-black text-[var(--color-neon-green)]' : 'bg-gray-100 border-gray-300 text-gray-400'}`}>
-                <span className="text-xl">{totalCount > 0 ? '🌱' : '🔒'}</span>
-                <div className="text-sm font-bold uppercase">First Drop</div>
-              </div>
-              <div className={`p-3 flex items-center gap-3 border-2 ${totalCount >= 10 ? 'bg-black border-black text-[var(--color-neon-green)]' : 'bg-gray-100 border-gray-300 text-gray-400'}`}>
-                <span className="text-xl">{totalCount >= 10 ? '🚀' : '🔒'}</span>
-                <div className="text-sm font-bold uppercase">Beer Baron (10)</div>
-              </div>
-              <div className={`p-3 flex items-center gap-3 border-2 ${uniqueCount >= 5 ? 'bg-white border-black text-black' : 'bg-gray-100 border-gray-300 text-gray-400'}`}>
-                <span className="text-xl">{uniqueCount >= 5 ? '🌍' : '🔒'}</span>
-                <div className="text-sm font-bold uppercase">World Traveler (5 Unique)</div>
-              </div>
-              <div className={`p-3 flex items-center gap-3 border-2 ${totalCount >= 100 ? 'bg-black border-black text-[var(--color-neon-green)]' : 'bg-gray-100 border-gray-300 text-gray-400'}`}>
-                <span className="text-xl">{totalCount >= 100 ? '💯' : '🔒'}</span>
-                <div className="text-sm font-bold uppercase">Century Club (100)</div>
-              </div>
-              <div className={`p-3 flex items-center gap-3 border-2 ${uniqueCount >= 25 ? 'bg-white border-black text-black' : 'bg-gray-100 border-gray-300 text-gray-400'}`}>
-                <span className="text-xl">{uniqueCount >= 25 ? '🎯' : '🔒'}</span>
-                <div className="text-sm font-bold uppercase">Variety Seeker (25 Unique)</div>
-              </div>
-              <div className={`p-3 flex items-center gap-3 border-2 ${checkWeekendWarrior(logs) ? 'bg-black border-black text-[var(--color-neon-green)]' : 'bg-gray-100 border-gray-300 text-gray-400'}`}>
-                <span className="text-xl">{checkWeekendWarrior(logs) ? '🎉' : '🔒'}</span>
-                <div className="text-sm font-bold uppercase">Weekend Warrior (10)</div>
-              </div>
-              <div className={`p-3 flex items-center gap-3 border-2 ${checkStyleMaster(logs, myBeers) ? 'bg-white border-black text-black' : 'bg-gray-100 border-gray-300 text-gray-400'}`}>
-                <span className="text-xl">{checkStyleMaster(logs, myBeers) ? '🏆' : '🔒'}</span>
-                <div className="text-sm font-bold uppercase">Style Master (All Styles)</div>
-              </div>
-              <div className={`p-3 flex items-center gap-3 border-2 ${checkLocalHero(logs, myBeers) ? 'bg-black border-black text-[var(--color-neon-green)]' : 'bg-gray-100 border-gray-300 text-gray-400'}`}>
-                <span className="text-xl">{checkLocalHero(logs, myBeers) ? '🏠' : '🔒'}</span>
-                <div className="text-sm font-bold uppercase">Local Hero (5+ Breweries)</div>
-              </div>
+              {visibleAchievements.map(item => {
+                const unlocked = item.unlocked;
+                const baseClasses = unlocked
+                  ? 'bg-black border-black text-[var(--color-neon-green)]'
+                  : 'bg-gray-50 border-gray-200 text-slate-600';
+                return (
+                  <div
+                    key={item.name}
+                    className={`p-3 border-2 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-transform hover:-translate-y-0.5 ${baseClasses}`}
+                  >
+                    <div className="flex items-start justify-between gap-2">
+                      <div>
+                        <div className="text-sm font-black uppercase tracking-wider">{item.name}</div>
+                        <div className={`text-[11px] font-bold ${unlocked ? 'text-white' : 'text-slate-500'}`}>{item.progress}</div>
+                      </div>
+                      <div className="text-lg">{unlocked ? '✅' : '🔒'}</div>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

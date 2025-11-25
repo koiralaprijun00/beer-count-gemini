@@ -3,6 +3,7 @@ import { User as FirebaseUser } from 'firebase/auth';
 import { Beer, LogEntry } from '../../types';
 import { fetchCatalogBulk, searchCatalogBeers } from '../../services/localBeerService';
 import { subscribeToUserData, saveBeerLogToCloud } from '../../services/firebase';
+import { getTimeBucket, ensureTimeBucket } from '../utils/calculations';
 
 const mergeBeers = (base: Beer[], extras: Beer[]) => {
     const map = new Map<string, Beer>();
@@ -44,7 +45,8 @@ export const useBeerData = (user: FirebaseUser | null, isGuest: boolean) => {
             const savedLogs = localStorage.getItem('beerLogs');
             if (savedLogs) {
                 try {
-                    setLogs(JSON.parse(savedLogs));
+                    const parsed = JSON.parse(savedLogs);
+                    setLogs(parsed.map((log: LogEntry) => ensureTimeBucket(log)));
                 } catch (e) {
                     console.error('Error parsing saved logs:', e);
                 }
@@ -54,7 +56,7 @@ export const useBeerData = (user: FirebaseUser | null, isGuest: boolean) => {
 
         const unsubscribe = subscribeToUserData(user.uid, (data) => {
             if (data?.logs) {
-                setLogs(data.logs);
+                setLogs(data.logs.map((log: LogEntry) => ensureTimeBucket(log)));
             }
             if (data?.beers?.length) {
                 setAllBeers(prev => mergeBeers(prev, data.beers));
@@ -77,6 +79,7 @@ export const useBeerData = (user: FirebaseUser | null, isGuest: boolean) => {
             id: `${Date.now()}-${Math.random()}`,
             beerId: beer.id,
             timestamp: Date.now(),
+            timeBucket: getTimeBucket(new Date()),
         };
 
         const updatedLogs = [...logs, newLog];

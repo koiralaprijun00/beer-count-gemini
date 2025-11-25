@@ -3,6 +3,7 @@ import { getAuth, GoogleAuthProvider, FacebookAuthProvider, signInWithPopup, sig
 import { getFirestore, doc, setDoc, getDoc, onSnapshot, updateDoc, arrayUnion } from 'firebase/firestore';
 import { getAnalytics } from "firebase/analytics";
 import { Beer, LogEntry } from '../types';
+import { getTimeBucket } from '../src/utils/calculations';
 
 // Firebase Configuration
 const firebaseConfig = {
@@ -201,13 +202,13 @@ export const saveBeerLogToCloud = async (userId: string, log: LogEntry, beer: Be
                 });
             } else {
                 await updateDoc(userDocRef, {
-                    logs: arrayUnion(log)
+                    logs: arrayUnion({ ...log, timeBucket: log.timeBucket || getTimeBucket(new Date(log.timestamp)) })
                 });
             }
         } else {
             await setDoc(userDocRef, {
                 beers: [beer],
-                logs: [log]
+                logs: [{ ...log, timeBucket: log.timeBucket || getTimeBucket(new Date(log.timestamp)) }]
             });
         }
     } catch (e) {

@@ -29,6 +29,7 @@ export interface LogEntry {
   beerId: string;
   timestamp: number;
   note?: string;
+  timeBucket?: 'morning' | 'afternoon' | 'evening' | 'latenight';
 }
 
 export enum ViewState {
