@@ -11,10 +11,6 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   liquidWaveOnClick?: boolean;
 }
 
-// THEME: Indigo & Violet & Teal
-// Primary: Indigo-600
-// Secondary Accents: Teal-400, Violet-500
-
 export const FunkyButton: React.FC<ButtonProps> = ({
   children,
   variant = "primary",
@@ -34,25 +30,25 @@ export const FunkyButton: React.FC<ButtonProps> = ({
   const timerRef = useRef<number | null>(null);
 
   const baseStyle =
-    "relative overflow-hidden transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 font-bold tracking-tight select-none";
+    "relative overflow-hidden transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 font-bold tracking-tight select-none border-2";
 
   const variants = {
     primary:
-      "w-full rounded-xl bg-gray-800 text-white py-3 px-6 shadow-md shadow-gray-900/20 hover:bg-gray-700 hover:shadow-gray-900/30",
+      "w-full bg-black text-white border-black hover:bg-[var(--color-neon-green)] hover:text-black hover:translate-x-[2px] hover:translate-y-[2px]",
     secondary:
-      "w-full rounded-xl border-2 border-gray-200 text-gray-600 py-3 px-6 bg-white hover:border-gray-300 hover:text-gray-800 hover:bg-gray-50",
+      "w-full bg-white text-black border-black hover:bg-gray-50 hover:text-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]",
     icon:
-      "p-2 rounded-full hover:bg-gray-100 text-gray-500 hover:text-gray-800 transition-colors",
+      "p-2 bg-transparent border-transparent hover:bg-gray-100 text-black transition-colors",
     danger:
-      "w-full rounded-xl bg-red-50 text-red-600 border border-red-100 hover:bg-red-100"
+      "w-full bg-white text-red-600 border-black hover:bg-red-50 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]"
   };
 
   const pulseVariants = {
     primary:
-      "w-full rounded-xl bg-gray-600 text-white py-3 px-6 shadow-md shadow-gray-800/30",
-    secondary: "bg-gray-100 border-gray-300 text-gray-800",
-    icon: "bg-gray-100",
-    danger: "bg-red-100"
+      "w-full bg-[var(--color-neon-green)] text-black border-black",
+    secondary: "bg-black text-white border-black",
+    icon: "bg-[var(--color-neon-green)]",
+    danger: "bg-red-800"
   };
 
   const triggerPulse = () => {
@@ -83,68 +79,39 @@ export const FunkyButton: React.FC<ButtonProps> = ({
 
   const waveColor =
     variant === "primary"
-      ? "rgba(255,255,255,0.35)"
+      ? "rgba(204, 255, 0, 0.5)"
       : variant === "secondary"
-        ? "rgba(79,70,229,0.12)"
-        : "rgba(79,70,229,0.12)";
+        ? "rgba(0,0,0,0.1)"
+        : "rgba(0,0,0,0.1)";
 
   return (
     <motion.button
       type={type || "button"}
-      className={`${baseStyle} ${visualVariant} ${className}`}
+      className={`${baseStyle} ${visualVariant} ${className} py-4`}
       disabled={isLoading || rest.disabled}
       onClick={handleClick}
       onMouseDown={handleMouseDown}
       onTouchStart={handleTouchStart}
-      whileHover={!rest.disabled && !isLoading ? { y: -2, scale: 1.02 } : {}}
-      whileTap={!rest.disabled && !isLoading ? { scale: 0.94 } : {}}
-      transition={{
-        type: "spring",
-        stiffness: 500,
-        damping: 30,
-        mass: 0.6,
-      }}
-      animate={pulsing ? { scale: [1, 1.05, 0.98, 1] } : { scale: 1 }}
+      whileHover={{ scale: rest.disabled ? 1 : 1.02 }}
+      whileTap={{ scale: rest.disabled ? 1 : 0.98 }}
+      transition={{ type: "spring", stiffness: 400, damping: 17, mass: 1 }}
+      animate={pulsing ? { scale: [1, 1.02, 1] } : {}}
       {...rest}
     >
-      {liquidWaveOnClick && (
-        <motion.div
-          className="absolute inset-x-0 bottom-0 z-0 pointer-events-none"
-          initial={{ height: 0, opacity: 0 }}
-          animate={
-            pulsing
-              ? { height: ["0%", "55%", "0%"], opacity: [0, 1, 0] }
-              : { height: "0%", opacity: 0 }
-          }
-          transition={{ duration: 0.65, ease: "easeInOut" }}
-          style={{ background: waveColor }}
-        >
-          <motion.svg
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-            className="absolute top-0 left-0 w-[200%] h-8"
-            initial={{ x: 0 }}
-            animate={pulsing ? { x: ["0%", "-50%"] } : { x: "0%" }}
-            transition={{ duration: 0.65, ease: "linear" }}
-          >
-            <path
-              d="M0,40 C150,90 350,0 600,40 C850,80 1050,10 1200,40 L1200,120 L0,120 Z"
-              fill={waveColor}
-            />
-          </motion.svg>
-        </motion.div>
-      )}
+      <span className="relative z-10 flex items-center gap-2">
+        {isLoading && <Loader2 className="animate-spin w-4 h-4" />}
+        {label}
+      </span>
 
-      <div className="relative z-10 flex items-center gap-2 whitespace-nowrap pointer-events-none">
-        {isLoading && <Loader2 className="w-4 h-4 animate-spin" />}
-        <motion.span
-          initial={{ y: 4 }}
-          animate={{ y: 0 }}
-          transition={{ duration: 0.18 }}
-        >
-          {label}
-        </motion.span>
-      </div>
+      {liquidWaveOnClick && pulsing && (
+        <motion.div
+          className="absolute inset-0 z-0"
+          initial={{ y: "100%" }}
+          animate={{ y: "-100%" }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+          style={{ background: waveColor }}
+        />
+      )}
     </motion.button>
   );
 };
@@ -152,7 +119,7 @@ export const FunkyButton: React.FC<ButtonProps> = ({
 export const FunkyCard: React.FC<{ children: React.ReactNode; className?: string; onClick?: () => void }> = ({ children, className = '', onClick }) => (
   <div
     onClick={onClick}
-    className={`bg-white rounded-2xl shadow-sm border border-slate-100 p-5 ${onClick ? '' : ''} ${className}`}
+    className={`bg-white border-2 border-black p-5 ${onClick ? 'cursor-pointer hover:bg-gray-50 transition-colors' : ''} ${className}`}
   >
     {children}
   </div>
@@ -160,21 +127,22 @@ export const FunkyCard: React.FC<{ children: React.ReactNode; className?: string
 
 export const FunkyInput: React.FC<React.InputHTMLAttributes<HTMLInputElement>> = (props) => (
   <input
-    className="w-full rounded-xl border-2 border-gray-200 px-5 py-4 text-base bg-gray-50 text-gray-800 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-500/20 focus:border-gray-500 transition-all shadow-sm"
+    className="w-full border-2 border-black px-5 py-4 text-base bg-white text-black placeholder-gray-500 focus:outline-none focus:border-[var(--color-neon-green)] focus:ring-1 focus:ring-[var(--color-neon-green)] transition-all"
     {...props}
   />
 );
 
-export const FunkyBadge: React.FC<{ children: React.ReactNode; color?: 'teal' | 'indigo' | 'rose' | 'slate' }> = ({ children, color = 'indigo' }) => {
-  const colors = {
-    teal: "bg-teal-50 text-teal-700 border border-teal-100",
-    indigo: "bg-indigo-50 text-indigo-700 border border-indigo-100",
-    rose: "bg-rose-50 text-rose-700 border border-rose-100",
-    slate: "bg-slate-100 text-slate-600 border border-slate-200"
+export const FunkyBadge: React.FC<{ children: React.ReactNode; color?: 'teal' | 'indigo' | 'rose' | 'slate' | 'gray' }> = ({ children, color = 'indigo' }) => {
+  const colors: Record<string, string> = {
+    teal: "bg-teal-200 text-black border-2 border-black",
+    indigo: "bg-indigo-200 text-black border-2 border-black",
+    rose: "bg-rose-200 text-black border-2 border-black",
+    slate: "bg-gray-200 text-black border-2 border-black",
+    gray: "bg-gray-200 text-black border-2 border-black"
   };
 
   return (
-    <span className={`px-2.5 py-1 rounded-lg text-[11px] font-bold uppercase tracking-wider ${colors[color]}`}>
+    <span className={`px-2.5 py-1 text-[12px] font-bold uppercase tracking-wider ${colors[color] || colors.indigo}`}>
       {children}
     </span>
   );
@@ -184,9 +152,9 @@ export const FunkyToast: React.FC<{ message: string; visible: boolean }> = ({ me
   if (!visible) return null;
   return (
     <div className="fixed top-6 left-1/2 -translate-x-1/2 z-[60] animate-bounce-in pointer-events-none w-full max-w-xs px-4 text-center">
-      <div className="bg-slate-900/90 backdrop-blur-md text-white px-6 py-4 rounded-2xl shadow-2xl border border-white/10 flex items-center justify-center gap-3 font-semibold">
-        <span className="text-xl">🎉</span> {message}
+      <div className="bg-black text-[var(--color-neon-green)] px-6 py-4 shadow-[8px_8px_0px_0px_rgba(204,255,0,1)] border-2 border-[var(--color-neon-green)] flex items-center justify-center gap-3 font-bold uppercase tracking-widest">
+        <span className="text-xl">📢</span> {message}
       </div>
     </div>
-  )
-}
+  );
+};
