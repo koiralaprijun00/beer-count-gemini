@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Loader2 } from "lucide-react";
 import { motion } from "framer-motion";
+import { useHaptic } from "../src/hooks/useHaptic";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: "primary" | "secondary" | "icon" | "danger";
@@ -28,6 +29,7 @@ export const FunkyButton: React.FC<ButtonProps> = ({
 }) => {
   const [pulsing, setPulsing] = useState(false);
   const timerRef = useRef<number | null>(null);
+  const { trigger } = useHaptic();
 
   const baseStyle =
     "relative overflow-hidden transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 font-bold tracking-tight select-none border-2";
@@ -52,6 +54,7 @@ export const FunkyButton: React.FC<ButtonProps> = ({
   };
 
   const triggerPulse = () => {
+    trigger('light');
     if (!pulseOnClick && !liquidWaveOnClick) return;
     if (timerRef.current) window.clearTimeout(timerRef.current);
     setPulsing(true);

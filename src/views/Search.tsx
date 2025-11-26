@@ -4,6 +4,7 @@ import { FunkyButton, FunkyCard, FunkyInput } from '../../components/FunkyCompon
 import { Search as SearchIcon, Sparkles, Percent, Loader2, Zap, Filter, X } from 'lucide-react';
 import { getCountryFlag, detectCountry } from '../utils/helpers';
 import { getBeerStats } from '../utils/calculations';
+import { BeerCardSkeleton } from '../components/shared/Skeleton';
 
 interface SearchProps {
   myBeers: Beer[];
@@ -242,14 +243,16 @@ const Search: React.FC<SearchProps> = ({
           </div>
 
           {isSearching ? (
-            <div className="flex flex-col items-center justify-center py-20 text-black bg-white border-2 border-black">
-              <Loader2 className="w-10 h-10 animate-spin text-black mb-4" />
-              <p className="font-bold uppercase animate-pulse">Scanning the global archives...</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[...Array(6)].map((_, i) => (
+                <BeerCardSkeleton key={i} />
+              ))}
             </div>
           ) : isCatalogLoading ? (
-            <div className="flex flex-col items-center justify-center py-8 text-gray-500 bg-white border-2 border-black">
-              <Loader2 className="w-6 h-6 animate-spin text-black mb-3" />
-              <p className="text-sm font-bold uppercase">Loading Catalog.beer listings...</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+              {[...Array(9)].map((_, i) => (
+                <BeerCardSkeleton key={i} />
+              ))}
             </div>
           ) : (
             <>
