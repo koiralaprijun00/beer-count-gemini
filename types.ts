@@ -36,7 +36,16 @@ export enum ViewState {
   DASHBOARD = 'DASHBOARD',
   SEARCH = 'SEARCH',
   DETAIL = 'DETAIL',
-  PROFILE = 'PROFILE'
+  PROFILE = 'PROFILE',
+  LEADERBOARD = 'LEADERBOARD'
+}
+
+export interface LeaderboardEntry {
+  userId: string;
+  displayName: string;
+  photoURL?: string;
+  totalLogs: number;
+  rank?: number;
 }
 
 export interface UserStats {

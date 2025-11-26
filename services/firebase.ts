@@ -1,8 +1,8 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider, FacebookAuthProvider, signInWithPopup, signInWithRedirect, getRedirectResult, signOut, User, sendSignInLinkToEmail, isSignInWithEmailLink, signInWithEmailLink, signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
-import { getFirestore, doc, setDoc, getDoc, onSnapshot, updateDoc, arrayUnion } from 'firebase/firestore';
+import { getFirestore, doc, setDoc, getDoc, onSnapshot, updateDoc, arrayUnion, increment, collection, query, orderBy, limit, getDocs } from 'firebase/firestore';
 import { getAnalytics } from "firebase/analytics";
-import { Beer, LogEntry } from '../types';
+import { Beer, LogEntry, LeaderboardEntry } from '../types';
 import { getTimeBucket } from '../src/utils/calculations';
 
 // Firebase Configuration
@@ -198,20 +198,58 @@ export const saveBeerLogToCloud = async (userId: string, log: LogEntry, beer: Be
             if (!beerExists) {
                 await updateDoc(userDocRef, {
                     beers: arrayUnion(beer),
-                    logs: arrayUnion(log)
+                    logs: arrayUnion(log),
+                    totalLogs: increment(1)
                 });
             } else {
                 await updateDoc(userDocRef, {
-                    logs: arrayUnion({ ...log, timeBucket: log.timeBucket || getTimeBucket(new Date(log.timestamp)) })
+                    logs: arrayUnion({ ...log, timeBucket: log.timeBucket || getTimeBucket(new Date(log.timestamp)) }),
+                    totalLogs: increment(1)
                 });
             }
         } else {
             await setDoc(userDocRef, {
                 beers: [beer],
-                logs: [{ ...log, timeBucket: log.timeBucket || getTimeBucket(new Date(log.timestamp)) }]
+                logs: [{ ...log, timeBucket: log.timeBucket || getTimeBucket(new Date(log.timestamp)) }],
+                totalLogs: 1
             });
         }
     } catch (e) {
         console.error("Error saving to cloud:", e);
+    }
+};
+
+export const syncUserProfile = async (user: User) => {
+    if (!db || !user) return;
+    const userDocRef = doc(db, "users", user.uid);
+    try {
+        await setDoc(userDocRef, {
+            displayName: user.displayName || 'Anonymous Brewer',
+            photoURL: user.photoURL || '',
+            email: user.email || ''
+        }, { merge: true });
+    } catch (e) {
+        console.error("Error syncing user profile:", e);
+    }
+};
+
+export const fetchLeaderboard = async (): Promise<LeaderboardEntry[]> => {
+    if (!db) return [];
+    try {
+        const q = query(collection(db, "users"), orderBy("totalLogs", "desc"), limit(50));
+        const querySnapshot = await getDocs(q);
+        return querySnapshot.docs.map((doc, index) => {
+            const data = doc.data();
+            return {
+                userId: doc.id,
+                displayName: data.displayName || 'Anonymous',
+                photoURL: data.photoURL,
+                totalLogs: data.totalLogs || 0,
+                rank: index + 1
+            };
+        }).filter(entry => entry.totalLogs > 0);
+    } catch (e) {
+        console.error("Error fetching leaderboard:", e);
+        return [];
     }
 };

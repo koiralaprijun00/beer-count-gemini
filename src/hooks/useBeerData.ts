@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { User as FirebaseUser } from 'firebase/auth';
 import { Beer, LogEntry } from '../../types';
 import { fetchCatalogBulk, searchCatalogBeers } from '../../services/localBeerService';
-import { subscribeToUserData, saveBeerLogToCloud } from '../../services/firebase';
+import { subscribeToUserData, saveBeerLogToCloud, syncUserProfile } from '../../services/firebase';
 import { getTimeBucket, ensureTimeBucket } from '../utils/calculations';
 
 const mergeBeers = (base: Beer[], extras: Beer[]) => {
@@ -53,6 +53,9 @@ export const useBeerData = (user: FirebaseUser | null, isGuest: boolean) => {
             }
             return;
         }
+
+        // Sync profile for leaderboard
+        syncUserProfile(user);
 
         const unsubscribe = subscribeToUserData(user.uid, (data) => {
             if (data?.logs) {

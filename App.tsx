@@ -7,7 +7,8 @@ import Dashboard from './src/views/Dashboard';
 import Search from './src/views/Search';
 import Detail from './src/views/Detail';
 import Profile from './src/views/Profile';
-import { Home, Search as SearchIcon, User, Beer as BeerIcon } from 'lucide-react';
+import Leaderboard from './src/views/Leaderboard';
+import { Home, Search as SearchIcon, User, Beer as BeerIcon, Trophy } from 'lucide-react';
 import { FunkyToast } from './components/FunkyComponents';
 import LoginScreen from './src/components/LoginScreen';
 
@@ -22,6 +23,7 @@ function App() {
   const NAV_ITEMS = [
     { id: ViewState.DASHBOARD, label: 'Taproom', icon: <Home size={18} fill="currentColor" /> },
     { id: ViewState.SEARCH, label: 'Cellar', icon: <SearchIcon size={18} strokeWidth={3} /> },
+    { id: ViewState.LEADERBOARD, label: 'Leaders', icon: <Trophy size={18} fill="currentColor" /> },
     { id: ViewState.PROFILE, label: 'My Tab', icon: <User size={18} fill="currentColor" /> },
   ];
 
@@ -45,24 +47,24 @@ function App() {
               <button
                 type="button"
                 onClick={() => setView(ViewState.DASHBOARD)}
-              className="flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 rounded-lg"
-              aria-label="Go to Taproom"
-            >
-              <BeerIcon className="w-6 h-6 text-black" />
-              <span className="font-black text-xl text-black uppercase">Count My Beer</span>
-            </button>
-            <nav className="flex gap-2">
-              {NAV_ITEMS.map(item => (
-                <NavItem
-                  key={item.id}
-                  active={view === item.id}
-                  icon={item.icon}
-                  label={item.label}
-                  onClick={() => setView(item.id)}
-                  desktop
-                />
-              ))}
-            </nav>
+                className="flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-slate-300 rounded-lg"
+                aria-label="Go to Taproom"
+              >
+                <BeerIcon className="w-6 h-6 text-black" />
+                <span className="font-black text-xl text-black uppercase">Count My Beer</span>
+              </button>
+              <nav className="flex gap-2">
+                {NAV_ITEMS.map(item => (
+                  <NavItem
+                    key={item.id}
+                    active={view === item.id}
+                    icon={item.icon}
+                    label={item.label}
+                    onClick={() => setView(item.id)}
+                    desktop
+                  />
+                ))}
+              </nav>
             </div>
           </div>
         </header>
@@ -115,6 +117,10 @@ function App() {
                 setIsGuest={auth.setIsGuest}
                 handleLogout={auth.handleLogout}
               />
+            )}
+
+            {view === ViewState.LEADERBOARD && (
+              <Leaderboard user={auth.user} />
             )}
           </>
         ) : (
