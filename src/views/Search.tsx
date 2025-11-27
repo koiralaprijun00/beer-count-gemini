@@ -240,6 +240,31 @@ const Search: React.FC<SearchProps> = ({
                 {isSearching ? <Loader2 className="animate-spin w-5 h-5" /> : <SearchIcon className="w-5 h-5" />}
               </button>
             </form>
+
+            {/* Desktop Filter Dropdowns */}
+            <div className="hidden lg:flex gap-4 mt-4">
+              <select
+                value={selectedCategory || 'All'}
+                onChange={(e) => setSelectedCategory(e.target.value === 'All' ? null : e.target.value)}
+                className="px-4 py-2 border-2 border-black font-bold text-sm uppercase bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-black"
+              >
+                <option value="All">Filter by Style</option>
+                {CATEGORY_FILTERS.filter(c => c !== 'All').map(cat => (
+                  <option key={cat} value={cat}>{cat}</option>
+                ))}
+              </select>
+
+              <select
+                value={selectedCountry}
+                onChange={(e) => setSelectedCountry(e.target.value)}
+                className="px-4 py-2 border-2 border-black font-bold text-sm uppercase bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-black"
+              >
+                <option value="all">Filter by Country</option>
+                {COUNTRY_FILTERS.filter(c => c !== 'all').map(country => (
+                  <option key={country} value={country}>{country}</option>
+                ))}
+              </select>
+            </div>
           </div>
 
           {isSearching ? (

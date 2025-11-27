@@ -6578,5 +6578,505 @@
         "description": "Whiskey-port barrel porter (92 pts). Decadent.",
         "emoji": "🫐",
         "country": "USA"
+    },
+    {
+        "id": "spain-1",
+        "name": "Mahou Cinco Estrellas",
+        "brewery": "Mahou",
+        "type": "Lager",
+        "abv": "5.5%",
+        "description": "Madrid's classic lager. Crisp and refreshing.",
+        "emoji": "⭐",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-2",
+        "name": "Alhambra Reserva 1925",
+        "brewery": "Cervezas Alhambra",
+        "type": "Lager",
+        "abv": "6.4%",
+        "description": "Premium Granada lager. Rich and full-bodied.",
+        "emoji": "🏰",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-3",
+        "name": "Alhambra Reserva Roja",
+        "brewery": "Cervezas Alhambra",
+        "type": "Red Ale",
+        "abv": "7.2%",
+        "description": "Intense red ale with caramel notes.",
+        "emoji": "🔴",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-4",
+        "name": "Estrella Galicia",
+        "brewery": "Hijos de Rivera",
+        "type": "Pilsner",
+        "abv": "5.5%",
+        "description": "Galician pilsner. Smooth and balanced.",
+        "emoji": "⭐",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-5",
+        "name": "Mahou Maestra",
+        "brewery": "Mahou",
+        "type": "Lager",
+        "abv": "7.5%",
+        "description": "Double malt lager. Complex and aromatic.",
+        "emoji": "👨‍🍳",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-6",
+        "name": "Voll-Damm",
+        "brewery": "S.A. Damm",
+        "type": "Doppelbock",
+        "abv": "7.2%",
+        "description": "Strong Catalan double malt. Rich and malty.",
+        "emoji": "💪",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-7",
+        "name": "Cruzcampo",
+        "brewery": "Heineken España",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Andalusian classic. Light and refreshing.",
+        "emoji": "🌞",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-8",
+        "name": "San Miguel 1516",
+        "brewery": "Mahou San Miguel",
+        "type": "Lager",
+        "abv": "5.4%",
+        "description": "Premium lager following German purity law.",
+        "emoji": "🍺",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-9",
+        "name": "Garage Beer Co Soup IPA",
+        "brewery": "Garage Beer Co",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Barcelona craft IPA. Hoppy and citrusy.",
+        "emoji": "🚗",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-10",
+        "name": "Soma Oatmeal Stout",
+        "brewery": "Soma Beer",
+        "type": "Stout",
+        "abv": "5.5%",
+        "description": "Catalan craft stout. Smooth and creamy.",
+        "emoji": "☕",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-11",
+        "name": "Basqueland Aupa",
+        "brewery": "Basqueland Brewing",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Basque Country IPA. Fresh and tropical.",
+        "emoji": "🏔️",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-12",
+        "name": "La Quince Hop Diggity",
+        "brewery": "La Quince Brewery",
+        "type": "IPA",
+        "abv": "6.8%",
+        "description": "Madrid craft IPA. Bold and hoppy.",
+        "emoji": "🍻",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-13",
+        "name": "Naparbier Back in Black",
+        "brewery": "Naparbier",
+        "type": "Black IPA",
+        "abv": "7.0%",
+        "description": "Navarre black IPA. Dark and hoppy.",
+        "emoji": "⚫",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-14",
+        "name": "Edge Brewing Hoptimista",
+        "brewery": "Edge Brewing",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Barcelona IPA. Citrus and pine notes.",
+        "emoji": "🌿",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-15",
+        "name": "La Pirata Black Block",
+        "brewery": "La Pirata",
+        "type": "Porter",
+        "abv": "6.0%",
+        "description": "Catalan porter. Rich chocolate flavors.",
+        "emoji": "🏴‍☠️",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-16",
+        "name": "Dougall's 942 IPA",
+        "brewery": "Dougall's",
+        "type": "IPA",
+        "abv": "7.2%",
+        "description": "Cantabrian IPA. British-inspired.",
+        "emoji": "🌊",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-17",
+        "name": "Guineu Riner",
+        "brewery": "Cervesa Guineu",
+        "type": "IPA",
+        "abv": "7.0%",
+        "description": "Catalan IPA. Balanced and aromatic.",
+        "emoji": "🦊",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-18",
+        "name": "Brew & Roll Hop Invaders",
+        "brewery": "Brew & Roll",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Navarre craft IPA. Tropical and juicy.",
+        "emoji": "🎸",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-19",
+        "name": "Barcelona Beer Company Moritz",
+        "brewery": "Barcelona Beer Company",
+        "type": "Lager",
+        "abv": "5.4%",
+        "description": "Historic Barcelona lager since 1856.",
+        "emoji": "🏛️",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-20",
+        "name": "Yria Pale Ale",
+        "brewery": "Cervezas Yria",
+        "type": "Pale Ale",
+        "abv": "5.5%",
+        "description": "Toledo craft pale ale. Balanced and hoppy.",
+        "emoji": "🌾",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-21",
+        "name": "La Socarrada Honey Ale",
+        "brewery": "La Socarrada",
+        "type": "Ale",
+        "abv": "6.0%",
+        "description": "Valencia winter ale with honey and smoke.",
+        "emoji": "🍯",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-22",
+        "name": "Er Boqueron Seawater Beer",
+        "brewery": "Er Boqueron",
+        "type": "Lager",
+        "abv": "5.0%",
+        "description": "Unique beer brewed with Mediterranean seawater.",
+        "emoji": "🌊",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-23",
+        "name": "Mala Gissona Pineapple IPA",
+        "brewery": "Mala Gissona",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "San Sebastian IPA with pineapple.",
+        "emoji": "🍍",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-24",
+        "name": "Beer Cat Peach Pale Ale",
+        "brewery": "Beer Cat",
+        "type": "Pale Ale",
+        "abv": "5.8%",
+        "description": "Barcelona barrel-aged pale ale with peach.",
+        "emoji": "🍑",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-25",
+        "name": "Califa Pale Ale",
+        "brewery": "Califa",
+        "type": "Pale Ale",
+        "abv": "5.5%",
+        "description": "Cordoba craft pale ale. Citrusy and fresh.",
+        "emoji": "🌴",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-26",
+        "name": "Cordobeer IPA",
+        "brewery": "Cordobeer",
+        "type": "IPA",
+        "abv": "6.2%",
+        "description": "Los Pedroches IPA. Hoppy and aromatic.",
+        "emoji": "🌻",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-27",
+        "name": "3Monos Pale Ale",
+        "brewery": "3Monos Craft Beer",
+        "type": "Pale Ale",
+        "abv": "5.5%",
+        "description": "Malaga craft pale ale. Balanced and smooth.",
+        "emoji": "🐵",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-28",
+        "name": "Bonvivant IPA",
+        "brewery": "Bonvivant Beer",
+        "type": "IPA",
+        "abv": "6.5%",
+        "description": "Malaga IPA. Tropical and citrusy.",
+        "emoji": "🎉",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-29",
+        "name": "Diez Cabezas Session IPA",
+        "brewery": "Diez Cabezas Brewing",
+        "type": "IPA",
+        "abv": "4.5%",
+        "description": "Malaga session IPA. Light and hoppy.",
+        "emoji": "🔟",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-30",
+        "name": "Alhambra Especial",
+        "brewery": "Cervezas Alhambra",
+        "type": "Lager",
+        "abv": "4.6%",
+        "description": "Granada's everyday lager. Crisp and clean.",
+        "emoji": "🍺",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-31",
+        "name": "Estrella Damm Inedit",
+        "brewery": "S.A. Damm",
+        "type": "Wheat Ale",
+        "abv": "4.8%",
+        "description": "Gourmet beer created with Ferran Adrià.",
+        "emoji": "🌟",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-32",
+        "name": "Ambar Especial",
+        "brewery": "La Zaragozana",
+        "type": "Lager",
+        "abv": "5.2%",
+        "description": "Zaragoza's classic amber lager.",
+        "emoji": "🟠",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-33",
+        "name": "Ambar Export",
+        "brewery": "La Zaragozana",
+        "type": "Lager",
+        "abv": "6.2%",
+        "description": "Stronger Aragonese lager. Full-bodied.",
+        "emoji": "💛",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-34",
+        "name": "Estrella Levante",
+        "brewery": "Damm",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Murcia's Mediterranean lager.",
+        "emoji": "🌅",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-35",
+        "name": "Mahou Clásica",
+        "brewery": "Mahou",
+        "type": "Lager",
+        "abv": "4.8%",
+        "description": "Madrid's everyday beer. Light and refreshing.",
+        "emoji": "🍺",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-36",
+        "name": "San Miguel Especial",
+        "brewery": "Mahou San Miguel",
+        "type": "Lager",
+        "abv": "5.4%",
+        "description": "Spain's most popular lager.",
+        "emoji": "🇪🇸",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-37",
+        "name": "Alhambra Verde",
+        "brewery": "Cervezas Alhambra",
+        "type": "Radler",
+        "abv": "3.2%",
+        "description": "Lemon radler from Granada. Refreshing.",
+        "emoji": "🍋",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-38",
+        "name": "Garage Beer Co Analog",
+        "brewery": "Garage Beer Co",
+        "type": "Pale Ale",
+        "abv": "5.5%",
+        "description": "Barcelona pale ale. Crisp and hoppy.",
+        "emoji": "📻",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-39",
+        "name": "Soma West Coast IPA",
+        "brewery": "Soma Beer",
+        "type": "IPA",
+        "abv": "7.0%",
+        "description": "Catalan West Coast style IPA.",
+        "emoji": "🌴",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-40",
+        "name": "Basqueland Imparable",
+        "brewery": "Basqueland Brewing",
+        "type": "Pale Ale",
+        "abv": "5.5%",
+        "description": "Basque pale ale. Unstoppable flavor.",
+        "emoji": "⚡",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-41",
+        "name": "La Quince Doble Mosaic",
+        "brewery": "La Quince Brewery",
+        "type": "DIPA",
+        "abv": "8.0%",
+        "description": "Madrid double IPA. Intense hops.",
+        "emoji": "🔥",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-42",
+        "name": "Naparbier Napar Anboto",
+        "brewery": "Naparbier",
+        "type": "Pale Ale",
+        "abv": "5.2%",
+        "description": "Navarre pale ale. Balanced and drinkable.",
+        "emoji": "🏔️",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-43",
+        "name": "Edge Brewing Hop Zombie",
+        "brewery": "Edge Brewing",
+        "type": "IPA",
+        "abv": "6.8%",
+        "description": "Barcelona IPA. Tropical hop bomb.",
+        "emoji": "🧟",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-44",
+        "name": "La Pirata Tremenda",
+        "brewery": "La Pirata",
+        "type": "IPA",
+        "abv": "7.2%",
+        "description": "Catalan IPA. Tremendous flavor.",
+        "emoji": "🏴‍☠️",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-45",
+        "name": "Dougall's Leyenda",
+        "brewery": "Dougall's",
+        "type": "Pale Ale",
+        "abv": "5.5%",
+        "description": "Cantabrian English-style pale ale.",
+        "emoji": "📖",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-46",
+        "name": "Guineu Riner Doble",
+        "brewery": "Cervesa Guineu",
+        "type": "DIPA",
+        "abv": "8.5%",
+        "description": "Catalan double IPA. Powerful and hoppy.",
+        "emoji": "🦊",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-47",
+        "name": "Brew & Roll Pale Ale",
+        "brewery": "Brew & Roll",
+        "type": "Pale Ale",
+        "abv": "5.5%",
+        "description": "Navarre pale ale. Smooth and balanced.",
+        "emoji": "🎵",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-48",
+        "name": "Moritz Epidor",
+        "brewery": "Barcelona Beer Company",
+        "type": "Lager",
+        "abv": "7.2%",
+        "description": "Barcelona premium strong lager.",
+        "emoji": "👑",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-49",
+        "name": "Yria Trigo Limpio",
+        "brewery": "Cervezas Yria",
+        "type": "Wheat",
+        "abv": "5.0%",
+        "description": "Toledo wheat beer. Light and citrusy.",
+        "emoji": "🌾",
+        "country": "Spain"
+    },
+    {
+        "id": "spain-50",
+        "name": "Estrella Galicia 1906",
+        "brewery": "Hijos de Rivera",
+        "type": "Lager",
+        "abv": "6.5%",
+        "description": "Premium Galician lager. Rich and complex.",
+        "emoji": "🏆",
+        "country": "Spain"
     }
 ]
