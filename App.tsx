@@ -38,7 +38,7 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen font-sans text-slate-600 bg-[#f8fafc]">
+    <div className="min-h-screen font-sans text-slate-600 bg-[#f8fafc] overflow-x-hidden">
       {/* Desktop Header */}
       {!auth.user && !auth.isGuest ? null : (
         <header className="hidden md:block sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">

@@ -160,7 +160,7 @@ const Search: React.FC<SearchProps> = ({
   );
 
   return (
-    <div className="pb-32 md:pb-24 animate-fade-in relative">
+    <div className="pb-20 md:pb-24 animate-fade-in relative overflow-x-hidden">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* Desktop Sidebar Filters */}
         <aside className="hidden lg:block space-y-6">
@@ -194,7 +194,7 @@ const Search: React.FC<SearchProps> = ({
         )}
 
         <div className="lg:col-span-3 space-y-6">
-          <div className="bg-white border-2 border-black p-5 sticky top-0 z-40 shadow-sm">
+          <div className="bg-white border-2 border-black p-5 sticky top-0 z-40 shadow-sm w-full max-w-full overflow-x-hidden">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2 mb-4">
               <div className="flex items-center justify-between">
                 <div>
