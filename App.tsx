@@ -139,8 +139,8 @@ function App() {
 
       {/* Mobile Navigation */}
       {auth.user || auth.isGuest ? (
-        <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-100 z-50">
-          <div className="grid grid-cols-3">
+        <nav className="md:hidden fixed bottom-4 left-4 right-4 z-50">
+          <div className="bg-black/90 backdrop-blur-md border border-white/10 rounded-full shadow-2xl flex justify-between items-center px-2 py-2">
             {NAV_ITEMS.map(item => (
               <NavItem
                 key={item.id}

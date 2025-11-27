@@ -21,15 +21,18 @@ export const NavItem: React.FC<NavItemProps> = ({ active, icon, label, onClick, 
         <button
             onClick={handleClick}
             className={`
-      transition-all duration-200 flex items-center gap-2 group border-2 border-transparent rounded-xl
+      transition-all duration-300 flex items-center justify-center group
       ${desktop
-                    ? `px-4 py-2 font-bold text-sm uppercase tracking-wider ${active ? 'text-slate-900 bg-slate-100/80 border-slate-200 shadow-sm' : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100 hover:border-slate-200'}`
-                    : `flex-col justify-center w-full py-6 relative ${active ? 'text-slate-900 bg-slate-100/80 border-slate-200 shadow-sm' : 'text-slate-400 hover:text-slate-900 hover:bg-slate-100 hover:border-slate-200'}`
+                    ? `px-4 py-2 font-bold text-sm uppercase tracking-wider border-2 border-transparent rounded-xl gap-2 ${active ? 'text-slate-900 bg-slate-100/80 border-slate-200 shadow-sm' : 'text-slate-500 hover:text-slate-900 hover:bg-slate-100 hover:border-slate-200'}`
+                    : `w-12 h-12 rounded-full ${active
+                        ? 'bg-[var(--color-neon-green)] text-black shadow-[0_0_15px_rgba(204,255,0,0.4)] scale-110'
+                        : 'text-gray-400 hover:text-gray-300 hover:bg-white/5'
+                    }`
                 }
     `}
         >
             <div
-                className={`relative transition-transform duration-300 ${!desktop && active ? '-translate-y-1' : ''} ${active ? 'text-slate-900' : ''} group-hover:scale-105 group-hover:text-slate-900`}
+                className={`relative transition-transform duration-300 ${active && !desktop ? 'scale-110' : ''} group-hover:scale-110`}
             >
                 {icon}
             </div>

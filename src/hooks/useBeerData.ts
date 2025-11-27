@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { User as FirebaseUser } from 'firebase/auth';
 import { Beer, LogEntry } from '../../types';
 import { fetchCatalogBulk, searchCatalogBeers } from '../../services/localBeerService';
-import { subscribeToUserData, saveBeerLogToCloud, syncUserProfile } from '../../services/firebase';
+import { subscribeToUserData, saveBeerLogToCloud } from '../../services/firebase';
 import { getTimeBucket, ensureTimeBucket } from '../utils/calculations';
 
 const mergeBeers = (base: Beer[], extras: Beer[]) => {
@@ -13,6 +13,14 @@ const mergeBeers = (base: Beer[], extras: Beer[]) => {
         map.set(beer.id, existing ? { ...existing, ...beer } : beer);
     });
     return Array.from(map.values());
+};
+
+// Daily cap to prevent cheating
+const MAX_LOGS_PER_DAY = 15;
+
+const getLogsToday = (logs: LogEntry[]): number => {
+    const today = new Date().setHours(0, 0, 0, 0);
+    return logs.filter(log => log.timestamp >= today).length;
 };
 
 export const useBeerData = (user: FirebaseUser | null, isGuest: boolean) => {
@@ -54,9 +62,6 @@ export const useBeerData = (user: FirebaseUser | null, isGuest: boolean) => {
             return;
         }
 
-        // Sync profile for leaderboard
-        syncUserProfile(user);
-
         const unsubscribe = subscribeToUserData(user.uid, (data) => {
             if (data?.logs) {
                 setLogs(data.logs.map((log: LogEntry) => ensureTimeBucket(log)));
@@ -78,6 +83,14 @@ export const useBeerData = (user: FirebaseUser | null, isGuest: boolean) => {
     }, [logs, isGuest, user]);
 
     const handleAddBeerLog = async (beer: Beer) => {
+        // Check daily cap
+        const logsToday = getLogsToday(logs);
+        if (logsToday >= MAX_LOGS_PER_DAY) {
+            console.warn(`Daily limit reached: ${logsToday}/${MAX_LOGS_PER_DAY}`);
+            alert(`🍺 Whoa there! You've hit your daily limit of ${MAX_LOGS_PER_DAY} beers. Come back tomorrow!`);
+            return;
+        }
+
         const newLog: LogEntry = {
             id: `${Date.now()}-${Math.random()}`,
             beerId: beer.id,
