@@ -160,7 +160,7 @@ const Search: React.FC<SearchProps> = ({
   );
 
   return (
-    <div className="pb-24 animate-fade-in relative">
+    <div className="pb-32 md:pb-24 animate-fade-in relative">
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
         {/* Desktop Sidebar Filters */}
         <aside className="hidden lg:block space-y-6">
