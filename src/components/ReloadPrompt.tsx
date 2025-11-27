@@ -17,11 +17,10 @@ export const ReloadPrompt: React.FC = () => {
     });
 
     const close = () => {
-        setOfflineReady(false);
         setNeedRefresh(false);
     };
 
-    if (!offlineReady && !needRefresh) return null;
+    if (!needRefresh) return null;
 
     return (
         <div className="fixed bottom-6 right-6 z-[60] animate-slide-in-right w-full max-w-sm">
@@ -29,12 +28,10 @@ export const ReloadPrompt: React.FC = () => {
                 <div className="flex items-start justify-between gap-4">
                     <div className="flex-1">
                         <h3 className="font-bold text-[var(--color-neon-green)] uppercase tracking-wider mb-1">
-                            {offlineReady ? 'Ready for Offline' : 'New Content Available'}
+                            New Content Available
                         </h3>
                         <p className="text-sm text-gray-300 font-medium">
-                            {offlineReady
-                                ? 'App is ready to work offline.'
-                                : 'A new version of Count My Beer is available. Update now to get the latest features!'}
+                            A new version of Count My Beer is available. Update now to get the latest features!
                         </p>
                     </div>
                     <button
@@ -45,15 +42,13 @@ export const ReloadPrompt: React.FC = () => {
                     </button>
                 </div>
 
-                {needRefresh && (
-                    <FunkyButton
-                        onClick={() => updateServiceWorker(true)}
-                        className="!py-2 !text-sm"
-                        pulseOnClick
-                    >
-                        Reload & Update
-                    </FunkyButton>
-                )}
+                <FunkyButton
+                    onClick={() => updateServiceWorker(true)}
+                    className="!py-2 !text-sm"
+                    pulseOnClick
+                >
+                    Reload & Update
+                </FunkyButton>
             </div>
         </div>
     );
