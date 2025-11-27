@@ -11,6 +11,7 @@ import Leaderboard from './src/views/Leaderboard';
 import { Home, Search as SearchIcon, User, Beer as BeerIcon, Trophy } from 'lucide-react';
 import { FunkyToast } from './components/FunkyComponents';
 import LoginScreen from './src/components/LoginScreen';
+import { ReloadPrompt } from './src/components/ReloadPrompt';
 
 function App() {
   const auth = useAuth();
@@ -156,6 +157,8 @@ function App() {
 
       {/* Toast Notifications */}
       {toast && <FunkyToast message={toast.message} type={toast.type} />}
+
+      <ReloadPrompt />
     </div>
   );
 }
